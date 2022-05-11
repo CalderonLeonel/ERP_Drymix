@@ -1,0 +1,108 @@
+CRITICAL - 2022-05-08 06:26:59 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xampp\htdocs\erpDrymix\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xampp\htdocs\erpDrymix\public\index.php(28): require('D:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2022-05-08 06:27:18 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xampp\htdocs\erpDrymix\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xampp\htdocs\erpDrymix\public\index.php(28): require('D:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2022-05-08 06:33:23 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xampp\htdocs\erpDrymix\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xampp\htdocs\erpDrymix\public\index.php(28): require('D:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2022-05-08 06:33:26 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xampp\htdocs\erpDrymix\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xampp\htdocs\erpDrymix\public\index.php(28): require('D:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2022-05-08 06:35:47 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xampp\htdocs\erpDrymix\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xampp\htdocs\erpDrymix\public\index.php(28): require('D:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2022-05-08 16:55:49 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xampp\htdocs\erpDrymix\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xampp\htdocs\erpDrymix\public\index.php(28): require('D:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2022-05-08 16:57:19 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xampp\htdocs\erpDrymix\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xampp\htdocs\erpDrymix\public\index.php(28): require('D:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2022-05-08 16:57:22 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xampp\htdocs\erpDrymix\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xampp\htdocs\erpDrymix\public\index.php(28): require('D:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2022-05-08 16:57:23 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xampp\htdocs\erpDrymix\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xampp\htdocs\erpDrymix\public\index.php(28): require('D:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2022-05-08 16:57:34 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xampp\htdocs\erpDrymix\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xampp\htdocs\erpDrymix\public\index.php(28): require('D:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2022-05-08 17:02:41 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xampp\htdocs\erpDrymix\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xampp\htdocs\erpDrymix\public\index.php(28): require('D:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2022-05-08 17:02:46 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xampp\htdocs\erpDrymix\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xampp\htdocs\erpDrymix\public\index.php(28): require('D:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2022-05-08 17:04:04 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xampp\htdocs\erpDrymix\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xampp\htdocs\erpDrymix\public\index.php(28): require('D:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2022-05-08 17:09:16 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xampp\htdocs\erpDrymix\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xampp\htdocs\erpDrymix\public\index.php(28): require('D:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2022-05-08 17:09:16 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xampp\htdocs\erpDrymix\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xampp\htdocs\erpDrymix\public\index.php(28): require('D:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2022-05-08 17:09:17 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xampp\htdocs\erpDrymix\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xampp\htdocs\erpDrymix\public\index.php(28): require('D:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2022-05-08 17:09:54 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xampp\htdocs\erpDrymix\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xampp\htdocs\erpDrymix\public\index.php(28): require('D:\\xampp\\htdocs...')
+#4 {main}
+CRITICAL - 2022-05-08 17:12:49 --> The framework needs the following extension(s) installed and loaded: intl.
+#0 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(219): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
+#1 D:\xampp\htdocs\erpDrymix\system\CodeIgniter.php(177): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
+#2 D:\xampp\htdocs\erpDrymix\system\bootstrap.php(146): CodeIgniter\CodeIgniter->initialize()
+#3 D:\xampp\htdocs\erpDrymix\public\index.php(28): require('D:\\xampp\\htdocs...')
+#4 {main}

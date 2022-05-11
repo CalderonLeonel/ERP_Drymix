@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
@@ -21,3 +22,20 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+=======
+# Global files
+
+*.zip
+.svn
+.DS_Store
+thumbs.db
+
+# Codeigniter files
+
+*/user_guide
+*/system/logs/log-*.php
+*/system/cache/*
+*/system/cache/!index.html
+*/wsdls/*
+*mailing/
+>>>>>>> 356529f18f0c37afbbb2d54bc12eb241e6d9b49d
