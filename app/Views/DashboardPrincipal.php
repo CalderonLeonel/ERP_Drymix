@@ -370,7 +370,11 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url("home/index")?>">
+            <a class="nav-link" href="<?php
+
+use App\Controllers\AcquisitionController;
+
+ echo site_url("home/index")?>">
               <i class="mdi mdi-grid-large menu-icon"></i>
               <span class="menu-title">Admin</span>
             </a>
@@ -473,16 +477,28 @@
               </ul>
             </div>
           </li>
-          <li class="nav-item nav-category">Gestion de Ventas y Adquisiciones</li>
+          <li class="nav-item nav-category">Gestion de Adquisiciones e Inventario</li>
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="<?php echo site_url('Home/AcquisitionMain') ?>" aria-expanded="false" aria-controls="auth">
-              <i class="menu-icon mdi mdi-account-circle-outline"></i>
+            <a class="nav-link" data-bs-toggle="collapse" href="#Acquisition" aria-expanded="false" aria-controls="Acquisition">
+              <i class="menu-icon mdi mdi-cash-usd"></i>
               <span class="menu-title">Adquisiones</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="auth">
+            <div class="collapse" id="Acquisition">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
+                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('AcquisitionController')?>"> Adquisiciones </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#Inventory" aria-expanded="false" aria-controls="Inventory">
+              <i class="menu-icon mdi mdi-package-variant-closed"></i>
+              <span class="menu-title">Inventario</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="Inventory">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('StorageContoller')?>"> Inventario </a></li>
               </ul>
             </div>
           </li>
