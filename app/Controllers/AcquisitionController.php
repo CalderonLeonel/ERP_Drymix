@@ -6,6 +6,6 @@ class AcquisitionController extends BaseController
 {
     public function index()
     {
-        return view('AcquisitionMain');
+        return view('Provider/ProviderDashboard');
     }
 }
