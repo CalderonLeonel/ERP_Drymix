@@ -28,15 +28,21 @@
             <div class="col-sm-12">
               <div class="home-tab">
                 <div class="d-sm-flex align-items-center justify-content-between border-bottom">
-                <ul class="nav nav-tabs" role="tablist">
+                  <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item">
-                      <a class="nav-link" id="main-tab" data-bs-toggle="tab" href="#" role="tab" aria-selected="false">Panel de Proveedores</a>
+                      <a class="nav-link" id="main-tab" data-bs-toggle="tab" href="<?php echo base_url('StorageManagementController/index')?>" role="tab" aria-selected="false">Panel de Inventaio</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" id="main-tab" data-bs-toggle="tab" href="#" role="tab" aria-selected="false">Lista de Proveedores</a>
+                      <a class="nav-link" id="main-tab" data-bs-toggle="tab" href="<?php echo base_url('StorageManagementController/listItem')?>" role="tab" aria-selected="false">Lista de Items</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" id="material-list-tab" data-bs-toggle="tab" href="#" role="tab" aria-selected="false">Crear Proveedor</a>
+                      <a class="nav-link" id="material-list-tab" data-bs-toggle="tab" href="<?php echo base_url('StorageManagementController/createItem')?>" role="tab" aria-selected="false">Crear Items</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="main-tab" data-bs-toggle="tab" href="<?php echo base_url('StorageManagementController/ItemTypeList')?>" role="tab" aria-selected="false">Lista de Tipos de Items</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="material-list-tab" data-bs-toggle="tab" href="<?php echo base_url('StorageManagementController/createItemType')?>" role="tab" aria-selected="false">Crear Tipo de Item</a>
                     </li>
                   </ul>
                 </div>
@@ -65,7 +71,7 @@
                           <div class="col-12 col-lg-4 col-lg-12 grid-margin stretch-card">
                             <div class="card card-rounded bg-info">
                               <div class="card-body">
-                              <h4 class="card-title card-title-dash text-light">Volver a la Pagina Principal de Adquisiciones</h4>
+                              <h4 class="card-title card-title-dash text-light">Volver a la Pagina Principal de Inventario</h4>
                                 <div class="d-sm-flex justify-content-between align-items-start">                             
                                   <div class="row-lg">
                                   <div class="col-12">
@@ -84,19 +90,47 @@
                           <div class="col-12 grid-margin stretch-card">
                             <div class="card card-rounded">
                               <div class="card-body">
-                                <h2 class="card-title">Editar un Proveedor</h2>
-                                <p class="card-description"> Modifique la informacion de un proveedor para solicitar adquisiciones</p>
+                                <h2 class="card-title">Modificar un Item</h2>
+                                <p class="card-description"> Modifique un Item que requiera un cambio de stand, seccion o almacen</p>
                                 <form class="forms-sample">
                                   <div class="form-group">
-                                   <label for="inputProviderName">Nombre Del Proveedor</label>
+                                   <label for="inputProviderName">Nombre De Item</label>
                                    <input type="text" class="form-control" id="inputProviderName" placeholder="Nombre Proveedor">
                                   </div>
                                   <div class="form-group">
-                                   <label for="inputProviderContact">Contacto del Proveedor</label>
-                                   <input type="number" class="form-control" id="inputProviderContact" min="60000000" max="79999999" placeholder="Contacto del Proveedor">
+                                       <label for="itemTypeSelect">Tipo de Item</label>
+                                       <select class="form-control" id="itemTypeSelect">
+                                       <option>tipo1</option>
+                                       <option>tipo2</option>
+                                       <option>tipo3</option>
+                                     </select>
                                   </div>
                                   <div class="form-group">
-                                     <button type="submit" class="btn btn-lg btn-primary text-light">Modiciar Proveedor</button>
+                                       <label for="storageSelect">Almacen</label>
+                                       <select class="form-control" id="storageSelect">
+                                       <option>storage1</option>
+                                       <option>storage2</option>
+                                       <option>storage3</option>
+                                     </select>
+                                  </div>
+                                  <div class="form-group">
+                                       <label for="sectionSelect">Seccion</label>
+                                       <select class="form-control" id="sectionSelect">
+                                       <option>section1</option>
+                                       <option>section2</option>
+                                       <option>ssection3</option>
+                                     </select>
+                                  </div>
+                                  <div class="form-group">
+                                       <label for="standSelect">Stand</label>
+                                       <select class="form-control" id="standSelect">
+                                       <option>stand1</option>
+                                       <option>stand2</option>
+                                       <option>stand3</option>
+                                     </select>
+                                  </div>                                  
+                                  <div class="form-group">
+                                     <button type="submit" class="btn btn-lg btn-primary text-light">Modificar Item</button>
                                   </div>
                                 </form>
                               </div>

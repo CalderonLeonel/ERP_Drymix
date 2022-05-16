@@ -22,14 +22,14 @@ class StorageManagementController extends BaseController
     }
     public function createItemType()
     {
-        return view('ItemType/CreateItem');
+        return view('ItemType/CreateItemType');
     }
     public function editItemType()
     {
-        return view('ItemType/EditItem');
+        return view('ItemType/EditItemType');
     }
     public function listItems()
     {
-        return view('ItemType/ItemTypeList');
+        return view('ItemType/listItemType');
     }
 }
