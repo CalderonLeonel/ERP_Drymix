@@ -146,7 +146,7 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url("Home/index")?>">
+            <a class="nav-link" href="<?php echo site_url('Home/index')?>">
               <i class="mdi mdi-grid-large menu-icon"></i>
               <span class="menu-title">Admin</span>
             </a>
@@ -270,15 +270,15 @@
                   <p class="card-description">
                     Aca podras agregar los productos producidos por la empresa
                   </p>
-                  <form class="forms-sample">
+                  <form class="forms-sample" method="POST" id="add_create" name="add_create" action="<?php echo site_url('submit/form') ?>">
                     <div class="form-group">
                       <label for="exampleInputUsername1">Nombre del Producto</label>
-                      <input type="text" class="form-control" id="nombreProducto" placeholder="Nombre del Producto">
+                      <input type="text" class="form-control" id="nameProduct" placeholder="Nombre del Producto">
                     </div>
                     <div class="form-group">
                         <label class="col-sm-3 col-form-label">Linea del Producto</label>
                         <div class="col-sm-12">
-                            <select class="form-control">
+                            <select class="form-control" id="lineProduct">
                                 <option>Yeso</option>
                                 <option>Mortero Seco</option>
                             </select>

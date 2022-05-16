@@ -18,7 +18,7 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php')) {
  */
 $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('Products');
-$routes->setDefaultMethod('index');
+$routes->setDefaultMethod('insert');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 $routes->setAutoRoute(true);
@@ -31,7 +31,7 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Products::index');
+$routes->get('/', 'Products::insert');
 
 /*
  * --------------------------------------------------------------------
@@ -50,4 +50,5 @@ if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
 $routes->get('insertar', 'Products::insert');
+$routes->post('submit-form', 'Products::insert');
 $routes->get('produccion', 'Products::index');

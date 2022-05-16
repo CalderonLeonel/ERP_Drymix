@@ -1,0 +1,18 @@
+CRITICAL - 2022-05-15 17:59:42 --> Invalid file: DashboardSCM.php
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('DashboardSCM.ph...')
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('DashboardSCM', Array, true)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\Products.php(10): view('DashboardSCM')
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Products->index()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-15 17:59:58 --> Invalid file: DashboardSCM.php
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('DashboardSCM.ph...')
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('DashboardSCM', Array, true)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\Products.php(10): view('DashboardSCM')
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Products->index()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
