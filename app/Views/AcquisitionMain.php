@@ -95,7 +95,7 @@
                                 <div class="d-sm-flex justify-content-between align-items-start">                             
                                   <div class="row-lg">
                                   <div class="col-12">
-                                   <a href="#" class="hidden text-light stretched-link"></a>
+                                   <a href="<?php echo site_url('home') ?>" class="hidden text-light stretched-link"></a>
                                   </div>
                                   </div>
                                 </div>
