@@ -433,7 +433,7 @@
             </a>
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Basic Elements</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo site_url("products/index")?>">Basic Elements</a></li>
               </ul>
             </div>
           </li>

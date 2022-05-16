@@ -49,3 +49,5 @@ $routes->get('/', 'AcquisitionController::index');
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
+$routes->get('insertar', 'Products::insert');
+$routes->get('produccion', 'Products::index');
