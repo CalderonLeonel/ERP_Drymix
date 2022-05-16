@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-class StorageContoller extends BaseController
+class StorageManagementController extends BaseController
 {
     public function index()
     {
@@ -22,14 +22,14 @@ class StorageContoller extends BaseController
     }
     public function createItemType()
     {
-        return view('Item/CreateItem');
+        return view('ItemType/CreateItem');
     }
     public function editItemType()
     {
-        return view('Item/EditItem');
+        return view('ItemType/EditItem');
     }
     public function listItems()
     {
-        return view('Item/ItemTypeList');
+        return view('ItemType/ItemTypeList');
     }
 }

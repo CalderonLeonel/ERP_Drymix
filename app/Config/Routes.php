@@ -20,7 +20,7 @@ $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('Home');
 $routes->setDefaultController('AcquisitionController');
 $routes->setDefaultController('ProviderController');
-$routes->setDefaultController('StorageController');
+$routes->setDefaultController('StorageManagementController');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
@@ -34,7 +34,7 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'ProviderController::index');
+$routes->get('/', 'StorageManagementController::index');
 
 /*
  * --------------------------------------------------------------------
@@ -52,7 +52,3 @@ $routes->get('/', 'ProviderController::index');
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
-
-
-$routes->get('insertar', 'Products::insert');
-$routes->get('produccion', 'Products::index');
