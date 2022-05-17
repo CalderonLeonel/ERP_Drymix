@@ -50,24 +50,7 @@
                   <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview"> 
                    
                     <div class="row">
-                      <div class="col-lg-4 d-flex flex-column">
-                          <div class="col-12 col-lg-4 col-lg-12 grid-margin stretch-card">
-                            <div class="card card-rounded">
-                              <div class="card-body">
-                                <div class="d-sm-flex justify-content-between align-items-start">                             
-                                  <div class="row-lg">
-                                  <div class="col-12">
-                                   <h2 class="card-title card-title-dash">Adquirir Material</h2>
-                                   <h5 class="card-subtitle card-subtitle-dash">Adquiera Materiales para Drymix</h5>
-                                   <button type="button" class="btn btn-success btn-rounded btn-lg text-light">Hacer Una Adquisición</button>
-                                  </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                      </div>
-                      <div class="col-lg-6 d-flex flex-column">
+                      <div class="col-lg-8 d-flex flex-column">
                           <div class="col-12 col-lg-4 col-lg-12 grid-margin stretch-card">
                             <div class="card card-rounded">
                               <div class="card-body">
@@ -84,11 +67,11 @@
                             </div>
                           </div>   
                       </div>
-                      <div class="col-lg-2 d-flex flex-column">
+                      <div class="col-lg-4 d-flex flex-column">
                           <div class="col-12 col-lg-4 col-lg-12 grid-margin stretch-card">
-                            <div class="card card-rounded bg-primary">
+                            <div class="card card-rounded bg-info">
                               <div class="card-body">
-                              <h4 class="card-title card-title-dash text-light">Volver a la Pagina Principal</h4>
+                              <h4 class="card-title card-title-dash text-light">Volver a la Pagina Principal de Inventario</h4>
                                 <div class="d-sm-flex justify-content-between align-items-start">                             
                                   <div class="row-lg">
                                   <div class="col-12">
@@ -102,48 +85,30 @@
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-lg-12 d-flex flex-column">
+                      <div class="col-lg-10 d-flex flex-column">
                         <div class="row flex-grow">
                           <div class="col-12 grid-margin stretch-card">
                             <div class="card card-rounded">
                               <div class="card-body">
-                                <div class="d-sm-flex justify-content-between align-items-start">
-                                  <div>
-                                    <h4 class="card-title card-title-dash">Listado de Tipos de Items</h4>
+                                <h2 class="card-title">Registrar una Sección</h2>
+                                <p class="card-description"> Edite una Seccion para Guardar Items</p>
+                                <form class="forms-sample">
+                                  <div class="form-group">
+                                   <label for="inputStorageName">Nombre De Sección</label>
+                                   <input type="text" class="form-control" id="inputStorageName" placeholder="Nombre de Almacen">
                                   </div>
-                                </div>
-                                <div class="table-responsive  mt-1">
-                                  <table class="table select-table">
-                                    <thead>
-                                      <tr>
-                                        <th>ID</th>
-                                        <th>Tipo de Item</th> 
-                                        <th></th>                                               
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                        <td>
-                                          <h6>ID</h6>
-                                        </td>
-                                        <td>
-                                          <h6>Nombre De Tipo de Item</h6>                                        
-                                        </td>
-                                        <td>
-                                          <form method="post">
-                                            <div class="form-group">
-                                              <input type="button" class="btn btn-primary" value="Editar">
-                                            </div>
-                                          </form>   
-                                          <form method="post">
-                                            <div class="form-group">
-                                              <input type="button" class="btn btn-danger" value="Eliminar">
-                                            </div>
-                                          </form>                                        
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
+                                  <div class="form-group">
+                                       <label for="storageSelect">Almacen</label>
+                                       <select class="form-control" id="storageSelect">
+                                       <option>storage1</option>
+                                       <option>storage2</option>
+                                       <option>storage3</option>
+                                     </select>
+                                  </div>
+                                  <div class="form-group">
+                                     <button type="submit" class="btn btn-lg btn-primary text-light">Modificar Sección</button>
+                                  </div>
+                                </form>
                               </div>
                             </div>
                           </div>

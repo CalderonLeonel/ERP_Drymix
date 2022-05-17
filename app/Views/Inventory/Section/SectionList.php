@@ -109,7 +109,7 @@
                               <div class="card-body">
                                 <div class="d-sm-flex justify-content-between align-items-start">
                                   <div>
-                                    <h4 class="card-title card-title-dash">Listado de Tipos de Items</h4>
+                                    <h4 class="card-title card-title-dash">Listado de Stands</h4>
                                   </div>
                                 </div>
                                 <div class="table-responsive  mt-1">
@@ -117,7 +117,9 @@
                                     <thead>
                                       <tr>
                                         <th>ID</th>
-                                        <th>Tipo de Item</th> 
+                                        <th>Stand</th> 
+                                        <th>Sección</th> 
+                                        <th>Almacen</th> 
                                         <th></th>                                               
                                       </tr>
                                     </thead>
@@ -126,7 +128,13 @@
                                           <h6>ID</h6>
                                         </td>
                                         <td>
-                                          <h6>Nombre De Tipo de Item</h6>                                        
+                                          <h6>NombreStand</h6>                                        
+                                        </td>
+                                        <td>
+                                          <h6>NombreSección</h6>                                        
+                                        </td>
+                                        <td>
+                                          <h6>NombreAlmacen</h6>                                        
                                         </td>
                                         <td>
                                           <form method="post">
