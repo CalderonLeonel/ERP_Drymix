@@ -6,30 +6,30 @@ class StorageManagementController extends BaseController
 {
     public function index()
     {
-        return view('Item/ItemDashboard');
+        return view('Inventory/InventoryDashboard');
     }
     public function createItem()
     {
-        return view('Item/CreateItem');
+        return view('Inventory/Item/CreateItem');
     }
     public function editItem()
     {
-        return view('Item/EditItem');
+        return view('Inventory/Item/EditItem');
     }
     public function listItem()
     {
-        return view('Item/ItemList');
+        return view('Inventory/Item/ItemList');
     }
     public function createItemType()
     {
-        return view('ItemType/CreateItemType');
+        return view('Inventory/ItemType/CreateItemType');
     }
     public function editItemType()
     {
-        return view('ItemType/EditItemType');
+        return view('Inventory/ItemType/EditItemType');
     }
     public function listItems()
     {
-        return view('ItemType/listItemType');
+        return view('Inventory/ItemType/listItemType');
     }
 }

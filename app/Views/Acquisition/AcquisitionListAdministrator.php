@@ -134,7 +134,16 @@
                                           <h5>0/00/0000</h5> 
                                         </td>
                                         <td>
-                                          <div class="badge badge-opacity-warning">EstadoDeSolicitud</div>
+                                        <form method="post">
+                                            <div class="form-group">
+                                              <input type="button" class="btn btn-primary" value="Editar">
+                                            </div>
+                                          </form>   
+                                          <form method="post">
+                                            <div class="form-group">
+                                              <input type="button" class="btn btn-danger" value="Eliminar">
+                                            </div>
+                                          </form>     
                                         </td>
                                         <td>
                                           <button class=" btn" >Ver Solicitud</button>
