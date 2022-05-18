@@ -38,4 +38,5 @@ thumbs.db
 */system/cache/!index.html
 */wsdls/*
 *mailing/
->>>>>>> 356529f18f0c37afbbb2d54bc12eb241e6d9b49d
+writable/debugbar/*
+
