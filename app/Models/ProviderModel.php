@@ -16,15 +16,15 @@ class ProviderModel extends Model{
     {
         return $this->find($id);
     }
-    public function createUser($data)
+    public function createProvider($data)
     {
         return $this->insert($data);
     }
-    public function updateUser($id,$data)
+    public function updateProvider($id,$data)
     {
         return $this->update($id,$data);
     }
-    public function deleteUser($id,$data)
+    public function deleteProvider($id,$data)
     {
         return $this->update($id,$data);
     }
