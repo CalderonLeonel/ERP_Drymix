@@ -3,28 +3,28 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class ItemModel extends Model{
+class ItemTypeModel extends Model{
     protected $table      = 'ItemType';
-    protected $primaryKey = 'idItem';
-    protected $allowedFields = ["itemName","idItemType","state"];
+    protected $primaryKey = 'idItemType';
+    protected $allowedFields = ["itemTypeName","state"];
 
-    public function readItems()
+    public function readItemTypes()
     {
         return $this->findAll();
     }
-    public function readItem($id)
+    public function readItemType($id)
     {
         return $this->find($id);
     }
-    public function createItem($data)
+    public function createItemType($data)
     {
         return $this->insert($data);
     }
-    public function updateItem($id,$data)
+    public function updateItemType($id,$data)
     {
         return $this->update($id,$data);
     }
-    public function deleteItem($id,$data)
+    public function deleteItemType($id,$data)
     {
         return $this->update($id,$data);
     }
