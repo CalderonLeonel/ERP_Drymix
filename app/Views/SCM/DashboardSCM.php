@@ -274,7 +274,7 @@
                       <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#audiences" role="tab" aria-selected="false">Efieciencia</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="<?php echo base_url("insertar")?>" role="tab" aria-selected="false">Nuevos Productos</a>
+                      <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="<?php echo base_url("create")?>" role="tab" aria-selected="false">Nuevos Productos</a>
                     </li>
                   </ul>
                   <div>

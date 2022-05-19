@@ -4,16 +4,34 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 use App\Controllers\BaseController;
 use App\Models\ProductModel;
+use App\Models\LineModel;
+use App\Models\FormatModel;
 
 class Products extends BaseController{
+
     public function index()
     {
+        
         return view('SCM/DashboardSCM');
     }
 
     public function create()
     {
-        return view('SCM/NewProduct');
+        $model = new LineModel();
+        $model2 = new FormatModel();
+
+        $data['lines'] = $model->orderBy('idLine')->findAll();
+        $data['format'] = $model2->orderBy('idFormat')->findAll();
+        //$formatModel = new FormatModel();
+        //$lineModel = new LineModel();
+        //$idLine = $_POST['idLine'];
+        //$lineList = $this->LineModel->ListLines();
+        //$idFormat = $_POST['idFormat'];
+        //$formatList = $this->FormatModel->ListFormats();
+        //$dataLines ['Lines'] = $lineList;
+        //$dataFormat ['Format'] = $formatList;
+        
+        return view('SCM/NewProduct'/*, [$dataLines, $dataFormat] */ ,  $data);
     }
 
     public function update()
@@ -31,13 +49,13 @@ class Products extends BaseController{
         $productModel = new ProductModel();
 
         $data = [
-            'nameProduct' => $this->request->getVar('nameProduct'),
-            'IdLine'  => $this->request->getVar('lineProduct'),
-            'IdFormat' => $this->request->getVar('formatProduct')
+            'productName' => $this->request->getVar('productName'),
+            'IdLine'  => $this->request->getVar('idLine'),
+            'IdFormat' => $this->request->getVar('idFormat')
         ];
         $productModel->insert($data);
         //return $this->response->redirect(site_url('/users-list'));
-        return view('SCM/NuevoProducto');
+        return view('SCM/DashboardSCM');
     }
 
     public function UpdateProduct()
@@ -51,7 +69,7 @@ class Products extends BaseController{
         ];
         $productModel->insert($data);
         //return $this->response->redirect(site_url('/users-list'));
-        return view('SCM/NuevoProducto');
+        return view('SCM/DashboardSCM');
     }
 
     public function DeleteProduct()
@@ -65,7 +83,7 @@ class Products extends BaseController{
         ];
         $productModel->insert($data);
         //return $this->response->redirect(site_url('/users-list'));
-        return view('SCM/NuevoProducto');
+        return view('SCM/DashboardSCM');
     }
 
     public function SelectProduct()

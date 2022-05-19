@@ -7,21 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Nuevo Producto</title>
   <!-- plugins:css -->
-  <link rel="stylesheet" href="vendors/feather/feather.css">
-  <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
-  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
-  <link rel="stylesheet" href="vendors/typicons/typicons.css">
-  <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
-  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="<?php echo base_url()?>/vendors/feather/feather.css">
+  <link rel="stylesheet" href="<?php echo base_url()?>/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="<?php echo base_url()?>/vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="<?php echo base_url()?>/vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="<?php echo base_url()?>/vendors/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="<?php echo base_url()?>/vendors/css/vendor.bundle.base.css">
   <!-- endinject -->
   <!-- Plugin css for this page -->
-  <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
-  <link rel="stylesheet" href="js/select.dataTables.min.css">
+  <link rel="stylesheet" href="<?php echo base_url()?>/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <link rel="stylesheet" href="<?php echo base_url()?>/js/select.dataTables.min.css">
   <!-- End plugin css for this page -->
   <!-- inject:css -->
-  <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+  <link rel="stylesheet" href="<?php echo base_url()?>/css/vertical-layout-light/style.css">
   <!-- endinject -->
-  <link rel="shortcut icon" href="images/favicon.png" />
+  <link rel="shortcut icon" href="<?php echo base_url()?>/images/favicon.png" />
 </head>
 <body>
   
@@ -270,28 +270,38 @@
                   <p class="card-description">
                     Aca podras agregar los productos producidos por la empresa
                   </p>
-                  <form class="forms-sample" method="POST" id="add_create" name="add_create" action="<?php echo site_url('submit/form') ?>">
+                  <form class="forms-sample" method="POST" id="add_create" name="add_create" action="<?php echo site_url('Products/InsertProduct') ?>">
                     <div class="form-group">
                       <label for="exampleInputUsername1">Nombre del Producto</label>
-                      <input type="text" class="form-control" id="nameProduct" placeholder="Nombre del Producto">
+                      <input type="text" class="form-control" id="productName" placeholder="Nombre del Producto">
                     </div>
                     <div class="form-group">
                         <label class="col-sm-3 col-form-label">Linea del Producto</label>
                         <div class="col-sm-12">
-                            <select class="form-control" id="lineProduct">
-                                <option>Yeso</option>
-                                <option>Mortero Seco</option>
+                            <select class="form-control" id="idLine">
+                            <?php foreach ($lines as $row)
+                                {
+                                  ?>
+                                  <option value="<?php $row['idLine']?>"><?php echo $row['lineName'];?></option>
+                                  
+                                  <?php
+                                }
+                            ?>
                             </select>
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-3 col-form-label">Formato del Producto</label>
                         <div class="col-sm-12">
-                            <select class="form-control">
-                                <option value="30">30</option>
-                                <option value="50">50</option>
-                                <option value="100">100</option>
-                                <option value="Granell">Granell</option>
+                            <select class="form-control" id="idFormat">
+                            <?php foreach ($format as $row)
+                                {
+                                  ?>
+                                  <option value="<?php $row['idFormat']?>"><?php echo $row['formatName'];?></option>
+                                  
+                                  <?php
+                                }
+                            ?>
                             </select>
                         </div>
                     </div>
@@ -323,25 +333,25 @@
   <!-- container-scroller -->
 
   <!-- plugins:js -->
-  <script src="vendors/js/vendor.bundle.base.js"></script>
+  <script src="<?php echo base_url()?>/vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page -->
-  <script src="vendors/chart.js/Chart.min.js"></script>
-  <script src="vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
-  <script src="vendors/progressbar.js/progressbar.min.js"></script>
+  <script src="<?php echo base_url()?>/vendors/chart.js/Chart.min.js"></script>
+  <script src="<?php echo base_url()?>/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="<?php echo base_url()?>/vendors/progressbar.js/progressbar.min.js"></script>
 
   <!-- End plugin js for this page -->
   <!-- inject:js -->
-  <script src="js/off-canvas.js"></script>
-  <script src="js/hoverable-collapse.js"></script>
-  <script src="js/template.js"></script>
-  <script src="js/settings.js"></script>
-  <script src="js/todolist.js"></script>
+  <script src="<?php echo base_url()?>/js/off-canvas.js"></script>
+  <script src="<?php echo base_url()?>/js/hoverable-collapse.js"></script>
+  <script src="<?php echo base_url()?>/js/template.js"></script>
+  <script src="<?php echo base_url()?>/js/settings.js"></script>
+  <script src="<?php echo base_url()?>/js/todolist.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
-  <script src="js/jquery.cookie.js" type="text/javascript"></script>
-  <script src="js/dashboard.js"></script>
-  <script src="js/Chart.roundedBarCharts.js"></script>
+  <script src="<?php echo base_url()?>/js/jquery.cookie.js" type="text/javascript"></script>
+  <script src="<?php echo base_url()?>/js/dashboard.js"></script>
+  <script src="<?php echo base_url()?>/js/Chart.roundedBarCharts.js"></script>
   <!-- End custom js for this page-->
 </body>
 
