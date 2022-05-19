@@ -1,3 +1,16 @@
+# ERP Drymix
+
+# Módulos
+
+ - BI o Módulo de Bussiness Intelligence
+ - CRM o Módulo de Gestión de Contabilidad
+ - CRM o Módulo de Gestión de Ventas y Relaciones con el Cliente
+ - ECM o Módulo de Gestion de Documentación Empresarial
+ - HRM o Módulo de Gestión de Recursos Humanos
+ - SCM o Módulo de Gestión de Producción
+ - SGI o Módulo de Gestión de Inventario y Adquisiciones
+ - UAC o Módulo de Gestion de Cuentas de Usuarios
+
 # CodeIgniter 4 Development
 
 [![Build Status](https://github.com/codeigniter4/CodeIgniter4/workflows/PHPUnit/badge.svg)](https://github.com/codeigniter4/CodeIgniter4/actions?query=workflow%3A%22PHPUnit%22)

@@ -13,17 +13,17 @@ class Products extends BaseController{
 
     public function create()
     {
-        return view('SCM/NuevoProducto');
+        return view('SCM/NewProduct');
     }
 
     public function update()
     {
-        return view('SCM/NuevoProducto');
+        return view('SCM/UpdateProduct');
     }
 
     public function delete()
     {
-        return view('SCM/NuevoProducto');
+        return view('SCM/DeleteProduct');
     }
 
     public function InsertProduct()
