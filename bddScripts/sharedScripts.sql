@@ -3,8 +3,24 @@ use erp_dry_db;
 
 
 -- 1 MODULO DE CUENTAS DE USUARIO  --
+-- TABLA Department
+INSERT INTO Department(nameDepartment) VALUES('Departamento de Recursos Humanos');
+INSERT INTO Department(nameDepartment) VALUES('Departamento de Ventas');
+INSERT INTO Department(nameDepartment) VALUES('Departamento de Marketing');
+SELECT * FROM department;
 
+-- TABLA Charge
+INSERT INTO Charge(chargeName, accessLevel) VALUES('Limpiador', 0);
+INSERT INTO Charge(chargeName, accessLevel) VALUES('Secretario de administración',1);
+INSERT INTO Charge(chargeName, accessLevel) VALUES('Jefe Operativo',2);
+INSERT INTO Charge(chargeName, accessLevel) VALUES('Gerente departamental',3);
+SELECT * FROM charge;
 
+INSERT INTO Employee(name,secondSurname,surname, email, bithdate, employeeCode,ci, idDepartment, idCharge) VALUES('Super','User','SUDO','admin@prueba.com','2021-02-02','SUDO-9304','3423421', 1,1);
+INSERT INTO User(idUser, userName, userPassword) VALUES(2,'sudo','sudo');
+SELECT * FROM employee;
+SELECT * FROM user;
+UPDATE User SET userName='administrador1', state=0 WHERE idUser = 2;
 -- 2 MODULO DE PRODUCCION  --
 
 

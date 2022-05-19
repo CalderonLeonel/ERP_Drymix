@@ -38,8 +38,8 @@ class Database extends Config
         'database' => 'erp_dry_db',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
-        'pConnect' => false,
-        'DBDebug'  => (ENVIRONMENT !== 'production'),
+        'pConnect' => true,
+        'DBDebug'  => true,
         'charset'  => 'utf8',
         'DBCollat' => 'utf8_general_ci',
         'swapPre'  => '',
@@ -47,16 +47,16 @@ class Database extends Config
         'compress' => false,
         'strictOn' => false,
         'failover' => [],
-        'port'     => 3306,
     ];
 
+    
     /**
      * This database connection is used when
      * running PHPUnit database tests.
      *
      * @var array
      */
-    public $tests = [
+    /*public $tests = [
         'DSN'      => '',
         'hostname' => '127.0.0.1',
         'username' => '',
@@ -74,7 +74,7 @@ class Database extends Config
         'strictOn' => false,
         'failover' => [],
         'port'     => 3306,
-    ];
+    ];*/
 
     public function __construct()
     {
