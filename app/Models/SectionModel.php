@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 class SectionModel extends Model{
     protected $table      = 'Section';
     protected $primaryKey = 'idSection';
-    protected $allowedFields = ["SectionName","idStorage","state"];
+    protected $allowedFields = ["sectionName","idStorage","state"];
 
     public function readSections()
     {

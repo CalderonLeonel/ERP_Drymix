@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Drymix Adquisiciones</title>
+    <title>Drymix</title>
     <!-- plugins:css -->
-    <link rel="stylesheet" href="vendors/feather/feather.css">
-    <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
-    <link rel="stylesheet" href="vendors/typicons/typicons.css">
-    <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
-    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/vendors/feather/feather.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/vendors/typicons/typicons.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/vendors/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/vendors/css/vendor.bundle.base.css">
     <!-- endinject -->
     <!-- Plugin css for this page -->
-    <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
-    <link rel="stylesheet" href="js/select.dataTables.min.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/js/select.dataTables.min.css">
     <!-- End plugin css for this page -->
     <!-- inject:css -->
-    <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/css/vertical-layout-light/style.css">
     <!-- endinject -->
-    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="shortcut icon" href="<?php echo base_url() ?>/images/favicon.png" />
 </head>
 <body>
 <div class="main-panel">
@@ -54,7 +54,7 @@
                                    <h2 class="card-title card-title-dash">Registra un Proveedor</h2>
                                    <br>
                                    <br>
-                                   <button type="button" class="btn btn-primary btn-rounded btn-lg text-light">Registrar Proveedor</button>
+                                   <a href="ProviderController/Create" class="btn btn-primary btn-rounded btn-lg text-light">Registrar Proveedor</a>
                                   </div>
                                   </div>
                                 </div>
@@ -87,7 +87,7 @@
                                 <div class="d-sm-flex justify-content-between align-items-start">                             
                                   <div class="row-lg">
                                   <div class="col-12">
-                                   <a href="#" class="hidden text-light stretched-link"></a>
+                                   <a href="Home" class="hidden text-light stretched-link"></a>
                                   </div>
                                   </div>
                                 </div>
@@ -107,7 +107,7 @@
                                     <h4 class="card-title card-title-dash">Listado de Proveedores</h4>
                                   </div>
                                   <div>
-                                    <button class="btn btn-primary btn-lg text-white mb-0 me-0" type="button"><i class="mdi mdi-playlist-plus"></i>Ver Listado Completo</button>
+                                  <a href="ProviderController/List"  class="btn btn-primary btn-lg text-white mb-0 me-0"><i class="mdi mdi-playlist-plus"></i>Ver Listado Completo</a>
                                   </div>
                                 </div>
                                 <div class="table-responsive  mt-1">
@@ -119,13 +119,15 @@
                                       </tr>
                                     </thead>
                                     <tbody>
+                                    <?php foreach(array_slice($table , 0, 5)as $data):?>
                                         <td>
-                                          <h6>ID</h6>
+                                          <h6><?= $data['idProvider'];?></h6>
                                         </td>
                                         <td>
-                                          <h6>NombreProveedor</h6>                                        
+                                          <h6><?= $data['providerName'];?></h6>                                        
                                         </td>
                                       </tr>
+                                    <?php endforeach;?>
                                     </tbody>
                                   </table>
                                 </div>

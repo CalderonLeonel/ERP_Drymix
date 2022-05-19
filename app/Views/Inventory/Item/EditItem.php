@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Drymix Inventario</title>
+    <title>Drymix</title>
     <!-- plugins:css -->
-    <link rel="stylesheet" href="vendors/feather/feather.css">
-    <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
-    <link rel="stylesheet" href="vendors/typicons/typicons.css">
-    <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
-    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/vendors/feather/feather.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/vendors/typicons/typicons.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/vendors/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/vendors/css/vendor.bundle.base.css">
     <!-- endinject -->
     <!-- Plugin css for this page -->
-    <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
-    <link rel="stylesheet" href="js/select.dataTables.min.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/js/select.dataTables.min.css">
     <!-- End plugin css for this page -->
     <!-- inject:css -->
-    <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/css/vertical-layout-light/style.css">
     <!-- endinject -->
-    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="shortcut icon" href="<?php echo base_url() ?>/images/favicon.png" />
 </head>
 <body>
 <div class="main-panel">
@@ -92,14 +92,28 @@
                               <div class="card-body">
                                 <h2 class="card-title">Modificar un Item</h2>
                                 <p class="card-description"> Modifique un Item que requiera un cambio de stand, seccion o almacen</p>
-                                <form class="forms-sample">
+                                <form class="forms-sample" method="POST" action="<?php echo site_url('StorageManagementController/UpdateItem')?>">
+                                <?php foreach($table as $row):?>
                                   <div class="form-group">
-                                   <label for="inputProviderName">Nombre De Item</label>
-                                   <input type="text" class="form-control" id="inputProviderName" placeholder="Nombre Proveedor">
+                                  <input type="hidden" name="idItem" name="idItem" value="<?php echo $row['idItem'];?>">
+                                   <label for="itemName">Nombre De Item</label>
+                                   <input type="text" class="form-control" id="itemName" value="<?php echo $row['itemName'];?>" placeholder="Nombre Item">
                                   </div>
                                   <div class="form-group">
                                        <label for="itemTypeSelect">Tipo de Item</label>
-                                       <select class="form-control" id="itemTypeSelect">
+                                       <select class="form-control"  name="idItemType" id="idItemType">
+                                       <?php foreach ($list as $row1)
+                                       {
+                                        ?>
+                                        <option value="<?php $row1['idItemType']?>"><?php echo $row1['itemTypeName'];?></option>                                
+                                       <?php
+                                       }
+                                       ?>
+                                       </select>
+                                  </div>
+                                  <!-- <div class="form-group">
+                                       <label for="itemTypeSelect">Tipo de Item</label>
+                                       <select class="form-control" name="" id="itemTypeSelect">
                                        <option>tipo1</option>
                                        <option>tipo2</option>
                                        <option>tipo3</option>
@@ -107,7 +121,7 @@
                                   </div>
                                   <div class="form-group">
                                        <label for="storageSelect">Almacen</label>
-                                       <select class="form-control" id="storageSelect">
+                                       <select class="form-control" name="" id="storageSelect">
                                        <option>storage1</option>
                                        <option>storage2</option>
                                        <option>storage3</option>
@@ -128,10 +142,15 @@
                                        <option>stand2</option>
                                        <option>stand3</option>
                                      </select>
-                                  </div>                                  
+                                  </div>
+                                  <div class="form-group">
+                                       <label for="unitInput">Cantidad Ingresada</label>
+                                      <input type="number" class="form-control"  id="unitInput" placeholder="Cantidad Ingresada">
+                                  </div>-->       
                                   <div class="form-group">
                                      <button type="submit" class="btn btn-lg btn-primary text-light">Modificar Item</button>
                                   </div>
+                                  <?php endforeach;?>
                                 </form>
                               </div>
                             </div>

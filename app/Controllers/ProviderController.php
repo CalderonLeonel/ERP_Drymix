@@ -5,19 +5,29 @@ use App\Models\ProviderModel;
 class ProviderController extends BaseController{
     public function index()
     {
-        return view('Provider/ProviderDashboard');
+        $providerModel = new ProviderModel();
+        $data['table'] = $providerModel->readProviders();
+        return view('Acquisition/Provider/ProviderDashboard',$data);
     }
     public function create()
     {
-        return view('Provider/CreateProvider');
+        return view('Acquisition/Provider/CreateProvider');
     }
     public function edit()
     {
-        return view('Provider/EditProvider');
+        $providerModel = new ProviderModel();
+        $id = [
+            'idProvider' => $this->request->getVar('idProvider')
+        ];
+        $data['table'] = $providerModel->readProvider($id);
+        return view('Acquisition/Provider/EditProvider',$data);
     }
     public function list()
     {
-        return view('Provider/ProviderList');
+        $providerModel = new ProviderModel();
+        $data['table'] = $providerModel->readProviders();
+        return view('Acquisition/Provider/ProviderList',$data);
+        
     }
     public function InsertProvider()
     {
@@ -25,10 +35,11 @@ class ProviderController extends BaseController{
 
         $data = [
             'providerName' => $this->request->getVar('providerName'),
-            'contact' => $this->request->getVar('contact')
+            'contact' => $this->request->getVar('contactNumber')
         ];
-        $providerModel->insertProvider($data);
-        return view('Provider/ProviderList');
+        $providerModel->createProvider($data);
+        $table['table'] = $providerModel->readProviders();
+        return view('Acquisition/Provider/ProviderList',$table);
     }
 
     public function UpdateProvider()
@@ -40,7 +51,8 @@ class ProviderController extends BaseController{
             'contact' => $this->request->getVar('contact')
         ];
         $providerModel->updateProvider($id ,$data);
-        return view('Provider/ProviderList');
+        $table['table'] = $providerModel->readProviders();
+        return view('Acquisition/Provider/ProviderList',$table);
     }
 
     public function DeleteProvider()
@@ -51,16 +63,17 @@ class ProviderController extends BaseController{
             'idProvider' => $this->request->getVar('idProvider')
         ];
         $data = [   
-            'contact' => $this->request->getVar('contact')
+            'state' => 0
         ];
         $providerModel->deleteProvider($id,$data);
-        return view('Provider/ProviderList');
+        $table['table'] = $providerModel->readProviders();
+        return view('Acquisition/Provider/ProviderList',$table);
     }
 
-    public function readProviders()
+    public function readProvider()
     {
         $providerModel = new ProviderModel();
         $providerModel->readProviders();
-        return view('Provider/ProviderList');
+        return view('Acquisition/Provider/ProviderList');
     }
 }

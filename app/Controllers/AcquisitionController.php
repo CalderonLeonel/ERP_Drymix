@@ -2,45 +2,64 @@
 
 namespace App\Controllers;
 use App\Models\AcquisitionModel;
+use App\Models\ProviderModel;
 
 class AcquisitionController extends BaseController
 {
     public function index()
     {
-        return view('Acquisition/AcquisitionMain');
+        $acquisitionModel = new AcquisitionModel();
+        $table['table'] = $acquisitionModel->readAcquisitions();
+        return view('Acquisition/AcquisitionMain',$table);
     }
     public function createAcquisition()
-    {
-        return view('Acquisition/CreateAcquisition');
+    { 
+        $provider = new ProviderModel;
+        $data['list'] = $provider->readProviders();
+        return view('Acquisition/AcquisitionCreate',$data);
     }
     public function editAcquisition()
     {
-        return view('Acquisition/EditAcquisition');
+        $acquisitionModel = new AcquisitionModel();
+        $id = [
+            'idAcquisitionQuote' => $this->request->getVar('idAcquisitionQuote')
+        ];
+        $data['table'] = $acquisitionModel->readAcquisition($id);
+        return view('Acquisition/EditAcquisition',$data);
     }
     public function acquisitionList()
     {
-        return view('Acquisition/AcquisitionList');
+        $acquisitionModel = new AcquisitionModel();
+        $table['table'] = $acquisitionModel->readAcquisitions();
+        return view('Acquisition/AcquisitionList',$table);
     }
     public function InsertAcquisition()
     {
         $acquisitionModel = new AcquisitionModel();
 
         $data = [
-            'name' => $this->request->getVar('AcquisitionName')
+            'name' => $this->request->getVar('name'),
+            'idUser' => 1,
+            'IdProvider' => $this->request->getVar('providerSelect')
         ];
-        $acquisitionModel->insertAcquisition($data);
-        return view('Acquisition/AcquisitionList');
+        $acquisitionModel->createAcquisition($data);
+        $table['table'] = $acquisitionModel->readAcquisitions();
+        return view('Acquisition/AcquisitionList',$table);
     }
 
     public function UpdateAcquisition()
     {
         $acquisitionModel = new AcquisitionModel();
-        $id = ['idAcquisition' => $this->request->getVar('idAcquisition')];
+        $id = ['idAcquisitionQuote' => $this->request->getVar('idAcquisitionQuote')];
         $data = [   
-            'name' => $this->request->getVar('AcquisitionName')
+            'name' => $this->request->getVar('AcquisitionName'),
+            'idUser' => 1,
+            'IdProvider' => $this->request->getVar('IdProvider')
+            
         ];
         $acquisitionModel->updateAcquisition($id ,$data);
-        return view('Acquisition/AcquisitionList');
+        $table['table'] = $acquisitionModel->readAcquisitions();
+        return view('Acquisition/AcquisitionList',$table);
     }
 
     public function DeleteAcquisition()
@@ -48,19 +67,20 @@ class AcquisitionController extends BaseController
         $acquisitionModel = new AcquisitionModel();
 
         $id = [
-            'idAcquisition' => $this->request->getVar('idAcquisition')
+            'idAcquisitionQuote' => $this->request->getVar('idAcquisitionQuote')
         ];
         $data = [   
             'quoteState' => $this->request->getVar('quoteState')
         ];
         $acquisitionModel->deleteAcquisition($id,$data);
-        return view('Acquisition/AcquisitionList');
+        $table['table'] = $acquisitionModel->readAcquisitions();
+        return view('Acquisition/AcquisitionList',$table);
     }
 
     public function readAcquisition()
     {
         $acquisitionModel = new AcquisitionModel();
-        $acquisitionModel->readAcquisitions();
-        return view('Acquisition/AcquisitionList');
+        $table['table'] = $acquisitionModel->readAcquisitions();
+        return view('Acquisition/AcquisitionList',$table);
     }
 }

@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Drymix Inventario</title>
+    <title>Drymix</title>
     <!-- plugins:css -->
-    <link rel="stylesheet" href="vendors/feather/feather.css">
-    <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
-    <link rel="stylesheet" href="vendors/typicons/typicons.css">
-    <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
-    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/vendors/feather/feather.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/vendors/typicons/typicons.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/vendors/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/vendors/css/vendor.bundle.base.css">
     <!-- endinject -->
     <!-- Plugin css for this page -->
-    <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
-    <link rel="stylesheet" href="js/select.dataTables.min.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/js/select.dataTables.min.css">
     <!-- End plugin css for this page -->
     <!-- inject:css -->
-    <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/css/vertical-layout-light/style.css">
     <!-- endinject -->
-    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="shortcut icon" href="<?php echo base_url() ?>/images/favicon.png" />
 </head>
 <body>
 <div class="main-panel">
@@ -92,22 +92,30 @@
                               <div class="card-body">
                                 <h2 class="card-title">Registrar una Sección</h2>
                                 <p class="card-description"> Edite una Seccion para Guardar Items</p>
-                                <form class="forms-sample">
+                                <form class="forms-sample" method="POST" action="<?php echo site_url('StorageManagementController/UpdateSection')?>">
+                                <?php foreach($table as $row):?>
+                                  <input type="hidden" name="idSection" value="<?php echo $row['idSection'];?>">
                                   <div class="form-group">
                                    <label for="inputStorageName">Nombre De Sección</label>
-                                   <input type="text" class="form-control" id="inputStorageName" placeholder="Nombre de Almacen">
+                                   <input type="text" class="form-control" id="sectionName" name="sectionName" value="<?php echo $row['sectionName'];?>" placeholder="Nombre de la Seccion">
                                   </div>
-                                  <div class="form-group">
-                                       <label for="storageSelect">Almacen</label>
-                                       <select class="form-control" id="storageSelect">
-                                       <option>storage1</option>
-                                       <option>storage2</option>
-                                       <option>storage3</option>
+                                  <!--<input type="hidden" name="idStorage" value="<?php echo $row['idStorage'];?>">-->
+                                 <div class="form-group">
+                                       <label for="idStorage">Almacen</label>
+                                       <select class="form-control" id="idStorage" name="idStorage">
+                                       <?php foreach ($list1 as $row1)
+                                       {
+                                        ?>
+                                        <option value="<?php echo $row1['idStorage'];?>"><?php echo $row1['storageName'];?></option>                                
+                                       <?php
+                                       }
+                                       ?>
                                      </select>
                                   </div>
                                   <div class="form-group">
                                      <button type="submit" class="btn btn-lg btn-primary text-light">Modificar Sección</button>
                                   </div>
+                                  <?php endforeach;?>
                                 </form>
                               </div>
                             </div>

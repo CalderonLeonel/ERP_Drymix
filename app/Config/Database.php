@@ -32,7 +32,7 @@ class Database extends Config
      */
     public $default = [
         'DSN'      => 'MySQLi://root:root@127.0.0.1:3306/erp_dry_db?charset=utf8&DBCollat=utf8_general_ci',
-        'hostname' => 'localhost',
+        'hostname' => 'localhost:3306',
         'username' => 'root',
         'password' => 'root',
         'database' => 'ERP_DRY_DB',
@@ -47,7 +47,6 @@ class Database extends Config
         'compress' => false,
         'strictOn' => false,
         'failover' => [],
-        'port'     => 3306,
     ];
 
     
