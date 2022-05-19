@@ -12,7 +12,8 @@ class StorageManagementController extends BaseController
 {
     public function index()
     {
-        return view('Inventory/InventoryDashboard');
+        #return view('Inventory/InventoryDashboard');
+        return view('testConnection');
     }
     #Item
     public function createItem()
