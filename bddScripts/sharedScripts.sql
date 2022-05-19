@@ -41,21 +41,27 @@ INSERT INTO Format(formatName) VALUES('granel');
 -- SELECT * FROM Format;
 
 -- TABLA ProductType
+INSERT INTO ProductType(idLine, productTypeName) VALUES(1, 'Yeso grueso de Construcción');
+INSERT INTO ProductType(idLine, productTypeName) VALUES(1, 'Yeso fino');
+INSERT INTO ProductType(idLine, productTypeName) VALUES(1, 'Yeso regulado');
+INSERT INTO ProductType(idLine, productTypeName) VALUES(2, 'Adhesivo cerámico');
+INSERT INTO ProductType(idLine, productTypeName) VALUES(2, 'Revoque');
 
-INSERT INTO ProductType(idLine, idFormat, productName) VALUES(1, 1, 'Bolsa de yeso grueso de 30 kilos');
-INSERT INTO ProductType(idLine, idFormat, productName) VALUES(1, 2, 'Bolsa de yeso grueso de 50 kilos');
-INSERT INTO ProductType(idLine, idFormat, productName) VALUES(1, 3, 'Bolsa de yeso grueso de 100 kilos');
-INSERT INTO ProductType(idLine, idFormat, productName) VALUES(1, 4, 'Bolsa de yeso grueso a granel');
+-- TABLA Product
+INSERT INTO Product(idProductType, idFormat, productName) VALUES(1, 1, 'Bolsa de yeso grueso de 30 kilos');
+INSERT INTO Product(idProductType, idFormat, productName) VALUES(1, 2, 'Bolsa de yeso grueso de 50 kilos');
+INSERT INTO Product(idProductType, idFormat, productName) VALUES(1, 3, 'Bolsa de yeso grueso de 100 kilos');
+INSERT INTO Product(idProductType, idFormat, productName) VALUES(1, 4, 'Bolsa de yeso grueso a granel');
 
-INSERT INTO ProductType(idLine, idFormat, productName) VALUES(1, 1, 'Bolsa de yeso fino de 30 kilos');
-INSERT INTO ProductType(idLine, idFormat, productName) VALUES(1, 2, 'Bolsa de yeso fino de 50 kilos');
-INSERT INTO ProductType(idLine, idFormat, productName) VALUES(1, 3, 'Bolsa de yeso fino de 100 kilos');
-INSERT INTO ProductType(idLine, idFormat, productName) VALUES(1, 4, 'Bolsa de yeso fino a granel');
+INSERT INTO Product(idProductType, idFormat, productName) VALUES(2, 1, 'Bolsa de yeso fino de 30 kilos');
+INSERT INTO Product(idProductType, idFormat, productName) VALUES(2, 2, 'Bolsa de yeso fino de 50 kilos');
+INSERT INTO Product(idProductType, idFormat, productName) VALUES(2, 3, 'Bolsa de yeso fino de 100 kilos');
+INSERT INTO Product(idProductType, idFormat, productName) VALUES(2, 4, 'Bolsa de yeso fino a granel');
 
-INSERT INTO ProductType(idLine, idFormat, productName) VALUES(1, 1, 'Bolsa de yeso regulado de 30 kilos');
-INSERT INTO ProductType(idLine, idFormat, productName) VALUES(1, 2, 'Bolsa de yeso regulado de 50 kilos');
-INSERT INTO ProductType(idLine, idFormat, productName) VALUES(1, 3, 'Bolsa de yeso regulado de 100 kilos');
-INSERT INTO ProductType(idLine, idFormat, productName) VALUES(1, 4, 'Bolsa de yeso regulado a granel');
--- SELECT * FROM ProductType;
+INSERT INTO Product(idProductType, idFormat, productName) VALUES(3, 1, 'Bolsa de yeso regulado de 30 kilos');
+INSERT INTO Product(idProductType, idFormat, productName) VALUES(3, 2, 'Bolsa de yeso regulado de 50 kilos');
+INSERT INTO Product(idProductType, idFormat, productName) VALUES(3, 3, 'Bolsa de yeso regulado de 100 kilos');
+INSERT INTO Product(idProductType, idFormat, productName) VALUES(3, 4, 'Bolsa de yeso regulado a granel');
+-- SELECT * FROM Product;
 -- 3 MODULO DE DOCUMENTACION  --
 

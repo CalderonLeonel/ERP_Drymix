@@ -1,0 +1,30 @@
+CRITICAL - 2022-05-16 17:07:19 --> in_array(): Argument #2 ($haystack) must be of type array, string given
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\BaseModel.php(1142): in_array('nameProduct', 'nameProduct', true)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\Products.php(28): CodeIgniter\Model->insert(Array)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Products->insert()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-16 17:09:11 --> in_array(): Argument #2 ($haystack) must be of type array, string given
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\BaseModel.php(1142): in_array('nameProduct', 'nameProduct', true)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\Products.php(28): CodeIgniter\Model->insert(Array)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Products->insert()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-16 17:20:07 --> in_array(): Argument #2 ($haystack) must be of type array, string given
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\BaseModel.php(1142): in_array('nameProduct', 'nameProduct', true)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\BaseModel.php(713): CodeIgniter\BaseModel->doProtectFields(Array)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\Products.php(28): CodeIgniter\Model->insert(Array)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Products->insert()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
