@@ -5,9 +5,9 @@ use CodeIgniter\Model;
 
 class Employee extends Model{
     protected $table      = 'Employees';
-    protected $primaryKey = 'idUser';
+    protected $primaryKey = 'idEmployee';
 
-    protected $allowedFields = ['userName','userPassword'];
+    protected $allowedFields = ['name','secondSurname','surname','email','bithdate','employeeCode', 'ci','updateDate','idDepartment', 'idCharge'];
 
     protected $useAutoIncrement = false;
     protected $useTimestamps = true;

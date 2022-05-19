@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Star Admin2 </title>
+  <title>ERP Drymix </title>
   <!-- plugins:css -->
   <link rel="stylesheet" href="vendors/feather/feather.css">
   <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
@@ -45,8 +45,8 @@
       <div class="navbar-menu-wrapper d-flex align-items-top"> 
         <ul class="navbar-nav">
           <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
-            <h1 class="welcome-text">Good Morning, <span class="text-black fw-bold">John Doe</span></h1>
-            <h3 class="welcome-sub-text">Your performance summary this week </h3>
+            <h1 class="welcome-text">Bienvenido, <span class="text-black fw-bold">Super Usuario</span></h1>
+          <!--  <h3 class="welcome-sub-text">Your performance summary this week </h3> -->
           </li>
         </ul>
         <ul class="navbar-nav ms-auto">
@@ -378,32 +378,35 @@
       <!-- partial:../../partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
+        <li class="nav-item nav-category">Usuarios</li>
+          <!--
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#dashboards" aria-expanded="false" aria-controls="dashboards">
               <i class="mdi mdi-grid-large menu-icon"></i>
-              <span class="menu-title">Dashboard</span>
+              <span class="menu-title">Panel de Usuarios</span>
               <i class="menu-arrow"></i> 
-            </a>
+            </a> -->
             <div class="collapse" id="dashboards">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link active" href="../../index.html">Defualt</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/dashboards/crm.html">CRM</a></li>
+                <li class="nav-item"> <a class="nav-link active" href="index.html">Defualt</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/dashboards/crm.html">CRM</a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../../pages/widgets/widgets.html">
-              <i class="mdi mdi-book menu-icon"></i>
-              <span class="menu-title">Widgets</span>
+            <a class="nav-link" href="<?=base_url('usuarios')?>">
+              <i class="mdi mdi-grid-large menu-icon"></i><!-- <i class="mdi mdi-grid-large menu-icon"></i> -->
+              <span class="menu-title">Panel de Usuarios</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../../pages/page-layouts/rtl.html">
-              <i class="mdi mdi-cube-outline menu-icon"></i>
-              <span class="menu-title">RTL</span>
+            <a class="nav-link" href="<?=base_url('crearUsuario')?>">
+              <i class="menu-icon mdi mdi-account-circle-outline"></i>
+              <span class="menu-title">Crear Usuario</span>
             </a>
           </li>
-          <li class="nav-item nav-category">UI Elements</li>
+          
+<!--
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <i class="menu-icon mdi mdi-floor-plan"></i>
@@ -412,12 +415,12 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/accordions.html">Accordions</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/buttons.html">Buttons</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/badges.html">Badges</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/breadcrumbs.html">Breadcrumbs</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/dropdowns.html">Dropdowns</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/modals.html">Modals</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/accordions.html">Accordions</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/badges.html">Badges</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/breadcrumbs.html">Breadcrumbs</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/modals.html">Modals</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/progress.html">Progress bar</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/pagination.html">Pagination</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/tabs.html">Tabs</a></li>
@@ -426,6 +429,8 @@
               </ul>
             </div>
           </li>
+-->
+<!--
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#ui-advanced" aria-expanded="false" aria-controls="ui-advanced">
               <i class="menu-icon mdi mdi-arrow-down-drop-circle-outline"></i>
@@ -444,6 +449,8 @@
               </ul>
             </div>
           </li>
+-->
+<!--
           <li class="nav-item nav-category">Forms and Datas</li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
@@ -507,6 +514,8 @@
               </ul>
             </div>
           </li>
+-->
+<!--
           <li class="nav-item">
             <a class="nav-link" href="../../pages/ui-features/popups.html">
               <i class="menu-icon mdi mdi-alert-outline"></i>
@@ -549,6 +558,8 @@
               </ul>
             </div>
           </li>
+-->
+          <!--
           <li class="nav-item nav-category">pages</li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
@@ -579,71 +590,7 @@
               </ul>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
-              <i class="menu-icon mdi mdi-book-open"></i>
-              <span class="menu-title">General Pages</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="general-pages">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Blank Page </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/profile.html"> Profile </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/faq.html"> FAQ </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/faq-2.html"> FAQ 2 </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/news-grid.html"> News grid </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/timeline.html"> Timeline </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/search-results.html"> Search Results </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/portfolio.html"> Portfolio </a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#e-commerce" aria-expanded="false" aria-controls="e-commerce">
-              <i class="menu-icon mdi mdi-cart-arrow-down"></i>
-              <span class="menu-title">E-commerce</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="e-commerce">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/invoice.html"> Invoice </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/pricing-table.html"> Pricing Table </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/orders.html"> Orders </a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item nav-category">Apps</li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../pages/apps/email.html">
-              <i class="menu-icon mdi mdi-email-outline"></i>
-              <span class="menu-title">E-mail</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../pages/apps/calendar.html">
-              <i class="menu-icon mdi mdi-calendar"></i>
-              <span class="menu-title">Calendar</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../pages/apps/todo.html">
-              <i class="menu-icon mdi mdi-format-list-bulleted"></i>
-              <span class="menu-title">Todo List</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../pages/apps/gallery.html">
-              <i class="menu-icon mdi mdi-file-image-outline"></i>
-              <span class="menu-title">Gallery</span>
-            </a>
-          </li>
-          <li class="nav-item nav-category">help</li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://bootstrapdash.com/demo/star-admin2-pro/docs/documentation.html">
-              <i class="menu-icon mdi mdi-file-document"></i>
-              <span class="menu-title">Documentation</span>
-            </a>
-          </li>
+-->
         </ul>
       </nav>
       <!-- partial -->

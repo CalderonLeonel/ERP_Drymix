@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ERROR - 2022-05-18 12:36:51 --> Unknown column 'id' in 'order clause'
 CRITICAL - 2022-05-18 12:36:51 --> Unknown column 'id' in 'order clause'
 #0 D:\xampp\htdocs\ERP_Drymix_UAC\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
@@ -336,3 +337,159 @@ CRITICAL - 2022-05-18 23:58:35 --> Invalid file: components/footer1.php
 #5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #6 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #7 {main}
+=======
+CRITICAL - 2022-05-18 21:25:12 --> Undefined property: CodeIgniter\View\View::$load
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Views\testConnection.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'I:\\7mo Semestre...', 11)
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\View\View.php(210): include('I:\\7mo Semestre...')
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('testConnection', Array, true)
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\StorageManagementController.php(16): view('testConnection')
+#5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\StorageManagementController->index()
+#6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StorageManagementController))
+#7 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-18 22:39:07 --> Object of class CodeIgniter\Database\MySQLi\Connection could not be converted to string
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\View\View.php(210): include()
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('testConnection', Array, true)
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\StorageManagementController.php(16): view('testConnection')
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\StorageManagementController->index()
+#5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StorageManagementController))
+#6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-18 22:40:54 --> Object of class CodeIgniter\Database\MySQLi\Connection could not be converted to string
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\View\View.php(210): include()
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('testConnection', Array, true)
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\StorageManagementController.php(16): view('testConnection')
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\StorageManagementController->index()
+#5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StorageManagementController))
+#6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-18 22:41:13 --> Object of class CodeIgniter\Database\MySQLi\Connection could not be converted to string
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\View\View.php(210): include()
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('testConnection', Array, true)
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\StorageManagementController.php(16): view('testConnection')
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\StorageManagementController->index()
+#5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StorageManagementController))
+#6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-18 22:42:47 --> Call to a member function getResult() on null
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\View\View.php(210): include()
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('testConnection', Array, true)
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\StorageManagementController.php(16): view('testConnection')
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\StorageManagementController->index()
+#5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StorageManagementController))
+#6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-18 22:43:19 --> Undefined property: stdClass::$title
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Views\testConnection.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'I:\\7mo Semestre...', 17)
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\View\View.php(210): include('I:\\7mo Semestre...')
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('testConnection', Array, true)
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\StorageManagementController.php(16): view('testConnection')
+#5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\StorageManagementController->index()
+#6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StorageManagementController))
+#7 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-18 22:43:20 --> Undefined property: stdClass::$title
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Views\testConnection.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'I:\\7mo Semestre...', 17)
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\View\View.php(210): include('I:\\7mo Semestre...')
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('testConnection', Array, true)
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\StorageManagementController.php(16): view('testConnection')
+#5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\StorageManagementController->index()
+#6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StorageManagementController))
+#7 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-18 22:43:20 --> Undefined property: stdClass::$title
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Views\testConnection.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'I:\\7mo Semestre...', 17)
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\View\View.php(210): include('I:\\7mo Semestre...')
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('testConnection', Array, true)
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\StorageManagementController.php(16): view('testConnection')
+#5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\StorageManagementController->index()
+#6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StorageManagementController))
+#7 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-18 22:43:20 --> Undefined property: stdClass::$title
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Views\testConnection.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'I:\\7mo Semestre...', 17)
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\View\View.php(210): include('I:\\7mo Semestre...')
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('testConnection', Array, true)
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\StorageManagementController.php(16): view('testConnection')
+#5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\StorageManagementController->index()
+#6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StorageManagementController))
+#7 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-18 22:43:20 --> Undefined property: stdClass::$title
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Views\testConnection.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'I:\\7mo Semestre...', 17)
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\View\View.php(210): include('I:\\7mo Semestre...')
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('testConnection', Array, true)
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\StorageManagementController.php(16): view('testConnection')
+#5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\StorageManagementController->index()
+#6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StorageManagementController))
+#7 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-18 22:43:21 --> Undefined property: stdClass::$title
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Views\testConnection.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'I:\\7mo Semestre...', 17)
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\View\View.php(210): include('I:\\7mo Semestre...')
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('testConnection', Array, true)
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\StorageManagementController.php(16): view('testConnection')
+#5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\StorageManagementController->index()
+#6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StorageManagementController))
+#7 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-18 22:43:29 --> Undefined property: stdClass::$title
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Views\testConnection.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'I:\\7mo Semestre...', 17)
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\View\View.php(210): include('I:\\7mo Semestre...')
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('testConnection', Array, true)
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\StorageManagementController.php(16): view('testConnection')
+#5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\StorageManagementController->index()
+#6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StorageManagementController))
+#7 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-05-18 22:55:23 --> Unknown column 'contacto' in 'field list'
+CRITICAL - 2022-05-18 22:55:23 --> Unknown column 'contacto' in 'field list'
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT provider...', 0)
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT provider...')
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT provider...')
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Views\testConnection.php(14): CodeIgniter\Database\BaseConnection->query('SELECT provider...')
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\View\View.php(210): include('I:\\7mo Semestre...')
+#5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('testConnection', Array, true)
+#7 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\StorageManagementController.php(16): view('testConnection')
+#8 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\StorageManagementController->index()
+#9 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StorageManagementController))
+#10 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-05-18 22:55:38 --> Undefined property: stdClass::$contacto
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Views\testConnection.php(18): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'I:\\7mo Semestre...', 18)
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\View\View.php(210): include('I:\\7mo Semestre...')
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('testConnection', Array, true)
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\StorageManagementController.php(16): view('testConnection')
+#5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\StorageManagementController->index()
+#6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StorageManagementController))
+#7 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+>>>>>>> 5755187f28dd4907e3501de0cf9a8133b1bf2d20

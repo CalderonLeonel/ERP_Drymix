@@ -20,6 +20,7 @@ INSERT INTO Employee(name,secondSurname,surname, email, bithdate, employeeCode,c
 INSERT INTO User(idUser, userName, userPassword) VALUES(2,'sudo','sudo');
 SELECT * FROM employee;
 SELECT * FROM user;
+UPDATE User SET userName='administrador1', state=0 WHERE idUser = 2;
 -- 2 MODULO DE PRODUCCION  --
 
 

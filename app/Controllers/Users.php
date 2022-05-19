@@ -23,5 +23,11 @@ class Users extends Controller{
         //$user->select($data['heeder']);
         return view('UAC/selectUsers',$data);
     }
+    public function crear()
+    {
+        $data['header'] = view('UAC/components/header');
+        $data['footer'] = view('UAC/components/footer');
+        return view('UAC/userForm',$data);
+    }
 }
 ?>
