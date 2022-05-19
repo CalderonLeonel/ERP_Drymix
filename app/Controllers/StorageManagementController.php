@@ -32,21 +32,23 @@ class StorageManagementController extends BaseController
         $itemModel = new ItemModel();
 
         $data = [
-            'name' => $this->request->getVar('AcquisitionName')
+            'itemName' => $this->request->getVar('itemName'),
+            'idItemType' => $this->request->getVar('idItemType')
         ];
         $itemModel->insertItem($data);
-        return view('Acquisition/AcquisitionList');
+        return view('Inventory/Item/ItemList');
     }
 
     public function UpdateItem()
     {
         $itemModel = new ItemModel();
-        $id = ['idAcquisition' => $this->request->getVar('idAcquisition')];
+        $id = ['idItem' => $this->request->getVar('idItem')];
         $data = [   
-            'name' => $this->request->getVar('AcquisitionName')
+            'itemName' => $this->request->getVar('itemName'),
+            'idItemType' => $this->request->getVar('idItemType')
         ];
         $itemModel->updateItem($id ,$data);
-        return view('Acquisition/AcquisitionList');
+        return view('Inventory/Item/ItemList');
     }
 
     public function DeleteItem()
@@ -54,20 +56,20 @@ class StorageManagementController extends BaseController
         $itemModel = new ItemModel();
 
         $id = [
-            'idAcquisition' => $this->request->getVar('idAcquisition')
+            'idItem' => $this->request->getVar('idItem')
         ];
         $data = [   
-            'quoteState' => $this->request->getVar('quoteState')
+            'state' => $this->request->getVar('state')
         ];
         $itemModel->deleteItem($id,$data);
-        return view('Acquisition/AcquisitionList');
+        return view('Inventory/Item/ItemList');
     }
 
     public function readItem()
     {
         $itemModel = new ItemModel();
         $itemModel->readItems();
-        return view('Acquisition/AcquisitionList');
+        return view('Inventory/Item/ItemList');
     }
     #ItemType
     public function createItemType()
@@ -87,7 +89,7 @@ class StorageManagementController extends BaseController
         $itemTypeModel = new ItemTypeModel();
 
         $data = [
-            'name' => $this->request->getVar('AcquisitionName')
+            'itemTypeName' => $this->request->getVar('itemTypeName')
         ];
         $itemTypeModel->insertItemType($data);
         return view('Acquisition/AcquisitionList');
@@ -96,12 +98,12 @@ class StorageManagementController extends BaseController
     public function UpdateItemType()
     {
         $itemTypeModel = new ItemTypeModel();
-        $id = ['idAcquisition' => $this->request->getVar('idAcquisition')];
+        $id = ['idItemTypeName' => $this->request->getVar('idItemTypeName')];
         $data = [   
-            'name' => $this->request->getVar('AcquisitionName')
+            'itemTypeName' => $this->request->getVar('itemTypeName')
         ];
         $itemTypeModel->updateItemType($id ,$data);
-        return view('Acquisition/AcquisitionList');
+        return view('Inventory/ItemType/ItemTypelist');
     }
 
     public function DeleteItemType()
@@ -109,20 +111,20 @@ class StorageManagementController extends BaseController
         $itemTypeModel = new ItemTypeModel();
 
         $id = [
-            'idAcquisition' => $this->request->getVar('idAcquisition')
+            'idItemTypeName' => $this->request->getVar('idItemTypeName')
         ];
         $data = [   
-            'quoteState' => $this->request->getVar('quoteState')
+            'state' => $this->request->getVar('state')
         ];
         $itemTypeModel->deleteItemType($id,$data);
-        return view('Acquisition/AcquisitionList');
+        return view('Inventory/ItemType/ItemTypelist');
     }
 
     public function readItemType()
     {
         $itemTypeModel = new ItemTypeModel();
         $itemTypeModel->readItemTypes();
-        return view('Acquisition/AcquisitionList');
+        return view('Inventory/ItemType/ItemTypelist');
     }
 
     #Storage
@@ -143,21 +145,21 @@ class StorageManagementController extends BaseController
         $storageModel = new StorageModel();
 
         $data = [
-            'name' => $this->request->getVar('AcquisitionName')
+            'storageName' => $this->request->getVar('storageName')
         ];
         $storageModel->insertStorage($data);
-        return view('Acquisition/AcquisitionList');
+        return view('Inventory/Storage/StorageList');
     }
 
     public function UpdateStorage()
     {
         $storageModel = new StorageModel();
-        $id = ['idAcquisition' => $this->request->getVar('idAcquisition')];
+        $id = ['idStorage' => $this->request->getVar('idStorage')];
         $data = [   
-            'name' => $this->request->getVar('AcquisitionName')
+            'storageName' => $this->request->getVar('storageName')
         ];
         $storageModel->updateStorage($id ,$data);
-        return view('Acquisition/AcquisitionList');
+        return view('Inventory/Storage/StorageList');
     }
 
     public function DeleteStorage()
@@ -165,20 +167,20 @@ class StorageManagementController extends BaseController
         $storageModel = new StorageModel();
 
         $id = [
-            'idAcquisition' => $this->request->getVar('idAcquisition')
+            'idStorage' => $this->request->getVar('idStorage')
         ];
         $data = [   
-            'quoteState' => $this->request->getVar('quoteState')
+            'state' => $this->request->getVar('state')
         ];
         $storageModel->deleteStorage($id,$data);
-        return view('Acquisition/AcquisitionList');
+        return view('AInventory/Storage/StorageList');
     }
 
     public function readStorage()
     {
         $storageModel = new StorageModel();
         $storageModel->readStorages();
-        return view('Acquisition/AcquisitionList');
+        return view('Inventory/Storage/StorageList');
     }
 
     #Section
@@ -199,7 +201,8 @@ class StorageManagementController extends BaseController
         $sectionModel = new SectionModel();
 
         $data = [
-            'name' => $this->request->getVar('AcquisitionName')
+            'sectionName' => $this->request->getVar('sectionName'),
+            'idStorage' => $this->request->getVar('idStorage')
         ];
         $sectionModel->insertSection($data);
         return view('Acquisition/AcquisitionList');
@@ -208,9 +211,10 @@ class StorageManagementController extends BaseController
     public function UpdateSection()
     {
         $sectionModel = new SectionModel();
-        $id = ['idAcquisition' => $this->request->getVar('idAcquisition')];
+        $id = ['idSection' => $this->request->getVar('idSection')];
         $data = [   
-            'name' => $this->request->getVar('AcquisitionName')
+            'sectionName' => $this->request->getVar('sectionName'),
+            'idStorage' => $this->request->getVar('idStorage')
         ];
         $sectionModel->updateSection($id ,$data);
         return view('Acquisition/AcquisitionList');
@@ -221,10 +225,10 @@ class StorageManagementController extends BaseController
         $sectionModel = new SectionModel();
 
         $id = [
-            'idAcquisition' => $this->request->getVar('idAcquisition')
+            'idSection' => $this->request->getVar('idSection')
         ];
         $data = [   
-            'quoteState' => $this->request->getVar('quoteState')
+            'state' => $this->request->getVar('state')
         ];
         $sectionModel->deleteSection($id,$data);
         return view('Acquisition/AcquisitionList');
@@ -254,21 +258,22 @@ class StorageManagementController extends BaseController
         $standModel = new StandModel();
 
         $data = [
-            'name' => $this->request->getVar('AcquisitionName')
+            'standName' => $this->request->getVar('standName'),
+            'idSection' => $this->request->getVar('idSection')
         ];
         $standModel->insertStand($data);
-        return view('Acquisition/AcquisitionList');
+        return view('Inventory/Stand/StandList');
     }
 
     public function UpdateStand()
     {
         $standModel = new StandModel();
-        $id = ['idAcquisition' => $this->request->getVar('idAcquisition')];
+        $id = ['idStand' => $this->request->getVar('idStand')];
         $data = [   
-            'name' => $this->request->getVar('AcquisitionName')
+            'standName' => $this->request->getVar('standName')
         ];
         $standModel->updateStand($id ,$data);
-        return view('Acquisition/AcquisitionList');
+        return view('Inventory/Stand/StandList');
     }
 
     public function DeleteStand()
@@ -276,20 +281,20 @@ class StorageManagementController extends BaseController
         $standModel = new StandModel();
 
         $id = [
-            'idAcquisition' => $this->request->getVar('idAcquisition')
+            'idStand' => $this->request->getVar('idStand')
         ];
         $data = [   
-            'quoteState' => $this->request->getVar('quoteState')
+            'state' => $this->request->getVar('state')
         ];
         $standModel->deleteStand($id,$data);
-        return view('Acquisition/AcquisitionList');
+        return view('Inventory/Stand/StandList');
     }
 
     public function readStand()
     {
         $standModel = new StandModel();
         $standModel->readStands();
-        return view('Acquisition/AcquisitionList');
+        return view('Inventory/Stand/StandList');
     }
 
     #StorageItem

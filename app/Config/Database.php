@@ -34,8 +34,8 @@ class Database extends Config
         'DSN'      => '',
         'hostname' => 'localhost',
         'username' => 'root',
-        'password' => '',
-        'database' => 'phpmyadmin',
+        'password' => 'root',
+        'database' => 'erp_dry_db',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,
@@ -47,7 +47,7 @@ class Database extends Config
         'compress' => false,
         'strictOn' => false,
         'failover' => [],
-        'port'     => 3306,
+        'port'     => 33060,
     ];
 
     /**
