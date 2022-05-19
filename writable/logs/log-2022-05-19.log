@@ -1,0 +1,591 @@
+CRITICAL - 2022-05-19 00:00:42 --> Invalid file: components/footer1.php
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/foot...')
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('components/foot...', Array, true)
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(22): view('components/foot...')
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 00:01:48 --> Invalid file: components/footer1.php
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/foot...')
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('components/foot...', Array, true)
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(22): view('components/foot...')
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 00:01:49 --> Invalid file: components/footer1.php
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/foot...')
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('components/foot...', Array, true)
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(22): view('components/foot...')
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 00:01:49 --> Invalid file: components/footer1.php
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/foot...')
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('components/foot...', Array, true)
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(22): view('components/foot...')
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 00:01:49 --> Invalid file: components/footer1.php
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/foot...')
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('components/foot...', Array, true)
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(22): view('components/foot...')
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 00:01:49 --> Invalid file: components/footer1.php
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/foot...')
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('components/foot...', Array, true)
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(22): view('components/foot...')
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 00:01:49 --> Invalid file: components/footer1.php
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/foot...')
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('components/foot...', Array, true)
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(22): view('components/foot...')
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 00:01:49 --> Invalid file: components/footer1.php
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/foot...')
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('components/foot...', Array, true)
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(22): view('components/foot...')
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 00:01:49 --> Invalid file: components/footer1.php
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/foot...')
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('components/foot...', Array, true)
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(22): view('components/foot...')
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 00:01:50 --> Invalid file: components/footer1.php
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/foot...')
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('components/foot...', Array, true)
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(22): view('components/foot...')
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 00:01:50 --> Invalid file: components/footer1.php
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/foot...')
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('components/foot...', Array, true)
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(22): view('components/foot...')
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 00:01:50 --> Invalid file: components/footer1.php
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/foot...')
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('components/foot...', Array, true)
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(22): view('components/foot...')
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 00:01:50 --> Invalid file: components/footer1.php
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/foot...')
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('components/foot...', Array, true)
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(22): view('components/foot...')
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 00:01:50 --> Invalid file: components/footer1.php
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/foot...')
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('components/foot...', Array, true)
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(22): view('components/foot...')
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 00:01:50 --> Invalid file: components/footer1.php
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/foot...')
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('components/foot...', Array, true)
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(22): view('components/foot...')
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 00:01:53 --> Invalid file: components/footer1.php
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/foot...')
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('components/foot...', Array, true)
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(22): view('components/foot...')
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 00:01:54 --> Invalid file: components/footer1.php
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/foot...')
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('components/foot...', Array, true)
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(22): view('components/foot...')
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 00:01:54 --> Invalid file: components/footer1.php
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/foot...')
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('components/foot...', Array, true)
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(22): view('components/foot...')
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 00:01:54 --> Invalid file: components/footer1.php
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/foot...')
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('components/foot...', Array, true)
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(22): view('components/foot...')
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 00:01:54 --> Invalid file: components/footer1.php
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/foot...')
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('components/foot...', Array, true)
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(22): view('components/foot...')
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 00:01:54 --> Invalid file: components/footer1.php
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/foot...')
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('components/foot...', Array, true)
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(22): view('components/foot...')
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 00:02:36 --> Invalid file: components/footer1.php
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/foot...')
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('components/foot...', Array, true)
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(22): view('components/foot...')
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 00:03:37 --> Invalid file: components/footer1.php
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/foot...')
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('components/foot...', Array, true)
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(22): view('components/foot...')
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 00:03:44 --> Undefined variable $footers
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\app\Views\UAC\selectUsers.php(1): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp\\htdocs...', 1)
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/selectUsers', Array, true)
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(24): view('UAC/selectUsers', Array)
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-19 00:05:03 --> Invalid file: components/footer1.php
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('components/foot...')
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('components/foot...', Array, true)
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(22): view('components/foot...')
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 00:18:43 --> Undefined variable $baseURL
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\app\Views\UAC\components\header.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp\\htdocs...', 10)
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-19 00:19:10 --> syntax error, unexpected token "echo"
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-19 00:19:30 --> Undefined variable $baseURL
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\app\Views\UAC\components\header.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp\\htdocs...', 10)
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-19 00:20:17 --> Undefined property: CodeIgniter\View\View::$baseURL
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\app\Views\UAC\components\header.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\xampp\\htdocs...', 10)
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-19 00:25:22 --> Undefined constant "App"
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:25:24 --> Undefined constant "App"
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:25:33 --> Undefined constant "App"
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:25:34 --> Undefined constant "App"
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:25:34 --> Undefined constant "App"
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:25:34 --> Undefined constant "App"
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:25:35 --> Undefined constant "App"
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:25:35 --> Undefined constant "App"
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:25:35 --> Undefined constant "App"
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:25:35 --> Undefined constant "App"
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:25:35 --> Undefined constant "App"
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:25:36 --> Undefined constant "App"
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:25:47 --> Undefined constant "App"
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:25:48 --> Undefined constant "App"
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:25:48 --> Undefined constant "App"
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:25:48 --> Undefined constant "App"
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:25:58 --> Undefined constant "App"
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:27:00 --> Class "App" not found
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:27:08 --> Class "App" not found
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:27:37 --> Class "App" not found
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:27:38 --> Class "App" not found
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:28:07 --> Class "App" not found
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:28:08 --> Class "App" not found
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:28:17 --> Class "App" not found
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:28:19 --> Class "App" not found
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:28:19 --> Class "App" not found
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:28:26 --> Class "App" not found
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:28:27 --> Class "App" not found
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:28:45 --> Undefined constant "App"
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 00:28:55 --> Undefined variable $app
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\app\Views\UAC\components\header.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp\\htdocs...', 10)
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-19 00:29:15 --> Undefined variable $app
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\app\Views\UAC\components\header.php(10): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp\\htdocs...', 10)
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-05-19 00:29:45 --> Undefined constant "App"
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(210): include()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Common.php(1089): CodeIgniter\View\View->render('UAC/components/...', Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(21): view('UAC/components/...')
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

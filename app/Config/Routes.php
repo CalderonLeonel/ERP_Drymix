@@ -49,5 +49,6 @@ $routes->get('/', 'Products::index');
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
+$routes->get('usuarios', 'Users::index');
 $routes->get('insertar', 'Products::insert');
 $routes->get('produccion', 'Products::index');
