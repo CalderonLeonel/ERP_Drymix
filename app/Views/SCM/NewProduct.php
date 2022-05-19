@@ -273,12 +273,12 @@
                   <form class="forms-sample" method="POST" id="add_create" name="add_create" action="<?php echo site_url('Products/InsertProduct') ?>">
                     <div class="form-group">
                       <label for="exampleInputUsername1">Nombre del Producto</label>
-                      <input type="text" class="form-control" id="productName" placeholder="Nombre del Producto">
+                      <input type="text" class="form-control" id="productName" name="productName" placeholder="Nombre del Producto">
                     </div>
                     <div class="form-group">
                         <label class="col-sm-3 col-form-label">Linea del Producto</label>
                         <div class="col-sm-12">
-                            <select class="form-control" id="idLine">
+                            <select class="form-control" id="idLine" name="idLine">
                             <?php foreach ($lines as $row)
                                 {
                                   ?>
@@ -293,7 +293,7 @@
                     <div class="form-group">
                         <label class="col-sm-3 col-form-label">Formato del Producto</label>
                         <div class="col-sm-12">
-                            <select class="form-control" id="idFormat">
+                            <select class="form-control" id="idFormat" name = "idFormat">
                             <?php foreach ($format as $row)
                                 {
                                   ?>
