@@ -4,6 +4,7 @@ namespace App\Models;
 use CodeIgniter\Model;
 
 class ProductModel extends Model{
+<<<<<<< HEAD
     protected $table      = 'Product';
     protected $primaryKey = 'idProduct';
     protected $allowedFields = ['productName',  'state', 'idProductType' , 'idFormat'];
@@ -30,4 +31,11 @@ class ProductModel extends Model{
     }
 
 
+=======
+    protected $table      = 'ProductType';
+    protected $primaryKey = 'IdProduct  ';
+    protected $allowedFields = 'nameProduct';
+
+    
+>>>>>>> 82784e3cb500478bda335d4ba85a14485498e8a6
 }

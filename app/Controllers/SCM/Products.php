@@ -17,6 +17,7 @@ class Products extends BaseController{
 
     public function create()
     {
+<<<<<<< HEAD:app/Controllers/Products.php
         $model = new LineModel();
         $model2 = new FormatModel();
 
@@ -32,6 +33,9 @@ class Products extends BaseController{
         //$dataFormat ['Format'] = $formatList;
         
         return view('SCM/NewProduct'/*, [$dataLines, $dataFormat] */ ,  $data);
+=======
+        return view('SCM/AddProducto');
+>>>>>>> 82784e3cb500478bda335d4ba85a14485498e8a6:app/Controllers/SCM/Products.php
     }
 
     public function update()

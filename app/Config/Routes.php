@@ -49,6 +49,12 @@ $routes->get('/', 'Home::index');
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
+<<<<<<< HEAD
 $routes->get('produccion', 'SCM/Products::index');
 $routes->get('create', 'SCM/Products::create');
 $routes->post('newProduct', 'SCM/Products::InsertProduct');
+=======
+$routes->get('insertar', 'SCM/Products::insert');
+$routes->post('submit-form', 'SCM/Products::insert');
+$routes->get('produccion', 'SCM/Products::index');
+>>>>>>> 82784e3cb500478bda335d4ba85a14485498e8a6
