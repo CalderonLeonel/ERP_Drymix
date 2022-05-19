@@ -22,6 +22,18 @@
                       <label for="exampleInputUsername1">Email</label>
                       <input type="text" class="form-control" id="txtEmail" placeholder="Email">
                     </div>
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Fecha de Nacimiento</label>
+                          <div class="col-sm-9">
+                            <input class="form-control" placeholder="dd/mm/yyyy" id="txtBirthday">
+                          </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputUsername1">Email</label>
+                      <input type="text" class="form-control" id="txtEmail" placeholder="Email">
+                    </div>
                     <div class="form-group">
                       <label for="exampleInputUsername1">CI</label>
                       <input type="text" class="form-control" id="txtCI" placeholder="Carnet de Identidad">
@@ -48,7 +60,7 @@
                     <div class="form-group row">
                       <label for="exampleInputPassword2" class="col-sm-3 col-form-label">Contraseña</label>
                       <div class="col-sm-9">
-                        <input type="password" class="form-control" id="txtPassword" placeholder="Contraseña">
+                        <input type="password" class="form-control" id="txtPassword1" placeholder="Contraseña">
                       </div>
                     </div>
                     <div class="form-group row">
