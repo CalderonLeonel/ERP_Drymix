@@ -498,7 +498,7 @@ use App\Controllers\AcquisitionController;
             </a>
             <div class="collapse" id="Inventory">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('StorageContoller')?>"> Inventario </a></li>
+                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('StorageManagementController')?>"> Inventario </a></li>
               </ul>
             </div>
           </li>

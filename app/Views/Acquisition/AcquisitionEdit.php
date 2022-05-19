@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Drymix</title>
     <!-- plugins:css -->
@@ -28,21 +28,24 @@
             <div class="col-sm-12">
               <div class="home-tab">
                 <div class="d-sm-flex align-items-center justify-content-between border-bottom">
-                  <ul class="nav nav-tabs" role="tablist">
+                <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item">
-                      <a class="nav-link" id="main-tab" data-bs-toggle="tab" href="<?php echo base_url('StorageManagementController/index')?>" role="tab" aria-selected="false">Panel de Inventaio</a>
+                      <a class="nav-link" id="main-tab" data-bs-toggle="tab" href="#" role="tab" aria-selected="false">Adquisciones</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" id="main-tab" data-bs-toggle="tab" href="<?php echo base_url('StorageManagementController/listItem')?>" role="tab" aria-selected="false">Lista de Items</a>
+                      <a class="nav-link" id="material-list-tab" data-bs-toggle="tab" href="#" role="tab" aria-selected="false">Lista de Materiales</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" id="material-list-tab" data-bs-toggle="tab" href="<?php echo base_url('StorageManagementController/createItem')?>" role="tab" aria-selected="false">Crear Items</a>
+                      <a class="nav-link" id="provider-list-tab" data-bs-toggle="tab" href="#" role="tab" aria-selected="false">Lista de Proveedores</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" id="main-tab" data-bs-toggle="tab" href="<?php echo base_url('StorageManagementController/ItemTypeList')?>" role="tab" aria-selected="false">Lista de Tipos de Items</a>
+                      <a class="nav-link" id="material-list-tab" data-bs-toggle="tab" href="#" role="tab" aria-selected="false">Registro de Adquisiciones</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" id="material-list-tab" data-bs-toggle="tab" href="<?php echo base_url('StorageManagementController/createItemType')?>" role="tab" aria-selected="false">Crear Tipo de Item</a>
+                      <a class="nav-link" id="material-list-tab" data-bs-toggle="tab" href="#" role="tab" aria-selected="false">Solicitud de Adquisiciones</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="material-list-tab" data-bs-toggle="tab" href="#" role="tab" aria-selected="false">Lista de Solicitudes</a>
                     </li>
                   </ul>
                 </div>
@@ -90,16 +93,34 @@
                           <div class="col-12 grid-margin stretch-card">
                             <div class="card card-rounded">
                               <div class="card-body">
-                                <h2 class="card-title">Registrar un tipo de item</h2>
-                                <p class="card-description"> Agregue un tipo de item para registrar y almacenar items</p>
-                                <form class="forms-sample" method="POST" action="<?php echo site_url('StorageManagementController/InsertItemType')?>">
+                                <h2 class="card-title">Modificar una adquisición</h2>
+                                <p class="card-description"> Modifique una adquisición</p>
+                                <form lass="forms-sample" method="post" action="<?php echo site_url('AcquisitionController/InsertAcquisition')?>">
                                   <div class="form-group">
-                                   <label for="itemTypeName">Nombre De Tipo Item</label>
-                                   <input type="text" class="form-control" id="itemTypeName" name="itemTypeName" placeholder="Nombre de Tipo">
+                                  <?php foreach($data as $row):?>
+                                    <div class="form-group">
+                                    <input id="idAcquisitionQuote" class="form-control" type="hidden" name="idAcquisitionQuote" value="<?= $data['idAcquisitionQuote'];?>">
+                                  </div>
+                                   <label for="name">Nombre Adquisición</label>
+                                   <input type="text" class="form-control" id="name" name="name" value="<?= $data['idProvider'];?>" placeholder="Nombre Adquisición">
                                   </div>
                                   <div class="form-group">
-                                     <button type="submit" class="btn btn-lg btn-success text-light">Registrar Tipo De Item</button>
+                                    
+                                       <label for="providerSelect" >Proveedor</label>
+                                       <select class="form-control"  id="providerSelect" name="providerSelect">
+                                       <?php foreach ($list as $row)
+                                       {
+                                        ?>
+                                        <option value="<?php $row['idProvider']?>"><?php echo $row['providerName'];?></option>                                
+                                       <?php
+                                       }
+                                       ?>
+                                       </select>
                                   </div>
+                                  <div class="form-group">
+                                     <button type="submit" class="btn btn-lg btn-primary text-light">Modificar Adquisión</button>
+                                  </div>
+                                  <?php endforeach;?>
                                 </form>
                               </div>
                             </div>

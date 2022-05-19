@@ -30,23 +30,31 @@ class Users extends Controller{
         $data['footer'] = view('UAC/components/footer');
         return view('UAC/userForm',$data);
     }
-    public function insertarUsuario()
+    public function insertEmployee()
     {
-        $user = new User();
+
         $employee = new Employee();
-        $data1 = [
+        $data = [
             'name' => $this->request->getVar('txtName'),
-            'surname' => $this->request->getVar('txtSurname'),
-            'secondSurname' => $this->request->getVar('txtSecondSurname'),
+            'surname' => $this->request->getVar('txtSurname1'),
+            'secondSurname' => $this->request->getVar('txtSurname2'),
             'email' => $this->request->getVar('txtEmail'),
             'bithdate' => $this->request->getVar('txtBirthday'),
             'employeeCode' => $this->request->getVar('txtEmployeeCode'),
             'ci' => $this->request->getVar('txtCI'),
         ];
-        $data1 = [
-            'userName' => $this->request->getVar('userName'),
-            'state' => $this->request->getVar('state')
+
+        $employee->createEmployee($data);
+    }
+    public function insertUser()
+    {
+        $user = new User();
+        $data = [
+            'userName' => $this->request->getVar('txtUsername'),
+            'userPassword' => $this->request->getVar('txtPassword1')
         ];
+
+        $user->createUser($data);
     }
 }
 ?>

@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 class StandModel extends Model{
     protected $table      = 'Stand';
     protected $primaryKey = 'idStand';
-    protected $allowedFields = ["StandName","idSection","state"];
+    protected $allowedFields = ["standName","idSection","state"];
 
     public function readStands()
     {

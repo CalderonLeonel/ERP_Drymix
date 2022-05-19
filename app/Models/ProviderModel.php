@@ -7,6 +7,8 @@ class ProviderModel extends Model{
     protected $table      = 'Provider';
     protected $primaryKey = 'idProvider';
     protected $allowedFields = ["providerName","contact","state"];
+    protected $createdField  = 'createDate';
+    protected $updatedField  = 'updateDate';
 
     public function readProviders()
     {
@@ -22,7 +24,7 @@ class ProviderModel extends Model{
     }
     public function updateProvider($id,$data)
     {
-        return $this->update($id,$data);
+		return $this->update($id,$data);
     }
     public function deleteProvider($id,$data)
     {

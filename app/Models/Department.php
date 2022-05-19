@@ -3,11 +3,11 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Employee extends Model{
-    protected $table      = 'Employee';
-    protected $primaryKey = 'idEmployee';
+class Department extends Model{
+    protected $table      = 'Department';
+    protected $primaryKey = 'idDepartment';
 
-    protected $allowedFields = ['name','secondSurname','surname','email','bithdate','employeeCode', 'ci','updateDate','idDepartment', 'idCharge'];
+    protected $allowedFields = [''];
 
     //protected $useAutoIncrement = false;
     protected $useTimestamps = true;
@@ -19,8 +19,4 @@ class Employee extends Model{
     //protected $validationRules    = [];
     //protected $validationMessages = [];
     //protected $skipValidation     = false;
-    public function createEmployee($data)
-    {
-        return $this->insert($data);
-    }
 }

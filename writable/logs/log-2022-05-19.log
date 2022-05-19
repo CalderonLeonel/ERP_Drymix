@@ -709,3 +709,76 @@ CRITICAL - 2022-05-19 11:53:21 --> Undefined variable $header
 #7 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #8 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 {main}
+CRITICAL - 2022-05-19 13:11:28 --> Call to undefined method App\Controllers\Users::insert()
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->insertEmployee()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-19 13:17:53 --> There is no data to insert.
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\app\Models\Employee.php(24): CodeIgniter\Model->insert(Array)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(56): App\Models\Employee->createEmployee(Array)
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->insertEmployee()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 13:18:40 --> Call to undefined function App\Controllers\alert()
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->insertEmployee()
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2022-05-19 13:19:00 --> Array to string conversion
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'D:\\xampp\\htdocs...', 56)
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->insertEmployee()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 13:21:25 --> There is no data to insert.
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\app\Models\Employee.php(24): CodeIgniter\Model->insert(Array)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(57): App\Models\Employee->createEmployee(Array)
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->insertEmployee()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-05-19 13:22:40 --> Undefined variable $user
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp\\htdocs...', 47)
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->insertEmployee()
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-05-19 13:22:55 --> There is no primary key defined when trying to make insert.
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\Model.php(229): CodeIgniter\Database\Exceptions\DataException::forEmptyPrimaryKey('insert')
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\app\Models\Employee.php(24): CodeIgniter\Model->insert(Array)
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(47): App\Models\Employee->createEmployee(Array)
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->insertEmployee()
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-05-19 13:24:25 --> Cannot add or update a child row: a foreign key constraint fails (`erp_dry_db`.`employee`, CONSTRAINT `fk_Employee_Area1` FOREIGN KEY (`idDepartment`) REFERENCES `department` (`idDepartment`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+CRITICAL - 2022-05-19 13:24:25 --> Cannot add or update a child row: a foreign key constraint fails (`erp_dry_db`.`employee`, CONSTRAINT `fk_Employee_Area1` FOREIGN KEY (`idDepartment`) REFERENCES `department` (`idDepartment`) ON DELETE NO ACTION ON UPDATE NO ACTION)
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Em...', 0)
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Em...')
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Em...')
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Em...', Array, false)
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\app\Models\Employee.php(24): CodeIgniter\Model->insert(Array)
+#8 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\Users.php(47): App\Models\Employee->createEmployee(Array)
+#9 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\Users->insertEmployee()
+#10 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#11 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}

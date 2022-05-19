@@ -9,7 +9,7 @@ class User extends Model{
 
     protected $allowedFields = ['userName','userPassword'];
 
-    protected $useAutoIncrement = false;
+    //protected $useAutoIncrement = false;
     protected $useTimestamps = true;
     protected $createdField  = 'createDate';
     protected $updatedField  = 'updateDate';
@@ -19,4 +19,8 @@ class User extends Model{
     //protected $validationRules    = [];
     //protected $validationMessages = [];
     //protected $skipValidation     = false;
+    public function createUser($data)
+    {
+        return $this->insert($data);
+    }
 }
