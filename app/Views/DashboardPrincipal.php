@@ -370,7 +370,7 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="<?php echo site_url("Inicio")?>">
+            <a class="nav-link" href="<?php echo site_url("home/index")?>">
               <i class="mdi mdi-grid-large menu-icon"></i>
               <span class="menu-title">Admin</span>
             </a>
@@ -463,6 +463,31 @@
             <div class="collapse" id="maps">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Mdi icons</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-category">Gestion de Adquisiciones e Inventario</li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#Acquisition" aria-expanded="false" aria-controls="Acquisition">
+              <i class="menu-icon mdi mdi-cash-usd"></i>
+              <span class="menu-title">Adquisiones</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="Acquisition">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('AcquisitionController')?>"> Adquisiciones </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#Inventory" aria-expanded="false" aria-controls="Inventory">
+              <i class="menu-icon mdi mdi-package-variant-closed"></i>
+              <span class="menu-title">Inventario</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="Inventory">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('StorageManagementController')?>"> Inventario </a></li>
               </ul>
             </div>
           </li>
