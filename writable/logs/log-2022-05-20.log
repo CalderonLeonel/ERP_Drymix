@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ERROR - 2022-05-20 10:09:43 --> Error connecting to the database: No connection could be made because the target machine actively refused it
 CRITICAL - 2022-05-20 10:09:43 --> Unable to connect to the database.
 Main connection [MySQLi]: No connection could be made because the target machine actively refused it
@@ -141,4 +142,20 @@ CRITICAL - 2022-05-20 11:06:44 --> Column 'idProductType' cannot be null
 #9 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
 #10 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #11 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+=======
+ERROR - 2022-05-20 20:36:39 --> Table 'erp_dry_db.acquisitionquote' doesn't exist
+CRITICAL - 2022-05-20 20:36:39 --> Table 'erp_dry_db.acquisitionquote' doesn't exist
+#0 D:\xampp\htdocs\ERP_Drymix_UAC\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\ERP_Drymix_UAC\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\ERP_Drymix_UAC\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\ERP_Drymix_UAC\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ERP_Drymix_UAC\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ERP_Drymix_UAC\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ERP_Drymix_UAC\app\Models\AcquisitionModel.php(13): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ERP_Drymix_UAC\app\Controllers\AcquisitionController.php(12): App\Models\AcquisitionModel->readAcquisitions()
+#8 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(832): App\Controllers\AcquisitionController->index()
+#9 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcquisitionController))
+#10 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
+>>>>>>> 634a1621d6fb398abc6df491f241fdc550daf023
 #12 {main}

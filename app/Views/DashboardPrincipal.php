@@ -370,7 +370,11 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
+<<<<<<< HEAD
             <a class="nav-link" href="<?php echo base_url("Home/index")?>">
+=======
+            <a class="nav-link" href="<?php echo site_url("home/index")?>">
+>>>>>>> 634a1621d6fb398abc6df491f241fdc550daf023
               <i class="mdi mdi-grid-large menu-icon"></i>
               <span class="menu-title">Admin</span>
             </a>

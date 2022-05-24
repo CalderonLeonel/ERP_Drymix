@@ -85,5 +85,9 @@ CRITICAL - 2022-05-15 23:15:33 --> Invalid file: StorageMain.php
 #4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StorageContoller))
 #5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+<<<<<<< HEAD
 >>>>>>> 92761c9220b9af61af4c70503391923cb863b41f
+=======
+>>>>>>> a355df0fdc57a6866b8bfe25284d6e1a0c937134
+>>>>>>> 634a1621d6fb398abc6df491f241fdc550daf023
 #7 {main}

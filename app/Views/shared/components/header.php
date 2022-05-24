@@ -450,7 +450,7 @@
             </div>
           </li>
 -->
-<!--
+
           <li class="nav-item nav-category">Forms and Datas</li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
@@ -514,8 +514,8 @@
               </ul>
             </div>
           </li>
--->
-<!--
+
+
           <li class="nav-item">
             <a class="nav-link" href="../../pages/ui-features/popups.html">
               <i class="menu-icon mdi mdi-alert-outline"></i>
@@ -558,8 +558,7 @@
               </ul>
             </div>
           </li>
--->
-          <!--
+
           <li class="nav-item nav-category">pages</li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
@@ -590,7 +589,7 @@
               </ul>
             </div>
           </li>
--->
+
         </ul>
       </nav>
       <!-- partial -->

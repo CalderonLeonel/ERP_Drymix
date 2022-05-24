@@ -1260,4 +1260,8 @@ CRITICAL - 2022-05-19 13:24:25 --> Cannot add or update a child row: a foreign k
 #11 D:\xampp\htdocs\ERP_Drymix_UAC\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #12 D:\xampp\htdocs\ERP_Drymix_UAC\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #13 {main}
+<<<<<<< HEAD
 >>>>>>> 92761c9220b9af61af4c70503391923cb863b41f
+=======
+>>>>>>> a355df0fdc57a6866b8bfe25284d6e1a0c937134
+>>>>>>> 634a1621d6fb398abc6df491f241fdc550daf023

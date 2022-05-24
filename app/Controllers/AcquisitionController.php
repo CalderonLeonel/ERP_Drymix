@@ -8,9 +8,9 @@ class AcquisitionController extends BaseController
 {
     public function index()
     {
-        $acquisitionModel = new AcquisitionModel();
-        $table['table'] = $acquisitionModel->readAcquisitions();
-        return view('Acquisition/AcquisitionMain',$table);
+        //$acquisitionModel = new AcquisitionModel();
+        //$table['table'] = $acquisitionModel->readAcquisitions();
+        return view('DashboardSCM');
     }
     public function createAcquisition()
     { 

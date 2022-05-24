@@ -1,9 +1,17 @@
 # ERP Drymix
 
+# Estandares al codificar
+ *Database: Usen la bdd de la carpeta bddScripts/ y el sharedScripts para escribir sus scripts, modifiquen lo que necesiten.
+ *Interfaz-Dashboards: Las paginas "Inicios" de cada usuario son los Dashboards, cada usuario diferente tendrá el suyo propio.
+ *Interfaz-Navegacion: Los Dashboards comparten header.php y footer.php que estan en "Views/shared/components/"
+ *ConsultasSQL: Seguir la guia de codeIgniter.io: https://codeigniter.com/user_guide/models/model.html
+ *Documentación-comentarios: Para documentar, arriba de cada función que escriban, comenten con tres lineas /// y una descripcion corta de lo que hace la funcion, empezando siempre con un verbo y centrandose en decir lo que hace, no como lo hace.
+   para aprender más vean: https://developer.wordpress.org/coding-standards/inline-documentation-standards/php/
+
 # Módulos
 
  - BI o Módulo de Bussiness Intelligence
- - CRM o Módulo de Gestión de Contabilidad
+ - CON o Módulo de Gestión de Contabilidad
  - CRM o Módulo de Gestión de Ventas y Relaciones con el Cliente
  - ECM o Módulo de Gestion de Documentación Empresarial
  - HRM o Módulo de Gestión de Recursos Humanos

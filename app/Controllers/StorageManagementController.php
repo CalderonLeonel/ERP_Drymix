@@ -93,6 +93,8 @@ class StorageManagementController extends BaseController
         $data['data'] = $itemModel->readItems();
         return view('Inventory/Item/ItemList',$data);
     }
+
+    
     #ItemType
     public function createItemType()
     {

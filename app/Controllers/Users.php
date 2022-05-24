@@ -10,7 +10,7 @@ class Users extends Controller{
         // Intento 1 Funcional
         $user = new User();
         $data['users'] = $user->orderBy('idUser','ASC')->findAll();
-        //return view('UAC/DashboardUsuarios',$data);
+        //return view('shared/DashboardUsuarios',$data);
         
         /*
         $user = new User();
@@ -19,16 +19,16 @@ class Users extends Controller{
             'state' => $this->request->getVar('state')
         ];
         */
-        $data['header'] = view('UAC/components/header');
-        $data['footer'] = view('UAC/components/footer');
+        $data['header'] = view('shared/components/header');
+        $data['footer'] = view('shared/components/footer');
         //$user->select($data['heeder']);
-        return view('UAC/selectUsers',$data);
+        return view('shared/selectUsers',$data);
     }
     public function crear()
     {
-        $data['header'] = view('UAC/components/header');
-        $data['footer'] = view('UAC/components/footer');
-        return view('UAC/userForm',$data);
+        $data['header'] = view('shared/components/header');
+        $data['footer'] = view('shared/components/footer');
+        return view('shared/userForm',$data);
     }
     public function insertEmployee()
     {
