@@ -49,9 +49,10 @@ class Products extends BaseController{
         $productModel = new ProductModel();
 
         $data = [
-            'productName' => $this->request->getPost('productName'),
-            'IdLine'  => $this->request->getPost('idLine'),
-            'IdFormat' => $this->request->getPost('idFormat')
+            'productName' => $this->request->getVar('productName'),
+            'idProductType' => $this->request->getVar('productNameType'),
+            'idLine'  => $this->request->getVar('idLine'),
+            'idFormat' => $this->request->getVar('idFormat')
         ];
         $productModel->insert($data);
         //return $this->response->redirect(site_url('/users-list'));

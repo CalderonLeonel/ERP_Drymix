@@ -1,0 +1,144 @@
+ERROR - 2022-05-20 10:09:43 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2022-05-20 10:09:43 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\Products.php(23): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Products->create()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-05-20 10:24:00 --> Error connecting to the database: Unknown database 'erp_dry_db'
+CRITICAL - 2022-05-20 10:24:00 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'erp_dry_db'
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\Products.php(23): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Products->create()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-05-20 10:24:01 --> Error connecting to the database: Unknown database 'erp_dry_db'
+CRITICAL - 2022-05-20 10:24:01 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'erp_dry_db'
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\Products.php(23): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Products->create()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-05-20 10:40:46 --> Field 'idProductType' doesn't have a default value
+CRITICAL - 2022-05-20 10:40:46 --> Field 'idProductType' doesn't have a default value
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Pr...', 0)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Pr...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Pr...')
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pr...', Array, false)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\Products.php(56): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Products->InsertProduct()
+#9 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#10 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-05-20 10:54:52 --> Field 'idProductType' doesn't have a default value
+CRITICAL - 2022-05-20 10:54:52 --> Field 'idProductType' doesn't have a default value
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Pr...', 0)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Pr...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Pr...')
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pr...', Array, false)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\Products.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Products->InsertProduct()
+#9 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#10 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-05-20 10:55:25 --> Cannot add or update a child row: a foreign key constraint fails (`erp_dry_db`.`product`, CONSTRAINT `fk_ProductType_Format1` FOREIGN KEY (`idFormat`) REFERENCES `format` (`idFormat`))
+CRITICAL - 2022-05-20 10:55:25 --> Cannot add or update a child row: a foreign key constraint fails (`erp_dry_db`.`product`, CONSTRAINT `fk_ProductType_Format1` FOREIGN KEY (`idFormat`) REFERENCES `format` (`idFormat`))
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Pr...', 0)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Pr...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Pr...')
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pr...', Array, false)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\Products.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Products->InsertProduct()
+#9 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#10 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-05-20 10:58:43 --> Column 'idProductType' cannot be null
+CRITICAL - 2022-05-20 10:58:43 --> Column 'idProductType' cannot be null
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Pr...', 0)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Pr...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Pr...')
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pr...', Array, false)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\Products.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Products->InsertProduct()
+#9 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#10 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-05-20 11:05:59 --> Column 'idProductType' cannot be null
+CRITICAL - 2022-05-20 11:05:59 --> Column 'idProductType' cannot be null
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Pr...', 0)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Pr...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Pr...')
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pr...', Array, false)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\Products.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Products->InsertProduct()
+#9 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#10 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-05-20 11:06:08 --> Column 'idProductType' cannot be null
+CRITICAL - 2022-05-20 11:06:08 --> Column 'idProductType' cannot be null
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Pr...', 0)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Pr...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Pr...')
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pr...', Array, false)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\Products.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Products->InsertProduct()
+#9 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#10 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-05-20 11:06:44 --> Column 'idProductType' cannot be null
+CRITICAL - 2022-05-20 11:06:44 --> Column 'idProductType' cannot be null
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Pr...', 0)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Pr...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Pr...')
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pr...', Array, false)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\Products.php(57): CodeIgniter\Model->insert(Array)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Products->InsertProduct()
+#9 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#10 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}

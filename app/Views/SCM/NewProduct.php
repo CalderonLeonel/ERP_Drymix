@@ -276,6 +276,10 @@
                       <input type="text" class="form-control" id="productName" name="productName" placeholder="Nombre del Producto">
                     </div>
                     <div class="form-group">
+                      <label for="exampleInputUsername1">Tipo de Producto</label>
+                      <input type="text" class="form-control" id="productNameType" name="productName" placeholder="Nombre del Producto">
+                    </div>
+                    <div class="form-group">
                         <label class="col-sm-3 col-form-label">Linea del Producto</label>
                         <div class="col-sm-12">
                             <select class="form-control" id="idLine" name="idLine">
