@@ -11,6 +11,11 @@ class ProductTypeModel extends Model{
     protected $createdField  = 'createDate';
     protected $updatedField  = 'updateDate';
 
+/**
+ * Metodo tu mama
+ * 
+ * @param int $var 
+ */
     public function readProductsType()
     {
         return $this->findAll();

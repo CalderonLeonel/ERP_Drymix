@@ -59,10 +59,10 @@ class LinesController extends BaseController{
 
         $data = [
             'productName' => $this->request->getVar('productName'),
-            'IdLine'  => $this->request->getVar('idLine'),
-            'IdFormat' => $this->request->getVar('idFormat')
+            'idLine'  => $this->request->getVar('idLine'),
+            'idFormat' => $this->request->getVar('idFormat')
         ];
-        $lineModel->createProduct($data);
+        $lineModel->InsertLine($data);
         //return $this->response->redirect(site_url('/users-list'));
         return view('SCM/DashboardSCM');
     }

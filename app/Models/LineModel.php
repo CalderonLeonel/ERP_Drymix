@@ -4,27 +4,63 @@ namespace App\Models;
 use CodeIgniter\Model;
 
 class LineModel extends Model{
-    protected $table      = 'Line';
-    // Uncomment below if you want add primary key
-    protected $primaryKey = 'idLine';
-    protected $allowedFields = ['lineName',  'state' ];
-    protected $createdField  = 'createDate';
-    protected $updatedField  = 'updateDate';
-
-    protected  $db      = \Config\Database::connect();
-    protected  $builder = $db->table('Products');
+    
+    /**
+     * ---
+     * Select
+     * ---
+     * Returns all the product lines
+     * 
+     * @param int $idLines
+     */
     public function ListLines($idLines)
     {
-        $this->builder->select('idLine', 'lineName', 'state');
-        $this->from('Line');
-        $this->where('idLine',$idLines);
-        $this->get();
+        $builder = $this->db->table('Lines');
+        $builder->select("*");
+        $builder->where('idLines', $idLines);
+        $query = $builder->get();
+        return $query->getResult();
+        
     }
+    /**
+     * ---
+     * InsertLine
+     * ---
+     * Insert Lines in DB
+     * 
+     * 
+     */
 
-    public function InsertProduct ()
+    public function InsertLine ()
     {
-        $this->builder->insert()
+        $builder = $this->db->table('Product');
+        $data = [
+            'LineName' => '@variable de la Vista'
+        ];
+        $query = $builder->insert($data);
+
     }
 
-    
+    public function UpdateLine ()
+    {
+        $builder = $this->db->table('Product');
+        $data = [
+            'LineName' => '@variable de la Vista'
+        ];
+        $query = $builder->insert($data);
+
+    }
+
+    public function SelectLines ()
+    {
+        $builder = $this->db->table('Product');
+        $data = [
+            'LineName' => '@variable de la Vista'
+        ];
+        $query = $builder->insert($data);
+
+    }
+
+
 }
+?>
