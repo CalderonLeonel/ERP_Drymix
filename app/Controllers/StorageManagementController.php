@@ -12,6 +12,7 @@ class StorageManagementController extends BaseController
 {
     public function index()
     {
+        echo view('import/Header');
         $itemModel = new ItemModel();
         $itemTypeModel = new ItemTypeModel;
         #$data['table1'] = $itemModel->readItems();
@@ -20,16 +21,20 @@ class StorageManagementController extends BaseController
         $itemTypeModel = new ItemTypeModel();
         $data['data'] = $itemTypeModel->readItemTypes();
         return view('Inventory/ItemType/ItemTypeList',$data);
+        echo view('import/Footer');
     }
     #Item
     public function createItem()
     {
+        echo view('import/Header');
         $itemTypeModel = new ItemTypeModel();
         $data['table'] = $itemTypeModel->readItemTypes();
         return view('Inventory/Item/CreateItem',$data);
+        echo view('import/Footer');
     }
     public function editItem()
     {
+        echo view('import/Header');
         $itemModel = new ItemModel();
         $id = [
             'idItem' => $this->request->getVar('idItem')
@@ -38,15 +43,19 @@ class StorageManagementController extends BaseController
         $data['list'] = $itemTypeModel->readItemTypes();
         $data['table'] =$itemModel ->readItem($id);
         return view('Inventory/Item/EditItem',$data);
+        echo view('import/Footer');
     }
     public function listItem()
     {
+        echo view('import/Header');
         $itemModel = new ItemModel();
         $data['table'] = $itemModel->readItems();
         return view('Inventory/Item/ItemList',$data);
+        echo view('import/Footer');
     }
     public function InsertItem()
     {
+        echo view('import/Header');
         $itemModel = new ItemModel();
         $data1 = [
             'itemName' => $this->request->getVar('itemName'),
@@ -55,10 +64,12 @@ class StorageManagementController extends BaseController
         $itemModel->createItem($data1);
         $table['table'] = $itemModel->readItems();
         return view('Inventory/Item/ItemList',$table);
+        echo view('import/Footer');   
     }
 
     public function UpdateItem()
     {
+        echo view('import/Header');
         $itemModel = new ItemModel();
         $id = ['idItem' => $this->request->getVar('idItem')];
         $data = [   
@@ -69,10 +80,12 @@ class StorageManagementController extends BaseController
         $itemModel->readItems();
         $data['table'] = $itemModel->readItems();
         return view('Inventory/Item/ItemList',$data);
+        echo view('import/Footer');    
     }
 
     public function DeleteItem()
     {
+        echo view('import/Header');
         $itemModel = new ItemModel();
 
         $id = [
@@ -85,36 +98,48 @@ class StorageManagementController extends BaseController
         $itemModel->readItems();
         $data['table'] = $itemModel->readItems();
         return view('Inventory/Item/ItemList',$data);
+        echo view('import/Footer');    
     }
 
     public function readItem()
     {
+        echo view('import/Header');
         $itemModel = new ItemModel();
         $data['data'] = $itemModel->readItems();
         return view('Inventory/Item/ItemList',$data);
+        echo view('import/Footer');
+      
     }
     #ItemType
     public function createItemType()
     {
+        echo view('import/Header');
         return view('Inventory/ItemType/CreateItemType');
+        echo view('import/Footer');
     }
     public function editItemType()
     {
+        echo view('import/Header');
         $itemTypeModel = new ItemTypeModel();
         $id = [
             'idItemType' => $this->request->getVar('idItemType')
         ];
         $data['data'] = $itemTypeModel->readItemType($id);
         return view('Inventory/ItemType/EditItemType',$data);
+        echo view('import/Footer');  
     }
     public function listItemTypes()
     {
+        echo view('import/Header');
         $itemTypeModel = new ItemTypeModel();
         $data['table'] = $itemTypeModel->readItemTypes();
+        echo view('import/Footer');
+      
         return view('Inventory/ItemType/ItemTypelist',$data);
     }
     public function InsertItemType()
     {
+        echo view('import/Header');
         $itemTypeModel = new ItemTypeModel();
 
         $data = [
@@ -123,10 +148,13 @@ class StorageManagementController extends BaseController
         $itemTypeModel->createItemType($data);
         $data['table'] = $itemTypeModel->readItemTypes();
         return view('Inventory/ItemType/ItemTypelist',$data);
+        echo view('import/Footer');
+        
     }
 
     public function UpdateItemType()
     {
+        echo view('import/Header');
         $itemTypeModel = new ItemTypeModel();
         $id = ['idItemType' => $this->request->getVar('idItemType')];
         $data = [   
@@ -135,10 +163,13 @@ class StorageManagementController extends BaseController
         $itemTypeModel->updateItemType($id ,$data);
         $data['data'] = $itemTypeModel->readItemTypes();
         return view('Inventory/ItemType/ItemTypelist',$data);
+        echo view('import/Footer');
+      
     }
 
     public function DeleteItemType()
     {
+        echo view('import/Header');
         $itemTypeModel = new ItemTypeModel();
 
         $id = [
@@ -150,37 +181,52 @@ class StorageManagementController extends BaseController
         $itemTypeModel->deleteItemType($id,$data);
         $data['table'] = $itemTypeModel->readItemTypes();
         return view('Inventory/ItemType/ItemTypelist',$data);
+        echo view('import/Footer');
+       
     }
 
     public function readItemType()
     {
+        echo view('import/Header');
         $itemTypeModel = new ItemTypeModel();
         $data['table'] = $itemTypeModel->readItemTypes();
         return view('Inventory/ItemType/ItemTypelist',$data);
+        echo view('import/Footer');
+       
     }
 
     #Storage
     public function createStorage()
     {
+        echo view('import/Header');
         return view('Inventory/Storage/CreateStorage');
+        echo view('import/Footer');
+       
     }
     public function editStorage()
     {
+        echo view('import/Header');
         $storageModel = new StorageModel();
         $id = [
             'idStorage' => $this->request->getVar('idStorage')
         ];
         $data['data'] = $storageModel->readStorage($id);
         return view('Inventory/Storage/EditStorage',$data);
+        echo view('import/Footer');
+       
     }
     public function listStorages()
     {
+        echo view('import/Header');
         $storageModel = new StorageModel();
         $data['table'] = $storageModel->readStorages();
         return view('Inventory/Storage/StorageList',$data);
+        echo view('import/Footer');
+       
     }
     public function InsertStorage()
     {
+        echo view('import/Header');
         $storageModel = new StorageModel();
 
         $data = [
@@ -189,10 +235,13 @@ class StorageManagementController extends BaseController
         $storageModel->createStorage($data);
         $data['table'] = $storageModel->readStorages();
         return view('Inventory/Storage/StorageList',$data);
+        echo view('import/Footer');
+       
     }
 
     public function UpdateStorage()
     {
+        echo view('import/Header');
         $storageModel = new StorageModel();
         $id = ['idStorage' => $this->request->getVar('idStorage')];
         $data = [   
@@ -201,10 +250,13 @@ class StorageManagementController extends BaseController
         $storageModel->updateStorage($id ,$data);
         $data['table'] = $storageModel->readStorages();
         return view('Inventory/Storage/StorageList',$data);
+        echo view('import/Footer');
+        
     }
 
     public function DeleteStorage()
     {
+        echo view('import/Header');
         $storageModel = new StorageModel();
 
         $id = [
@@ -216,24 +268,33 @@ class StorageManagementController extends BaseController
         $storageModel->deleteStorage($id,$data);
         $data['table'] = $storageModel->readStorages();
         return view('Inventory/Storage/StorageList',$data);
+        echo view('import/Footer');
+       
     }
 
     public function readStorage()
     {
+        echo view('import/Header');
         $storageModel = new StorageModel();
         $data['table'] = $storageModel->readStorages();
         return view('Inventory/Storage/StorageList',$data);
+        echo view('import/Footer');
+       
     }
 
     #Section
     public function createSection()
     {
+        echo view('import/Header');
         $storageModel = new StorageModel();
         $data['list1'] = $storageModel->readStorages();
         return view('Inventory/Section/CreateSection',$data);
+        echo view('import/Footer');
+       
     }
     public function editSection()
     {
+        echo view('import/Header');
         $sectionModel = new SectionModel();
         $id = [
             'idSection' => $this->request->getVar('idSection')
@@ -242,15 +303,21 @@ class StorageManagementController extends BaseController
         $data['list1'] = $storageModel->readStorages();
         $data['table'] =$sectionModel ->readSection($id);
         return view('Inventory/Section/EditSection',$data);
+        echo view('import/Footer');
+       
     }
     public function listSections()
     {
+        echo view('import/Header');
         $sectionModel = new SectionModel();
         $data['table'] = $sectionModel->readSections();
         return view('Inventory/Section/SectionList',$data);
+        echo view('import/Footer');
+       
     }
     public function InsertSection()
     {
+        echo view('import/Header');
         $sectionModel = new SectionModel();
 
         $data = [
@@ -260,10 +327,13 @@ class StorageManagementController extends BaseController
         $sectionModel->createSection($data);
         $data['table'] = $sectionModel->readSections();
         return view('Inventory/Section/SectionList',$data);
+        echo view('import/Footer');
+       
     }
 
     public function UpdateSection()
     {
+        echo view('import/Header');
         $sectionModel = new SectionModel();
         $id = ['idSection' => $this->request->getVar('idSection')];
         $data = [   
@@ -273,10 +343,13 @@ class StorageManagementController extends BaseController
         $sectionModel->updateSection($id ,$data);
         $data['table'] = $sectionModel->readSections();
         return view('Inventory/Section/SectionList',$data);
+        echo view('import/Footer');
+       
     }
 
     public function DeleteSection()
     {
+        echo view('import/Header');
         $sectionModel = new SectionModel();
 
         $id = [
@@ -288,25 +361,34 @@ class StorageManagementController extends BaseController
         $sectionModel->deleteSection($id,$data);
         $data['table'] = $sectionModel->readSections();
         return view('Inventory/Section/SectionList',$data);
+        echo view('import/Footer');
+       
     }
 
     public function readSection()
     {
+        echo view('import/Header');
         $sectionModel = new SectionModel();
         $data['table'] = $sectionModel->readSections();
         return view('Inventory/Section/SectionList',$data);
+        echo view('import/Footer');
+       
     }
     #Stand
     public function createStand()
     {
+        echo view('import/Header');
         $sectionModel = new SectionModel();
         $storageModel = new StorageModel();
         $data['list2'] = $sectionModel->readSections();
         $data['list1'] = $storageModel->readStorages();
         return view('Inventory/Stand/CreateStand',$data);
+        echo view('import/Footer');
+       
     }
     public function editStand()
     {
+        echo view('import/Header');
         $standModel = new StandModel();
         $id = [
             'idStand' => $this->request->getVar('idStand')
@@ -315,15 +397,21 @@ class StorageManagementController extends BaseController
         $data['list2'] = $sectionModel->readSections();
         $data['table'] =$standModel ->readStand($id);
         return view('Inventory/Stand/EditStand',$data);
+        echo view('import/Footer');
+       
     }
     public function listStand()
     {
+        echo view('import/Header');
         $standModel = new StandModel();
         $data['table'] = $standModel->readStands();
         return view('Inventory/Stand/StandList',$data);
+        echo view('import/Footer');
+       
     }
     public function InsertStand()
     {
+        echo view('import/Header');
         $standModel = new StandModel();
 
         $data = [
@@ -333,10 +421,13 @@ class StorageManagementController extends BaseController
         $standModel->createStand($data);
         $data['table'] = $standModel->readStands();
         return view('Inventory/Stand/StandList',$data);
+        echo view('import/Footer');
+        
     }
 
     public function UpdateStand()
     {
+        echo view('import/Header');
         $standModel = new StandModel();
         $id = ['idStand' => $this->request->getVar('idStand')];
         $data = [   
@@ -345,10 +436,13 @@ class StorageManagementController extends BaseController
         $standModel->updateStand($id ,$data);
         $data['table'] = $standModel->readStands();
         return view('Inventory/Stand/StandList',$data);
+        echo view('import/Footer');
+       
     }
 
     public function DeleteStand()
     {
+        echo view('import/Header');
         $standModel = new StandModel();
 
         $id = [
@@ -360,18 +454,24 @@ class StorageManagementController extends BaseController
         $standModel->deleteStand($id,$data);
         $data['table'] = $standModel->readStands();
         return view('Inventory/Stand/StandList',$data);
+        echo view('import/Footer');
+        
     }
 
     public function readStand()
     {
+        echo view('import/Header');
         $standModel = new StandModel();
         $data['table'] = $standModel->readStands();
         return view('Inventory/Stand/StandList',$data);
+        echo view('import/Footer');
+       
     }
 
     #StorageItem
     public function InsertItemStorage()
     {
+        echo view('import/Header');
         $itemModel = new StorageItemModel();
 
         $data = [
@@ -382,10 +482,13 @@ class StorageManagementController extends BaseController
         $itemModel->readItems();
         $data['table'] = $itemModel->readItems();
         return view('Inventory/Item/ItemList',$data);
+        echo view('import/Footer');
+       
     }
 
     public function UpdateItemStorage()
     {
+        echo view('import/Header');
         $itemModel = new StorageItemModel();
         $id = ['idItem' => $this->request->getVar('idItem')];
         $data = [   
@@ -396,5 +499,7 @@ class StorageManagementController extends BaseController
         $itemModel->readItems();
         $data['table'] = $itemModel->readItems();
         return view('Inventory/Item/ItemList',$data);
+        echo view('import/Footer');
+       
     }
 }

@@ -1,0 +1,101 @@
+ERROR - 2022-06-02 07:25:46 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: NO)
+CRITICAL - 2022-06-02 07:25:46 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Models\ItemTypeModel.php(13): CodeIgniter\BaseModel->findAll()
+#5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\StorageManagementController.php(21): App\Models\ItemTypeModel->readItemTypes()
+#6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\StorageManagementController->index()
+#7 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StorageManagementController))
+#8 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-06-02 07:26:04 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: NO)
+CRITICAL - 2022-06-02 07:26:04 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Models\ItemTypeModel.php(13): CodeIgniter\BaseModel->findAll()
+#5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\StorageManagementController.php(21): App\Models\ItemTypeModel->readItemTypes()
+#6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\StorageManagementController->index()
+#7 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StorageManagementController))
+#8 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-06-02 07:26:15 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: NO)
+CRITICAL - 2022-06-02 07:26:15 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Models\AcquisitionModel.php(13): CodeIgniter\BaseModel->findAll()
+#5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\AcquisitionController.php(12): App\Models\AcquisitionModel->readAcquisitions()
+#6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\AcquisitionController->index()
+#7 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcquisitionController))
+#8 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-06-02 07:26:36 --> Table 'erp_dry_db.acquisitionquote' doesn't exist
+CRITICAL - 2022-06-02 07:26:36 --> Table 'erp_dry_db.acquisitionquote' doesn't exist
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Models\AcquisitionModel.php(13): CodeIgniter\BaseModel->findAll()
+#7 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\AcquisitionController.php(12): App\Models\AcquisitionModel->readAcquisitions()
+#8 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\AcquisitionController->index()
+#9 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcquisitionController))
+#10 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-06-02 07:28:40 --> Table 'erp_dry_db.acquisitionquote' doesn't exist
+CRITICAL - 2022-06-02 07:28:40 --> Table 'erp_dry_db.acquisitionquote' doesn't exist
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Models\AcquisitionModel.php(13): CodeIgniter\BaseModel->findAll()
+#7 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\AcquisitionController.php(12): App\Models\AcquisitionModel->readAcquisitions()
+#8 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\AcquisitionController->index()
+#9 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcquisitionController))
+#10 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-06-02 07:37:56 --> Table 'erp_dry_db.acquisitionquote' doesn't exist
+CRITICAL - 2022-06-02 07:37:56 --> Table 'erp_dry_db.acquisitionquote' doesn't exist
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Models\AcquisitionModel.php(13): CodeIgniter\BaseModel->findAll()
+#7 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\AcquisitionController.php(12): App\Models\AcquisitionModel->readAcquisitions()
+#8 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\AcquisitionController->index()
+#9 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcquisitionController))
+#10 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-06-02 07:50:18 --> Undefined property: App\Controllers\ProviderController::$load
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\ProviderController.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'I:\\7mo Semestre...', 8)
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProviderController->index()
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-06-02 07:50:43 --> Undefined property: App\Controllers\ProviderController::$load
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\ProviderController.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'I:\\7mo Semestre...', 8)
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProviderController->index()
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProviderController))
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

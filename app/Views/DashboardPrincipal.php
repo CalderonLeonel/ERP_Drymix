@@ -475,7 +475,10 @@
             </a>
             <div class="collapse" id="Acquisition">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('AcquisitionController')?>"> Adquisiciones </a></li>
+                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('AcquisitionController/index')?>"> Adquisiciones </a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('ProviderController/index')?>"> Proveedores </a></li>
               </ul>
             </div>
           </li>
@@ -487,7 +490,7 @@
             </a>
             <div class="collapse" id="Inventory">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('StorageManagementController')?>"> Inventario </a></li>
+                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('StorageManagementController/index')?>"> Inventario </a></li>
               </ul>
             </div>
           </li>
