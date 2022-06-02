@@ -61,6 +61,14 @@ class LineModel extends Model{
 
     }
 
+    public function DeleteLines ()
+    {
+        $builder = $this->db->table('Product');
+        $data = [
+            'LineName' => '@variable de la Vista'
+        ];
+        $query = $builder->insert($data);
 
+    }
 }
 ?>
