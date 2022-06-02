@@ -63,3 +63,6 @@ $routes->get('crearUsuario', 'Users::crear');
 $routes->get('AcquisitionController/index', 'AcquisitionController::index');
 $routes->get('ProviderController/index', 'ProviderController::index');
 $routes->get('StorageManagementController/index', 'StorageManagementController::index');
+$routes->get('DepartmentController/index', 'DepartmentController::index');
+$routes->get('ChargeController/index', 'ChargeController::index');
+

@@ -494,6 +494,24 @@
               </ul>
             </div>
           </li>
+          <li class="nav-item nav-category">Gestion de Recursos Humanos</li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#rrhh" aria-expanded="false" aria-controls="rrhh">
+              <i class="menu-icon mdi mdi-account-circle-outline"></i>
+              <span class="menu-title">Recursos Humanos</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="rrhh">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('DepartmentController/index')?>"> Departamentos </a></li>
+              </ul>
+            </div>
+            <div class="collapse" id="rrhh">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('ChargeController/index')?>"> Cargos </a></li>
+              </ul>
+            </div>
+          </li>
           <li class="nav-item nav-category">Gestion de Usuario</li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">

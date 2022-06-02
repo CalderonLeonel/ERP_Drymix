@@ -133,9 +133,10 @@ class StorageManagementController extends BaseController
         echo view('import/Header');
         $itemTypeModel = new ItemTypeModel();
         $data['table'] = $itemTypeModel->readItemTypes();
+        return view('Inventory/ItemType/ItemTypelist',$data);
         echo view('import/Footer');
       
-        return view('Inventory/ItemType/ItemTypelist',$data);
+        
     }
     public function InsertItemType()
     {
