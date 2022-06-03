@@ -95,14 +95,14 @@
                               <div class="card-body">
                                 <h2 class="card-title">Modificar una adquisición</h2>
                                 <p class="card-description"> Modifique una adquisición</p>
-                                <form lass="forms-sample" method="post" action="<?php echo site_url('AcquisitionController/InsertAcquisition')?>">
+                                <form lass="forms-sample" method="post" action="<?php echo site_url('AcquisitionController/UpdateAcquisition')?>">
                                   <div class="form-group">
-                                  <?php foreach($data as $row):?>
+                                  <?php foreach($table as $row1):?>
                                     <div class="form-group">
-                                    <input id="idAcquisitionQuote" class="form-control" type="hidden" name="idAcquisitionQuote" value="<?= $data['idAcquisitionQuote'];?>">
+                                    <input id="idAdquisitionQuote" class="form-control" type="hidden" name="idAdquisitionQuote" value="<?= $row1['idAdquisitionQuote'];?>">
                                   </div>
                                    <label for="name">Nombre Adquisición</label>
-                                   <input type="text" class="form-control" id="name" name="name" value="<?= $data['idProvider'];?>" placeholder="Nombre Adquisición">
+                                   <input type="text" class="form-control" id="name" name="name" value="<?php echo $row1['name']?>" placeholder="Nombre Adquisición">
                                   </div>
                                   <div class="form-group">
                                     
@@ -111,7 +111,7 @@
                                        <?php foreach ($list as $row)
                                        {
                                         ?>
-                                        <option value="<?php $row['idProvider']?>"><?php echo $row['providerName'];?></option>                                
+                                        <option value="<?php echo $row['idProvider']?>"><?php echo $row['providerName'];?></option>                                
                                        <?php
                                        }
                                        ?>

@@ -10,7 +10,7 @@ class AcquisitionController extends BaseController
     {
         $acquisitionModel = new AcquisitionModel();
         $table['table'] = $acquisitionModel->readAcquisitions();
-        return view('Acquisition/AcquisitionMain',$table);
+        return view('Acquisition/AcquisitionList',$table);
     }
     public function createAcquisition()
     { 
@@ -21,11 +21,13 @@ class AcquisitionController extends BaseController
     public function editAcquisition()
     {
         $acquisitionModel = new AcquisitionModel();
+        $provider = new ProviderModel;
         $id = [
-            'idAcquisitionQuote' => $this->request->getVar('idAcquisitionQuote')
+            'idAdquisitionQuote' => $this->request->getVar('idAdquisitionQuote')
         ];
         $data['table'] = $acquisitionModel->readAcquisition($id);
-        return view('Acquisition/EditAcquisition',$data);
+        $data['list'] = $provider->readProviders();
+        return view('Acquisition/AcquisitionEdit',$data);
     }
     public function acquisitionList()
     {
@@ -50,11 +52,11 @@ class AcquisitionController extends BaseController
     public function UpdateAcquisition()
     {
         $acquisitionModel = new AcquisitionModel();
-        $id = ['idAcquisitionQuote' => $this->request->getVar('idAcquisitionQuote')];
+        $id = ['idAdquisitionQuote' => $this->request->getVar('idAdquisitionQuote')];
         $data = [   
-            'name' => $this->request->getVar('AcquisitionName'),
+            'name' => $this->request->getVar('name'),
             'idUser' => 1,
-            'IdProvider' => $this->request->getVar('IdProvider')
+            'IdProvider' => $this->request->getVar('providerSelect')
             
         ];
         $acquisitionModel->updateAcquisition($id ,$data);
@@ -67,10 +69,10 @@ class AcquisitionController extends BaseController
         $acquisitionModel = new AcquisitionModel();
 
         $id = [
-            'idAcquisitionQuote' => $this->request->getVar('idAcquisitionQuote')
+            'idAdquisitionQuote' => $this->request->getVar('idAdquisitionQuote')
         ];
         $data = [   
-            'quoteState' => $this->request->getVar('quoteState')
+            'quoteState' => 0
         ];
         $acquisitionModel->deleteAcquisition($id,$data);
         $table['table'] = $acquisitionModel->readAcquisitions();

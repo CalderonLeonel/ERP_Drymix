@@ -111,6 +111,7 @@
                                         <th>Nombre de Solicitud</th>
                                         <th>Fecha</th>
                                         <th>Estado</th>
+                                        <th>Estado</th>
                                       </tr>
                                     </thead>
                                     <tbody>
@@ -118,7 +119,7 @@
                                       <tr>
                                      
                                         <td>
-                                          <h5><?= $data['idAcquisitionQuote'];?></h5> 
+                                          <h5><?= $data['idAdquisitionQuote'];?></h5> 
                                         </td>
                                         <td>
                                           <div class="d-flex">
@@ -137,7 +138,20 @@
                                         <td>
                                           <div class="badge badge-opacity-warning">EstadoDeSolicitud</div>
                                         </td>
-                                        
+                                        <td>
+                                          <form method="post" action="<?php echo site_url('AcquisitionController/editAcquisition')?>" >
+                                            <div class="form-group">
+                                              <input type="hidden" name="idAdquisitionQuote" id="idAdquisitionQuote" value="<?= $data['idAdquisitionQuote'];?>">
+                                              <input type="submit" class="btn btn-primary text-light" value="Editar">
+                                            </div>
+                                          </form>   
+                                          <form method="post" action="<?php echo site_url('AcquisitionController/DeleteAcquisition')?>" >
+                                            <div class="form-group">
+                                            <input type="hidden" name="idAdquisitionQuote" id="idAdquisitionQuote" value="<?= $data['idAdquisitionQuote'];?>">
+                                              <input type="submit" class="btn btn-danger text-light" value="Eliminar">
+                                            </div>
+                                          </form>                                       
+                                        </td>
                                       </tr>  
                                       <?php endforeach;?>                                           
                                     </tbody>

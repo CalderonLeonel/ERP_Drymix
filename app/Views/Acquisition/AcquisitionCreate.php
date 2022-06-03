@@ -106,7 +106,7 @@
                                        <?php foreach ($list as $row)
                                        {
                                         ?>
-                                        <option value="<?php $row['idProvider']?>"><?php echo $row['providerName'];?></option>                                
+                                        <option value="<?php echo $row['idProvider']?>"><?php echo $row['providerName'];?></option>                                
                                        <?php
                                        }
                                        ?>

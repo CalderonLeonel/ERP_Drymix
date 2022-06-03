@@ -5,7 +5,7 @@ use CodeIgniter\Model;
 
 class AcquisitionModel extends Model{
     protected $table      = 'AdquisitionQuote';
-    protected $primaryKey = 'idAcquisitionQuote';
+    protected $primaryKey = 'idAdquisitionQuote';
     protected $allowedFields = ["name","idUser","IdProvider","quoteState"];
 
     public function readAcquisitions()
