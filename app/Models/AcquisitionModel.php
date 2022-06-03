@@ -4,7 +4,7 @@ namespace App\Models;
 use CodeIgniter\Model;
 
 class AcquisitionModel extends Model{
-    protected $table      = 'AcquisitionQuote';
+    protected $table      = 'AdquisitionQuote';
     protected $primaryKey = 'idAcquisitionQuote';
     protected $allowedFields = ["name","idUser","IdProvider","quoteState"];
 

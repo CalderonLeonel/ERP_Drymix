@@ -468,7 +468,7 @@
           </li>
           <li class="nav-item nav-category">Gestion de Adquisiciones e Inventario</li>
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#Acquisition" aria-expanded="false" aria-controls="Acquisition">
+            <a class="nav-link" data-bs-toggle="collapse"  aria-expanded="false" href="" aria-controls="Acquisition">
               <i class="menu-icon mdi mdi-cash-usd"></i>
               <span class="menu-title">Adquisiones</span>
               <i class="menu-arrow"></i>
@@ -480,7 +480,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#Inventory" aria-expanded="false" aria-controls="Inventory">
+            <a class="nav-link" data-bs-toggle="collapse"" aria-expanded="false" href="" aria-controls="Inventory">
               <i class="menu-icon mdi mdi-package-variant-closed"></i>
               <span class="menu-title">Inventario</span>
               <i class="menu-arrow"></i>
@@ -488,6 +488,24 @@
             <div class="collapse" id="Inventory">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('StorageManagementController')?>"> Inventario </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-category">Gestion de Recursos Humanos</li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" aria-expanded="false" href="" aria-controls="rrhh">
+              <i class="menu-icon mdi mdi-account-circle-outline"></i>
+              <span class="menu-title">Recursos Humanos</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="rrhh">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('DepartmentController/index')?>"> Departamentos </a></li>
+              </ul>
+            </div>
+            <div class="collapse" id="rrhh">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('ChargeController/index')?>"> Cargos </a></li>
               </ul>
             </div>
           </li>

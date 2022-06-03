@@ -293,3 +293,113 @@ CRITICAL - 2022-06-02 16:14:00 --> Undefined array key "departmentName"
 #7 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #8 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 {main}
+ERROR - 2022-06-02 19:20:25 --> Table 'erp_dry_db.acquisitionquote' doesn't exist
+CRITICAL - 2022-06-02 19:20:25 --> Table 'erp_dry_db.acquisitionquote' doesn't exist
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Models\AcquisitionModel.php(13): CodeIgniter\BaseModel->findAll()
+#7 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\AcquisitionController.php(12): App\Models\AcquisitionModel->readAcquisitions()
+#8 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\AcquisitionController->index()
+#9 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcquisitionController))
+#10 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-06-02 19:22:14 --> Table 'erp_dry_db.acquisitionquote' doesn't exist
+CRITICAL - 2022-06-02 19:22:14 --> Table 'erp_dry_db.acquisitionquote' doesn't exist
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Models\AcquisitionModel.php(13): CodeIgniter\BaseModel->findAll()
+#7 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\AcquisitionController.php(12): App\Models\AcquisitionModel->readAcquisitions()
+#8 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\AcquisitionController->index()
+#9 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcquisitionController))
+#10 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2022-06-02 19:49:54 --> Table 'erp_dry_db.acquisitionquote' doesn't exist
+CRITICAL - 2022-06-02 19:49:54 --> Table 'erp_dry_db.acquisitionquote' doesn't exist
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Ac...', 0)
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ac...')
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ac...')
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ac...', Array, false)
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Models\AcquisitionModel.php(21): CodeIgniter\Model->insert(Array)
+#8 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\AcquisitionController.php(45): App\Models\AcquisitionModel->createAcquisition(Array)
+#9 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\AcquisitionController->InsertAcquisition()
+#10 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcquisitionController))
+#11 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-06-02 19:50:31 --> Column 'name' cannot be null
+CRITICAL - 2022-06-02 19:50:31 --> Column 'name' cannot be null
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Ad...', 0)
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ad...')
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ad...')
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ad...', Array, false)
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Models\AcquisitionModel.php(21): CodeIgniter\Model->insert(Array)
+#8 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\AcquisitionController.php(45): App\Models\AcquisitionModel->createAcquisition(Array)
+#9 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\AcquisitionController->InsertAcquisition()
+#10 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcquisitionController))
+#11 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-06-02 19:50:37 --> Data too long for column 'name' at row 1
+CRITICAL - 2022-06-02 19:50:37 --> Data too long for column 'name' at row 1
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Ad...', 0)
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ad...')
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ad...')
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ad...', Array, false)
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Models\AcquisitionModel.php(21): CodeIgniter\Model->insert(Array)
+#8 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\AcquisitionController.php(45): App\Models\AcquisitionModel->createAcquisition(Array)
+#9 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\AcquisitionController->InsertAcquisition()
+#10 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcquisitionController))
+#11 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-06-02 19:50:43 --> Data too long for column 'name' at row 1
+CRITICAL - 2022-06-02 19:50:43 --> Data too long for column 'name' at row 1
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Ad...', 0)
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ad...')
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ad...')
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ad...', Array, false)
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Models\AcquisitionModel.php(21): CodeIgniter\Model->insert(Array)
+#8 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\AcquisitionController.php(45): App\Models\AcquisitionModel->createAcquisition(Array)
+#9 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\AcquisitionController->InsertAcquisition()
+#10 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcquisitionController))
+#11 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
+ERROR - 2022-06-02 20:12:51 --> Data too long for column 'name' at row 1
+CRITICAL - 2022-06-02 20:12:51 --> Data too long for column 'name' at row 1
+#0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Ad...', 0)
+#1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Ad...')
+#2 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Ad...')
+#3 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Ad...', Array, false)
+#4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#7 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Models\AcquisitionModel.php(21): CodeIgniter\Model->insert(Array)
+#8 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Controllers\AcquisitionController.php(45): App\Models\AcquisitionModel->createAcquisition(Array)
+#9 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\AcquisitionController->InsertAcquisition()
+#10 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AcquisitionController))
+#11 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 {main}
