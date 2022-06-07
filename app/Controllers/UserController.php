@@ -4,7 +4,7 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 use App\Models\User;
 use App\Models\Employee;
-class Users extends Controller{
+class UserController extends BaseController{
     public function index()
     {
         // Intento 1 Funcional
@@ -22,14 +22,31 @@ class Users extends Controller{
         $data['header'] = view('shared/components/header');
         $data['footer'] = view('shared/components/footer');
         //$user->select($data['heeder']);
-        return view('shared/selectUsers',$data);
+        return view('UAC/selectUsers',$data);
     }
     public function crear()
     {
         $data['header'] = view('shared/components/header');
         $data['footer'] = view('shared/components/footer');
-        return view('shared/userForm',$data);
+        return view('UAC/userForm',$data);
     }
+    public function login()
+    {
+        $data['header'] = view('import/header');
+        $data['footer'] = view('import/footer');
+        return view('UAC/Login', $data);
+    }
+    
+    public function btnLogin()
+    {
+        $user = new User();
+        $data = [
+            'userName' => $this->request->getVar('txtUsername'),
+            'userPassword' => $this->request->getVar('txtPassword')
+        ];
+        return view('UAC/Login', $data);
+    }
+    
     public function insertEmployee()
     {
 

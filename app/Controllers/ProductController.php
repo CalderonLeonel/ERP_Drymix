@@ -4,7 +4,7 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 use App\Models\Product;
 
-class Products extends Controller{
+class ProductController extends Controller{
     public function index()
     {
         return view('DashboardSCM');

@@ -5,7 +5,7 @@
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Formulario de Empleado</h4>
-                  <form class="forms-sample" method="POST" action="<?php echo site_url('Users/insertEmployee')?>">
+                  <form class="forms-sample" method="POST" action="<?php echo site_url('UserController/insertEmployee')?>">
                     <div class="form-group">
                       <label for="exampleInputUsername1">Nombres</label>
                       <input type="text" class="form-control" name="txtName" placeholder="Nombres">
@@ -39,7 +39,7 @@
                       <input type="text" class="form-control" name="txtCI" placeholder="Carnet de Identidad">
                     </div>
 
-                    <button type="submit" class="btn btn-primary me-2">Submit</button>
+                    <button type="submit" class="btn btn-primary me-2">Crear</button>
                     <button class="btn btn-light">Cancel</button>
 
                   </form>
@@ -50,7 +50,7 @@
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Formulario de Usuario</h4>
-                  <form class="forms-sample" method="POST" action="<?php echo site_url('Users/insertUser')?>">
+                  <form class="forms-sample" method="POST" action="<?php echo site_url('UserController/insertUser')?>">
                     <div class="form-group row">
                       <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Nombre de Usuario</label>
                       <div class="col-sm-9">
