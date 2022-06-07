@@ -503,6 +503,11 @@
             </a>
             <div class="collapse" id="rrhh">
               <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('EmployeeController/index')?>"> Asignar Empleados </a></li>
+              </ul>
+            </div>
+            <div class="collapse" id="rrhh">
+              <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('DepartmentController/index')?>"> Departamentos </a></li>
               </ul>
             </div>
