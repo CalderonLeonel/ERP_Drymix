@@ -30,19 +30,13 @@
                 <div class="d-sm-flex align-items-center justify-content-between border-bottom">
                   <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item">
-                      <a class="nav-link" id="main-tab" data-bs-toggle="tab" href="<?php echo base_url('StorageManagementController/index')?>" role="tab" aria-selected="false">Panel de Inventaio</a>
+                      <a class="nav-link " id="main-tab" data-bs-toggle="tab" href="<?php echo base_url('ChargeController/list')?>" role="tab" aria-selected="false">Lista de Cargos</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" id="main-tab" data-bs-toggle="tab" href="<?php echo base_url('StorageManagementController/listItem')?>" role="tab" aria-selected="false">Lista de Items</a>
+                      <a class="nav-link" id="main-tab" data-bs-toggle="tab" href="<?php echo base_url('EmployeeController/index')?>" role="tab" aria-selected="false">Asignacion de Cargos</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" id="material-list-tab" data-bs-toggle="tab" href="<?php echo base_url('StorageManagementController/createItem')?>" role="tab" aria-selected="false">Crear Items</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="main-tab" data-bs-toggle="tab" href="<?php echo base_url('StorageManagementController/ItemTypeList')?>" role="tab" aria-selected="false">Lista de Tipos de Items</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="material-list-tab" data-bs-toggle="tab" href="<?php echo base_url('StorageManagementController/createItemType')?>" role="tab" aria-selected="false">Crear Tipo de Item</a>
+                      <a class="nav-link active" id="material-list-tab" data-bs-toggle="tab" href="<?php echo base_url('ChargeController/create')?>" role="tab" aria-selected="true">Crear Cargos</a>
                     </li>
                   </ul>
                 </div>

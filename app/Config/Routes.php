@@ -65,4 +65,5 @@ $routes->get('ProviderController/index', 'ProviderController::index');
 $routes->get('StorageManagementController/index', 'StorageManagementController::index');
 $routes->get('DepartmentController/index', 'DepartmentController::index');
 $routes->get('ChargeController/index', 'ChargeController::index');
+$routes->get('EmployeeController/index', 'EmployeeController::index');
 
