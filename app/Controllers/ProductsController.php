@@ -23,14 +23,7 @@ class ProductsController extends BaseController{
 
         $data['lines'] = $lineModel->orderBy('idLine')->findAll();
         $data['format'] = $formatModel->orderBy('idFormat')->findAll();
-        //$formatModel = new FormatModel();
-        //$lineModel = new LineModel();
-        //$idLine = $_POST['idLine'];
-        //$lineList = $this->LineModel->ListLines();
-        //$idFormat = $_POST['idFormat'];
-        //$formatList = $this->FormatModel->ListFormats();
-        //$dataLines ['Lines'] = $lineList;
-        //$dataFormat ['Format'] = $formatList;
+       
         
         return view('SCM/NewProduct' ,  $data);
     }
@@ -75,7 +68,7 @@ class ProductsController extends BaseController{
             'IdLine'  => $this->request->getVar('idLine'),
             'IdFormat' => $this->request->getVar('idFormat')
         ];
-        $productModel->createProduct($data);
+        $productModel->InsertProduct($data);
         //return $this->response->redirect(site_url('/users-list'));
         return view('SCM/DashboardSCM');
     }

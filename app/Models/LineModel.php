@@ -13,11 +13,11 @@ class LineModel extends Model{
      * 
      * @param int $idLines
      */
-    public function ListLines($idLines)
+    public function ListLines()
     {
         $builder = $this->db->table('Lines');
         $builder->select("*");
-        $builder->where('idLines', $idLines);
+        $builder->where('idLines', 1);
         $query = $builder->get();
         return $query->getResult();
         
