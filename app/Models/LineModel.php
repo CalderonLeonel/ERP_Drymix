@@ -33,41 +33,40 @@ class LineModel extends Model{
 
     public function InsertLine ()
     {
-        $builder = $this->db->table('Product');
+        $builder = $this->db->table('Line');
         $data = [
-            'LineName' => '@variable de la Vista'
+            'LineName' => 'LineName'
         ];
-        $query = $builder->insert($data);
+        return $builder->insert($data);
 
     }
 
     public function UpdateLine ()
     {
-        $builder = $this->db->table('Product');
+        $builder = $this->db->table('Line');
         $data = [
-            'LineName' => '@variable de la Vista'
+            'LineName' => 'LineName'
         ];
-        $query = $builder->insert($data);
+        return $builder->update($data);
 
     }
 
     public function SelectLines ()
     {
-        $builder = $this->db->table('Product');
-        $data = [
-            'LineName' => '@variable de la Vista'
-        ];
-        $query = $builder->insert($data);
+        $builder = $this->db->table('Line');
+        $query = $builder->select('*');
+        $query = $builder->get();
+        return $query->getResult();
 
     }
 
-    public function DeleteLines ()
+    public function DeleteLines ($idLine)
     {
-        $builder = $this->db->table('Product');
+        $builder = $this->db->table('Line');
         $data = [
-            'LineName' => '@variable de la Vista'
+            'idLine' => 'idLine'
         ];
-        $query = $builder->insert($data);
+        $builder->update($idLine, 0);
 
     }
 }

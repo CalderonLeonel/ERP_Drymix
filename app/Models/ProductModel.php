@@ -1,54 +1,62 @@
 <?php 
 namespace App\Models;
 
+use CodeIgniter\Database\MySQLi\Builder;
 use CodeIgniter\Model;
 
 class ProductModel extends Model{
-    protected $table      = 'Product';
+    /*protected $table      = 'Product';
     protected $primaryKey = 'idProduct';
     protected $allowedFields = ['productName',  'state'];
     protected $createdField  = 'createDate';
     protected $updatedField  = 'updateDate';
     // Uncomment below if you want add primary key
-    // protected $primaryKey = 'id';
+    // protected $primaryKey = 'id';*/
 
-    /*public function InsertProduct($data)
+    public function InsertProduct($data)
     {
-        return $this->insert("Product", $data);
+        $builder = $this->db->table('Product');
+        $data = [
+            'nameProduct' => $this->request->getVar('nameProduct'),
+            'IdLine'  => $this->request->getVar('lineProduct'),
+            'IdFormat' => $this->request->getVar('formatProduct')
+        ];
+        return $this->$builder->insert("Product", $data);
     }
 
     public function UpdateProduct($idProduct, $data)
     {
-        $this->where('idProduct',$idProduct);
-		$this->update('Product',$data);
+        $builder = $this->db->table('Product');
+        $data = [
+            'nameProduct' => $this->request->getVar('nameProduct'),
+            'IdLine'  => $this->request->getVar('lineProduct'),
+            'IdFormat' => $this->request->getVar('formatProduct')
+        ];
+        $query = $builder->update($data);
+        $query = $builder->where('idProduct',$idProduct);
+        return $this->$builder->update($data);
     }
 
-    public function DeleteProduct($idProduct)
+    public function DeleteProduct($idProduct, $state)
     {
-        $this->where('idProduct',$idProduct);
-		$this->delete('Product');
-    }*/
+        $builder = $this->db->table('Product');
+        $query = $builder->update($state, 0);
+        $query = $builder->where('idProduct',$idProduct);
 
-    public function readProducts()
-    {
-        return $this->findAll();
+        return $query->db->update();
+		
     }
-    public function readProduct($id)
+
+    public function SelectProducts()
     {
-        return $this->find($id);
+        $builder = $this->db->table('Product');
+        $query = $builder->select('*');
+        $query = $builder->get();
+        return $query->getResult();
+
     }
-    public function createProduct($data)
-    {
-        return $this->insert($data);
-    }
-    public function updateProduct($id,$data)
-    {
-        return $this->update($id,$data);
-    }
-    public function deleteProduct($id,$data)
-    {
-        return $this->update($id,$data);
-    }
+
+   
 
 
 }

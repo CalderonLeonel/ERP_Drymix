@@ -91,11 +91,7 @@ class ProductsController extends BaseController{
     {
         $productModel = new ProductModel();
         $id = ['idProduct' => $this->request->getVar('idProduct')];
-        $data = [
-            'nameProduct' => $this->request->getVar('nameProduct'),
-            'IdLine'  => $this->request->getVar('lineProduct'),
-            'IdFormat' => $this->request->getVar('formatProduct')
-        ];
+        
         $productModel->deleteProduct($data , $id);
         //return $this->response->redirect(site_url('/users-list'));
         return view('SCM/DashboardSCM');
