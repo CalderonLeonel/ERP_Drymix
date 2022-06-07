@@ -5,22 +5,23 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>ERP Drymix </title>
-  <!-- plugins:css -->
-  <link rel="stylesheet" href="vendors/feather/feather.css">
-  <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
-  <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
-  <link rel="stylesheet" href="vendors/typicons/typicons.css">
-  <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
-  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
-  <!-- endinject -->
-  <!-- plugin css for this page -->
-  <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
-  <!-- End plugin css for this page -->
-  <!-- inject:css -->
-  <link rel="stylesheet" href="css/vertical-layout-light/style.css">
-  <!-- endinject -->
-  <link rel="shortcut icon" href="images/favicon.png" />
+    <title>Drymix</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="<?php echo base_url() ?>/vendors/feather/feather.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/vendors/typicons/typicons.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/vendors/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="<?php echo base_url() ?>/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="<?php echo base_url() ?>/js/select.dataTables.min.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="<?php echo base_url() ?>/css/vertical-layout-light/style.css">
+    <!-- endinject -->
+    <link rel="shortcut icon" href="<?php echo base_url() ?>/images/favicon.png" />
 </head>
 
 <body>
@@ -35,10 +36,10 @@
         </div>
         <div>
           <a class="navbar-brand brand-logo" href="index.html">
-            <img src="images/logo.svg" alt="logo" />
+          <img src="<?php echo base_url() ?>/images/Logotipo Drymix v.2.png" alt="logo" />
           </a>
           <a class="navbar-brand brand-logo-mini" href="index.html">
-            <img src="images/logo-mini.svg" alt="logo" />
+          <img src="<?php echo base_url() ?>/images/Logotipo Drymix v.2.png" alt="logo" />
           </a>
         </div>
       </div>
@@ -378,218 +379,169 @@
       <!-- partial:../../partials/_sidebar.html -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
-        <li class="nav-item nav-category">Usuarios</li>
-          <!--
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#dashboards" aria-expanded="false" aria-controls="dashboards">
+            <a class="nav-link" href="<?php echo base_url("Home/index")?>">
               <i class="mdi mdi-grid-large menu-icon"></i>
-              <span class="menu-title">Panel de Usuarios</span>
-              <i class="menu-arrow"></i> 
-            </a> -->
-            <div class="collapse" id="dashboards">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link active" href="index.html">Defualt</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/dashboards/crm.html">CRM</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<?=base_url('usuarios')?>">
-              <i class="mdi mdi-grid-large menu-icon"></i><!-- <i class="mdi mdi-grid-large menu-icon"></i> -->
-              <span class="menu-title">Panel de Usuarios</span>
+              <span class="menu-title">Admin</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<?=base_url('crearUsuario')?>">
-              <i class="menu-icon mdi mdi-account-circle-outline"></i>
-              <span class="menu-title">Crear Usuario</span>
-            </a>
-          </li>
-          
-<!--
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <i class="menu-icon mdi mdi-floor-plan"></i>
-              <span class="menu-title">UI Elements</span>
-              <i class="menu-arrow"></i> 
-            </a>
-            <div class="collapse" id="ui-basic">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/accordions.html">Accordions</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/badges.html">Badges</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/breadcrumbs.html">Breadcrumbs</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/modals.html">Modals</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/progress.html">Progress bar</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/pagination.html">Pagination</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/tabs.html">Tabs</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/typography.html">Typography</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/tooltips.html">Tooltips</a></li>
-              </ul>
-            </div>
-          </li>
--->
-<!--
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#ui-advanced" aria-expanded="false" aria-controls="ui-advanced">
-              <i class="menu-icon mdi mdi-arrow-down-drop-circle-outline"></i>
-              <span class="menu-title">Advanced UI</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="ui-advanced">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/dragula.html">Dragula</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/clipboard.html">Clipboard</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/context-menu.html">Context menu</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/slider.html">Sliders</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/carousel.html">Carousel</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/colcade.html">Colcade</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/loaders.html">Loaders</a></li>
-              </ul>
-            </div>
-          </li>
--->
-
-          <li class="nav-item nav-category">Forms and Datas</li>
+          <li class="nav-item nav-category">Documentación</li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
               <i class="menu-icon mdi mdi-card-text-outline"></i>
-              <span class="menu-title">Form elements</span>
+              <span class="menu-title">Registro</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="../../pages/forms/basic_elements.html">Basic Elements</a></li>                
-                <li class="nav-item"><a class="nav-link" href="../../pages/forms/advanced_elements.html">Advanced Elements</a></li>
-                <li class="nav-item"><a class="nav-link" href="../../pages/forms/validation.html">Validation</a></li>
-                <li class="nav-item"><a class="nav-link" href="../../pages/forms/wizard.html">Wizard</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#editors" aria-expanded="false" aria-controls="editors">
-              <i class="menu-icon mdi mdi-code-braces"></i>
-              <span class="menu-title">Editors</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="editors">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="../../pages/forms/text_editor.html">Text editors</a></li>
-                <li class="nav-item"><a class="nav-link" href="../../pages/forms/code_editor.html">Code editors</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Basic Elements</a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
               <i class="menu-icon mdi mdi-chart-line"></i>
-              <span class="menu-title">Charts</span>
+              <span class="menu-title">Ver Recepción</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="charts">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../pages/charts/chartjs.html">ChartJs</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/charts/morris.html">Morris</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/charts/flot-chart.html">Flot</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/charts/google-charts.html">Google charts</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/charts/sparkline.html">Sparkline js</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/charts/c3.html">C3 charts</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/charts/chartist.html">Chartists</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/charts/justGage.html">JustGage</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Mdi icons</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+              <i class="menu-icon mdi mdi-layers-outline"></i>
+              <span class="menu-title">Seguimiento</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="icons">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Mdi icons</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-category">Producción</li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#editors" aria-expanded="false" aria-controls="editors">
+              <i class="menu-icon mdi mdi-card-text-outline"></i>
+              <span class="menu-title">Productos Producidos</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="editors">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="<?php echo base_url("productController/insert")?>">Nuevo Producto</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#ui-advanced" aria-expanded="false" aria-controls="ui-advanced">
+              <i class="menu-icon mdi mdi-chart-line"></i>
+              <span class="menu-title">Pedidos al Laboratorio</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-advanced">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">ChartJs</a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
               <i class="menu-icon mdi mdi-table"></i>
-              <span class="menu-title">Tables</span>
+              <span class="menu-title">Observaciones al Laboratorio</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../pages/tables/basic-table.html">Basic table</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/tables/data-table.html">Data table</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/tables/js-grid.html">Js-grid</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/tables/sortable-table.html">Sortable table</a></li>
-              </ul>
-            </div>
-          </li>
-
-
-          <li class="nav-item">
-            <a class="nav-link" href="../../pages/ui-features/popups.html">
-              <i class="menu-icon mdi mdi-alert-outline"></i>
-              <span class="menu-title">Popups</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../pages/ui-features/notifications.html">
-              <i class="menu-icon mdi mdi-bell-alert-outline"></i>
-              <span class="menu-title">Notifications</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
-              <i class="menu-icon mdi mdi-layers-outline"></i>
-              <span class="menu-title">Icons</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="icons">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/icons/flag-icons.html">Flag icons</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Mdi icons</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/icons/font-awesome.html">Font Awesome</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/icons/simple-line-icon.html">Simple line icons</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/icons/themify.html">Themify icons</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.html">Basic table</a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#maps" aria-expanded="false" aria-controls="maps">
-              <i class="menu-icon mdi mdi-google-maps"></i>
-              <span class="menu-title">Maps</span>
+              <i class="menu-icon mdi mdi-layers-outline"></i>
+              <span class="menu-title">Eficiencia de Producción</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="maps">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/maps/mapael.html">Mapael</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/maps/vector-map.html">Vector Map</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/maps/google-maps.html">Google Map</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Mdi icons</a></li>
               </ul>
             </div>
           </li>
-
-          <li class="nav-item nav-category">pages</li>
+          <li class="nav-item nav-category">Gestion de Adquisiciones e Inventario</li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#Acquisition" aria-expanded="false" aria-controls="Acquisition">
+              <i class="menu-icon mdi mdi-cash-usd"></i>
+              <span class="menu-title">Adquisiones</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="Acquisition">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('AcquisitionController/index')?>"> Adquisiciones </a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('ProviderController/index')?>"> Proveedores </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#Inventory" aria-expanded="false" aria-controls="Inventory">
+              <i class="menu-icon mdi mdi-package-variant-closed"></i>
+              <span class="menu-title">Inventario</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="Inventory">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('StorageManagementController/index')?>"> Inventario </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-category">Gestion de Recursos Humanos</li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#rrhh" aria-expanded="false" aria-controls="rrhh">
+              <i class="menu-icon mdi mdi-account-circle-outline"></i>
+              <span class="menu-title">Recursos Humanos</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="rrhh">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('EmployeeController/index')?>"> Asignar Empleados </a></li>
+              </ul>
+            </div>
+            <div class="collapse" id="rrhh">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('DepartmentController/index')?>"> Departamentos </a></li>
+              </ul>
+            </div>
+            <div class="collapse" id="rrhh">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('ChargeController/index')?>"> Cargos </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-category">Gestion de Usuario</li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
               <i class="menu-icon mdi mdi-account-circle-outline"></i>
-              <span class="menu-title">User Pages</span>
+              <span class="menu-title">Cuentas de Usuarios</span>
               <i class="menu-arrow"></i>
             </a>
             <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/login-2.html"> Login 2 </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/register-2.html"> Register 2 </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/lock-screen.html"> Lockscreen </a></li>
+                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url("UserController/index")?>"> Login </a></li>
               </ul>
             </div>
           </li>
+          <li class="nav-item nav-category">Ayuda</li>
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#error" aria-expanded="false" aria-controls="error">
-              <i class="menu-icon mdi mdi-stop-circle-outline"></i>
-              <span class="menu-title">Error pages</span>
-              <i class="menu-arrow"></i>
+            <a class="nav-link" href="http://bootstrapdash.com/demo/star-admin2-free/docs/documentation.html">
+              <i class="menu-icon mdi mdi-file-document"></i>
+              <span class="menu-title">Documentacion y Guias</span>
             </a>
-            <div class="collapse" id="error">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
-              </ul>
-            </div>
           </li>
-
         </ul>
       </nav>
       <!-- partial -->
