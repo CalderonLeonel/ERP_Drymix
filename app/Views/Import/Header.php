@@ -34,8 +34,8 @@
           </button>
         </div>
         <div>
-          <a class="navbar-brand brand-logo" href="DashboardPrincipal.php ">
-            <img src="images/Logotipo Drymix v.2.png" width="200px" height="200px" alt="logo" />
+          <a class="navbar-brand brand-logo" href="<?php echo base_url('Home')?>">
+            <img src="<?php echo base_url() ?> images/Logotipo Drymix v.2.png" width="200px" height="200px" alt="logo" />
           </a>
         </div>
       </div>

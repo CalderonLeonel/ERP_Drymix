@@ -30,7 +30,7 @@
                 <div class="d-sm-flex align-items-center justify-content-between border-bottom">
                   <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item">
-                      <a class="nav-link" id="main-tab" data-bs-toggle="tab" href="<?php echo base_url('ProviderController/index')?>" role="tab" aria-selected="false">Panel de Proveedores</a>
+                      <a class="nav-link active" id="main-tab" data-bs-toggle="tab" href="<?php echo base_url('ProviderController/index')?>" role="tab" aria-selected="true">Panel de Proveedores</a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" id="main-tab" data-bs-toggle="tab" href="<?php echo base_url('ProviderController/list')?>" role="tab" aria-selected="false">Lista de Proveedores</a>
@@ -44,7 +44,7 @@
                   <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview"> 
                    
                     <div class="row">
-                      <div class="col-lg-4 d-flex flex-column">
+                      <div class="col-lg-3 d-flex flex-column">
                           <div class="col-12 col-lg-4 col-lg-12 grid-margin stretch-card">
                             <div class="card card-rounded">
                               <div class="card-body">
@@ -54,7 +54,7 @@
                                    <h2 class="card-title card-title-dash">Registra un Proveedor</h2>
                                    <br>
                                    <br>
-                                   <a href="ProviderController/Create" class="btn btn-primary btn-rounded btn-lg text-light">Registrar Proveedor</a>
+                                   <a href="<?php echo base_url('ProviderController/create')?>" class="btn btn-primary btn-rounded btn-lg text-light">Registrar Proveedor</a>
                                   </div>
                                   </div>
                                 </div>
@@ -62,32 +62,52 @@
                             </div>
                           </div>   
                       </div>
-                      <div class="col-lg-6 d-flex flex-column">
-                          <div class="col-6 col-lg-4 col-lg-12 grid-margin stretch-card">
+                      <div class="col-lg-3 d-flex flex-column">
+                          <div class="col-12 col-lg-4 col-lg-12 grid-margin stretch-card">
                             <div class="card card-rounded">
                               <div class="card-body">
                                 <div class="d-sm-flex justify-content-between align-items-start">                             
                                   <div class="row-lg">
                                   <div class="col-12">
-                                   <h2 class="card-title card-title-dash">Perfil</h2>
-                                   <h5 class="card-subtitle card-subtitle-dash">Nombre Usuario</h5>
-                                   <button type="button" class="btn btn-primary btn-rounded btn-lg text-light">Ver Perfil</button>
+                                   <h2 class="card-title card-title-dash">Ver la lista completa de Proveedores</h2>
+                                   <br>
+                                   <br>
+                                   <a href="<?php echo base_url('ProviderController/list')?>" class="btn btn-primary btn-rounded btn-lg text-light">Lista de Proveedor</a>
                                   </div>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                          </div>                           
+                          </div>   
                       </div>
-                      <div class="col-lg-2 d-flex flex-column">
+                      <div class="col-lg-3 d-flex flex-column">
                           <div class="col-12 col-lg-4 col-lg-12 grid-margin stretch-card">
-                            <div class="card card-rounded bg-primary">
+                            <div class="card card-rounded">
                               <div class="card-body">
-                              <h4 class="card-title card-title-dash text-light">Volver a la Pagina Principal</h4>
                                 <div class="d-sm-flex justify-content-between align-items-start">                             
                                   <div class="row-lg">
                                   <div class="col-12">
-                                   <a href="Home" class="hidden text-light stretched-link"></a>
+                                   <h2 class="card-title card-title-dash">Pagina Principal de adquisiciones</h2>
+                                   <br>
+                                   <br>
+                                   <a href="<?php echo base_url('AcquisitionController')?>" class="btn btn-success btn-rounded btn-lg text-light">Entrar a la pagina de adquisiciones</a>
+                                  </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-3 d-flex flex-column">
+                          <div class="col-12 col-lg-4 col-lg-12 grid-margin stretch-card">
+                            <div class="card card-rounded bg-primary">
+                              <div class="card-body">
+                              <i class=" mdi mdi-home mdi-48px text-light"></i>
+                              <h4 class="card-title card-title-dash text-light"> Volver a la Pagina Principal </h4>
+                                <div class="d-sm-flex justify-content-between align-items-start">                             
+                                  <div class="row-lg">
+                                  <div class="col-12">
+                                   <a href="<?php echo base_url('Home')?>" class="hidden text-light stretched-link"></a>
                                   </div>
                                   </div>
                                 </div>
@@ -105,9 +125,10 @@
                                 <div class="d-sm-flex justify-content-between align-items-start">
                                   <div>
                                     <h4 class="card-title card-title-dash">Listado de Proveedores</h4>
+                                    <h5 class="card-subtitle card-subtitle-dash">Vea la lista de completa para poder dar de baja o modificar un proveedor en el sistema</h5>
                                   </div>
                                   <div>
-                                  <a href="ProviderController/List"  class="btn btn-primary btn-lg text-white mb-0 me-0"><i class="mdi mdi-playlist-plus"></i>Ver Listado Completo</a>
+                                  <a href="<?php echo base_url('ProviderController/list')?>"  class="btn btn-primary btn-lg text-white mb-0 me-0"><i class="mdi mdi-playlist-plus"></i>Ver Listado Completo</a>
                                   </div>
                                 </div>
                                 <div class="table-responsive  mt-1">

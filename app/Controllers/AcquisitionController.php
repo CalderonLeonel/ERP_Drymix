@@ -8,18 +8,26 @@ class AcquisitionController extends BaseController
 {
     public function index()
     {
+        echo view('import/Header');
         $acquisitionModel = new AcquisitionModel();
+        $providerModel = new ProviderModel();
+        $table['provider'] = $providerModel->readProviders();
         $table['table'] = $acquisitionModel->readAcquisitions();
-        return view('Acquisition/AcquisitionList',$table);
+        return view('Acquisition/AcquisitionMain',$table);
+        echo view('import/Footer');
     }
-    public function createAcquisition()
+    public function create()
     { 
+        echo view('import/Header');
         $provider = new ProviderModel;
         $data['list'] = $provider->readProviders();
         return view('Acquisition/AcquisitionCreate',$data);
+        echo view('import/Footer');
+       
     }
-    public function editAcquisition()
+    public function edit()
     {
+        echo view('import/Header');
         $acquisitionModel = new AcquisitionModel();
         $provider = new ProviderModel;
         $id = [
@@ -28,15 +36,23 @@ class AcquisitionController extends BaseController
         $data['table'] = $acquisitionModel->readAcquisition($id);
         $data['list'] = $provider->readProviders();
         return view('Acquisition/AcquisitionEdit',$data);
+        echo view('import/Footer');
+       
     }
-    public function acquisitionList()
+    public function list()
     {
+        echo view('import/Header');
         $acquisitionModel = new AcquisitionModel();
+        $providerModel = new ProviderModel();
         $table['table'] = $acquisitionModel->readAcquisitions();
+        $table['provider'] = $providerModel->readProviders();
         return view('Acquisition/AcquisitionList',$table);
+        echo view('import/Footer');
+      
     }
     public function InsertAcquisition()
     {
+        echo view('import/Header');
         $acquisitionModel = new AcquisitionModel();
 
         $data = [
@@ -47,10 +63,13 @@ class AcquisitionController extends BaseController
         $acquisitionModel->createAcquisition($data);
         $table['table'] = $acquisitionModel->readAcquisitions();
         return view('Acquisition/AcquisitionList',$table);
+        echo view('import/Footer');
+       
     }
 
     public function UpdateAcquisition()
     {
+        echo view('import/Header');
         $acquisitionModel = new AcquisitionModel();
         $id = ['idAdquisitionQuote' => $this->request->getVar('idAdquisitionQuote')];
         $data = [   
@@ -62,10 +81,28 @@ class AcquisitionController extends BaseController
         $acquisitionModel->updateAcquisition($id ,$data);
         $table['table'] = $acquisitionModel->readAcquisitions();
         return view('Acquisition/AcquisitionList',$table);
+        echo view('import/Footer');
+      
+    }
+
+    public function UpdateState()
+    {
+        echo view('import/Header');
+        $acquisitionModel = new AcquisitionModel();
+        $id = ['idAdquisitionQuote' => $this->request->getVar('idAdquisitionQuote')];
+        $data = [   
+            'quoteState' => $this->request->getVar('stateSelect')  
+        ];
+        $acquisitionModel->updateAcquisition($id ,$data);
+        $table['table'] = $acquisitionModel->readAcquisitions();
+        return view('Acquisition/AcquisitionList',$table);
+        echo view('import/Footer');
+      
     }
 
     public function DeleteAcquisition()
     {
+        echo view('import/Header');
         $acquisitionModel = new AcquisitionModel();
 
         $id = [
@@ -77,12 +114,17 @@ class AcquisitionController extends BaseController
         $acquisitionModel->deleteAcquisition($id,$data);
         $table['table'] = $acquisitionModel->readAcquisitions();
         return view('Acquisition/AcquisitionList',$table);
+        echo view('import/Footer');
+       
     }
 
     public function readAcquisition()
     {
+        echo view('import/Header');
         $acquisitionModel = new AcquisitionModel();
         $table['table'] = $acquisitionModel->readAcquisitions();
         return view('Acquisition/AcquisitionList',$table);
+        echo view('import/Footer');
+       
     }
 }
