@@ -51,10 +51,10 @@
                                 <div class="d-sm-flex justify-content-between align-items-start">                             
                                   <div class="row-lg">
                                   <div class="col-12">
-                                   <h2 class="card-title card-title-dash">Ver la lista completa de Adquisiciones</h2>
+                                   <h2 class="card-title card-title-dash">Asignar Empleados</h2>
                                    <br>
                                    <br>
-                                   <a href="<?php echo base_url('AcquisitionController/list')?>" class="btn btn-primary btn-rounded btn-lg text-light">Lista de Adquisicion</a>
+                                   <a href="<?php echo base_url('EmployeeController/index')?>" class="btn btn-success btn-rounded btn-lg text-light">Pagina de Asignacion de Cargos</a>
                                   </div>
                                   </div>
                                 </div>
@@ -69,10 +69,10 @@
                                 <div class="d-sm-flex justify-content-between align-items-start">                             
                                   <div class="row-lg">
                                   <div class="col-12">
-                                   <h2 class="card-title card-title-dash">Registrar adquisicion</h2>
+                                   <h2 class="card-title card-title-dash">Lista completa de cargos</h2>
                                    <br>
                                    <br>
-                                   <a href="<?php echo base_url('AcquisitionController/create')?>" class="btn btn-success btn-rounded btn-lg text-light">Registrar adquisicion</a>
+                                   <a href="<?php echo base_url('ChargeController/list')?>" class="btn btn-primary btn-rounded btn-lg text-light">Lista de cargos</a>
                                   </div>
                                   </div>
                                 </div>
