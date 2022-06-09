@@ -42,8 +42,8 @@
       <div class="navbar-menu-wrapper d-flex align-items-top"> 
         <ul class="navbar-nav">
           <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
-            <h1 class="welcome-text">Bienvinido, <span class="text-black fw-bold">John Doe</span></h1>
-            <h3 class="welcome-sub-text">Este es el formulario para que agregues los productos que produce la Empresa</h3>
+            <h1 class="welcome-text">Bienvenido, <span class="text-black fw-bold">John Doe</span></h1>
+            <h3 class="welcome-sub-text">Este es el formulario para que edites los productos que tengan algun error</h3>
           </li>
         </ul>
         <ul class="navbar-nav ms-auto">
@@ -260,76 +260,40 @@
         </ul>
       </nav>
       <!-- partial -->
-      <div class="main-panel">        
+      <div class="main-panel">
         <div class="content-wrapper">
-          <div class="row">
-            <div class="col-md-12 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Agregar Nuevo Producto</h4>
-                  <p class="card-description">
-                    Aca podras agregar los productos producidos por la empresa
-                  </p>
-                  <form class="forms-sample" method="POST" id="add_create" name="add_create" action="<?php echo site_url('Products/InsertProduct') ?>">
-                    <div class="form-group">
-                      <label for="exampleInputUsername1">Nombre del Producto</label>
-                      <input type="text" class="form-control" id="productName" name="productName" placeholder="Nombre del Producto">
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-3 col-form-label">Tipo de Producto</label>
-                        <div class="col-sm-12">
-                            <select class="form-control" id="idLine" name="idLine">
-                            <?php foreach ($types as $row)
-                                {
-                                  ?>
-                                  <option value="<?php $row['idProductType']?>"><?php echo $row['productTypeName'];?></option>
-                                  
-                                  <?php
-                                }
-                            ?>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-3 col-form-label">Linea del Producto</label>
-                        <div class="col-sm-12">
-                            <select class="form-control" id="idLine" name="idLine">
-                            <?php foreach ($lines as $row)
-                                {
-                                  ?>
-                                  <option value="<?php $row['idLine']?>"><?php echo $row['lineName'];?></option>
-                                  
-                                  <?php
-                                }
-                            ?>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label class="col-sm-3 col-form-label">Formato del Producto</label>
-                        <div class="col-sm-12">
-                            <select class="form-control" id="idFormat" name = "idFormat">
-                            <?php foreach ($format as $row)
-                                {
-                                  ?>
-                                  <option value="<?php $row['idFormat']?>"><?php echo $row['formatName'];?></option>
-                                  
-                                  <?php
-                                }
-                            ?>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputConfirmPassword1">Cantidad Producida</label>
-                      <input type="text" class="form-control" id="cantidadProducto" placeholder="Cantidad Producida">
-                    </div>
-                    <button type="submit" class="btn btn-primary me-2">Agregar</button>
-                    <button class="btn btn-light">Cancelar</button>
-                  </form>
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Productos de la Empresa</h4>
+              <div class="row">
+                <div class="col-12">
+                  <div class="table-responsive">
+                    <div id="order-listing_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="order-listing_length"><label>Show <select name="order-listing_length" aria-controls="order-listing" class="custom-select custom-select-sm form-control"><option value="5">5</option><option value="10">10</option><option value="15">15</option><option value="-1">All</option></select> entries</label></div></div><div class="col-sm-12 col-md-6"><div id="order-listing_filter" class="dataTables_filter"><label><input type="search" class="form-control" placeholder="Search" aria-controls="order-listing"></label></div></div></div><div class="row"><div class="col-sm-12"><table id="order-listing" class="table dataTable no-footer" aria-describedby="order-listing_info">
+                      <thead>
+                        <tr><th class="sorting" tabindex="0" aria-controls="order-listing" rowspan="1" colspan="1" aria-label="Order #: activate to sort column ascending" style="width: 111.828px;">Order #</th><th class="sorting" tabindex="0" aria-controls="order-listing" rowspan="1" colspan="1" aria-label="Purchased On: activate to sort column ascending" style="width: 173.25px;">Purchased On</th><th class="sorting sorting_desc" tabindex="0" aria-controls="order-listing" rowspan="1" colspan="1" aria-label="Customer: activate to sort column ascending" style="width: 131.578px;" aria-sort="descending">Customer</th><th class="sorting" tabindex="0" aria-controls="order-listing" rowspan="1" colspan="1" aria-label="Ship to: activate to sort column ascending" style="width: 101px;">Ship to</th><th class="sorting" tabindex="0" aria-controls="order-listing" rowspan="1" colspan="1" aria-label="Base Price: activate to sort column ascending" style="width: 136.078px;">Base Price</th><th class="sorting" tabindex="0" aria-controls="order-listing" rowspan="1" colspan="1" aria-label="Purchased Price: activate to sort column ascending" style="width: 196.531px;">Purchased Price</th><th class="sorting" tabindex="0" aria-controls="order-listing" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 123.188px;">Status</th><th class="sorting" tabindex="0" aria-controls="order-listing" rowspan="1" colspan="1" aria-label="Actions: activate to sort column ascending" style="width: 115.562px;">Actions</th></tr>
+                      </thead>
+                      <tbody>
+                        <tr class="odd">
+                            <td class="">10</td>
+                            <td>2003/12/26</td>
+                            <td class="sorting_1">Tom</td>
+                            <td>Germany</td>
+                            <td>$1100</td>
+                            <td>$2300</td>
+                            <td>
+                              <label class="badge badge-danger">Pending</label>
+                            </td>
+                            <td>
+                              <button class="btn btn-outline-primary">View</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    </table></div></div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="order-listing_info" role="status" aria-live="polite">Showing 1 to 10 of 10 entries</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="order-listing_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="order-listing_previous"><a href="https://www.bootstrapdash.com/demo/star-admin2-pro/template/demo/vertical-default-light/pages/tables/data-table.html#" aria-controls="order-listing" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li><li class="paginate_button page-item active"><a href="https://www.bootstrapdash.com/demo/star-admin2-pro/template/demo/vertical-default-light/pages/tables/data-table.html#" aria-controls="order-listing" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item next disabled" id="order-listing_next"><a href="https://www.bootstrapdash.com/demo/star-admin2-pro/template/demo/vertical-default-light/pages/tables/data-table.html#" aria-controls="order-listing" data-dt-idx="2" tabindex="0" class="page-link">Next</a></li></ul></div></div></div></div>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
         </div>
         <!-- content-wrapper ends -->
         <!-- partial:../../partials/_footer.html -->
@@ -371,4 +335,3 @@
 </body>
 
 </html>
-

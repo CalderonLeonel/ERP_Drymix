@@ -42,8 +42,8 @@
       <div class="navbar-menu-wrapper d-flex align-items-top"> 
         <ul class="navbar-nav">
           <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
-            <h1 class="welcome-text">Bienvinido, <span class="text-black fw-bold">John Doe</span></h1>
-            <h3 class="welcome-sub-text">Este es el formulario para que agregues los productos que produce la Empresa</h3>
+            <h1 class="welcome-text">Bienvenido, <span class="text-black fw-bold">John Doe</span></h1>
+            <h3 class="welcome-sub-text">Este es el formulario para que edites los productos que tengan algun error</h3>
           </li>
         </ul>
         <ul class="navbar-nav ms-auto">
@@ -266,7 +266,7 @@
             <div class="col-md-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Agregar Nuevo Producto</h4>
+                  <h4 class="card-title">Editar Producto</h4>
                   <p class="card-description">
                     Aca podras agregar los productos producidos por la empresa
                   </p>
@@ -371,4 +371,3 @@
 </body>
 
 </html>
-
