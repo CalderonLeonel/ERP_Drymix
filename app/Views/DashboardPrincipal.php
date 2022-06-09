@@ -370,11 +370,7 @@
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="<?php
-
-use App\Controllers\AcquisitionController;
-
- echo site_url("home/index")?>">
+            <a class="nav-link" href="<?php echo site_url("home/index")?>">
               <i class="mdi mdi-grid-large menu-icon"></i>
               <span class="menu-title">Admin</span>
             </a>
@@ -400,19 +396,7 @@ use App\Controllers\AcquisitionController;
             </a>
             <div class="collapse" id="charts">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">ChartJs</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
-              <i class="menu-icon mdi mdi-table"></i>
-              <span class="menu-title">Ver Envio</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="tables">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.html">Basic table</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Mdi icons</a></li>
               </ul>
             </div>
           </li>
@@ -430,24 +414,29 @@ use App\Controllers\AcquisitionController;
           </li>
           <li class="nav-item nav-category">Producción</li>
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+            <a class="nav-link" data-bs-toggle="collapse" href="#editors" aria-expanded="false" aria-controls="editors">
               <i class="menu-icon mdi mdi-card-text-outline"></i>
               <span class="menu-title">Productos Producidos</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="form-elements">
+            <div class="collapse" id="editors">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="<?php echo site_url("products/index")?>">Basic Elements</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo base_url("Products/index")?>">Inicio</a></li>
+              </ul>
+            </div>
+            <div class="collapse" id="editors">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"><a class="nav-link" href="<?php echo base_url("Products/insert")?>">Nuevo Producto</a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+            <a class="nav-link" data-bs-toggle="collapse" href="#ui-advanced" aria-expanded="false" aria-controls="ui-advanced">
               <i class="menu-icon mdi mdi-chart-line"></i>
               <span class="menu-title">Pedidos al Laboratorio</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="charts">
+            <div class="collapse" id="ui-advanced">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">ChartJs</a></li>
               </ul>
@@ -466,12 +455,12 @@ use App\Controllers\AcquisitionController;
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+            <a class="nav-link" data-bs-toggle="collapse" href="#maps" aria-expanded="false" aria-controls="maps">
               <i class="menu-icon mdi mdi-layers-outline"></i>
               <span class="menu-title">Eficiencia de Producción</span>
               <i class="menu-arrow"></i>
             </a>
-            <div class="collapse" id="icons">
+            <div class="collapse" id="maps">
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Mdi icons</a></li>
               </ul>
@@ -486,7 +475,10 @@ use App\Controllers\AcquisitionController;
             </a>
             <div class="collapse" id="Acquisition">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('AcquisitionController')?>"> Adquisiciones </a></li>
+                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('AcquisitionController/index')?>"> Adquisiciones </a></li>
+              </ul>
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('ProviderController/index')?>"> Proveedores </a></li>
               </ul>
             </div>
           </li>
@@ -498,7 +490,30 @@ use App\Controllers\AcquisitionController;
             </a>
             <div class="collapse" id="Inventory">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('StorageManagementController')?>"> Inventario </a></li>
+                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('StorageManagementController/index')?>"> Inventario </a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item nav-category">Gestion de Recursos Humanos</li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#rrhh" aria-expanded="false" aria-controls="rrhh">
+              <i class="menu-icon mdi mdi-account-circle-outline"></i>
+              <span class="menu-title">Recursos Humanos</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="rrhh">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('EmployeeController/index')?>"> Asignar Empleados </a></li>
+              </ul>
+            </div>
+            <div class="collapse" id="rrhh">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('DepartmentController/index')?>"> Departamentos </a></li>
+              </ul>
+            </div>
+            <div class="collapse" id="rrhh">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="<?php echo base_url('ChargeController/index')?>"> Cargos </a></li>
               </ul>
             </div>
           </li>

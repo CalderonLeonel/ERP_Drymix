@@ -18,9 +18,6 @@ if (file_exists(SYSTEMPATH . 'Config/Routes.php')) {
  */
 $routes->setDefaultNamespace('App\Controllers');
 $routes->setDefaultController('Home');
-$routes->setDefaultController('AcquisitionController');
-$routes->setDefaultController('ProviderController');
-$routes->setDefaultController('StorageManagementController');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
@@ -34,8 +31,7 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'ProviderController::index');
-
+$routes->get('/', 'Home::index');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
@@ -51,8 +47,23 @@ $routes->get('/', 'ProviderController::index');
  */
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
+
 }
-//$routes->get('usuarios', 'Users::index');
+
+$routes->get('insertar', 'SCM/Products::insert');
+$routes->post('submit-form', 'SCM/Products::insert');
+$routes->get('produccion', 'SCM/Products::index');
+
+$routes->get('usuarios', 'Users::index');
 $routes->get('insertar', 'Products::insert');
 $routes->get('produccion', 'Products::index');
 $routes->get('crearUsuario', 'Users::crear');
+
+
+$routes->get('AcquisitionController/index', 'AcquisitionController::index');
+$routes->get('ProviderController/index', 'ProviderController::index');
+$routes->get('StorageManagementController/index', 'StorageManagementController::index');
+$routes->get('DepartmentController/index', 'DepartmentController::index');
+$routes->get('ChargeController/index', 'ChargeController::index');
+$routes->get('EmployeeController/index', 'EmployeeController::index');
+

@@ -3,11 +3,11 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class Employee extends Model{
+class EmployeeModel extends Model{
     protected $table      = 'Employee';
     protected $primaryKey = 'idEmployee';
 
-    protected $allowedFields = ['name','secondSurname','surname','email','bithdate','employeeCode', 'ci','updateDate','idDepartment', 'idCharge'];
+    protected $allowedFields = ['name','secondSurname','surname','email','bithdate','employeeCode', 'ci','updateDate','idArea', 'idCharge'];
 
     //protected $useAutoIncrement = false;
     protected $useTimestamps = true;
@@ -22,5 +22,13 @@ class Employee extends Model{
     public function createEmployee($data)
     {
         return $this->insert($data);
+    }
+    public function readEmployees()
+    {
+        return $this->findAll();
+    }
+    public function UpdateEmployee($id,$data)
+    {
+        return $this->update($id,$data);
     }
 }

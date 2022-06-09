@@ -31,10 +31,10 @@ class Database extends Config
      * @var array
      */
     public $default = [
-        'DSN'      => '',
-        'hostname' => 'localhost',
+        'DSN'      => 'MySQLi://root:root@127.0.0.1:3306/erp_dry_db?charset=utf8&DBCollat=utf8_general_ci',
+        'hostname' => 'localhost:3306',
         'username' => 'root',
-        'password' => '',
+        'password' => 'root',
         'database' => 'erp_dry_db',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',

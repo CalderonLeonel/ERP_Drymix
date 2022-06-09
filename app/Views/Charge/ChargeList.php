@@ -27,21 +27,22 @@
           <div class="row">
             <div class="col-sm-12">
               <div class="home-tab">
-                <div class="d-sm-flex align-items-center justify-content-between border-bottom">
-                <ul class="nav nav-tabs" role="tablist">
-                   <li class="nav-item">
-                      <a class="nav-link" id="main-tab" data-bs-toggle="tab" href="<?php echo base_url('ProviderController/index')?>" role="tab" aria-selected="false">Panel de Proveedores</a>
+                <div class="d-sm-flex align-Charges-center justify-content-between border-bottom">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active" id="main-tab" data-bs-toggle="tab" href="<?php echo base_url('ChargeController/list')?>" role="tab" aria-selected="true">Lista de Cargos</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" id="main-tab" data-bs-toggle="tab" href="<?php echo base_url('ProviderController/list')?>" role="tab" aria-selected="false">Lista de Proveedores</a>
+                      <a class="nav-link" id="main-tab" data-bs-toggle="tab" href="<?php echo base_url('EmployeeController/index')?>" role="tab" aria-selected="false">Asignacion de Cargos</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link active" id="material-list-tab" data-bs-toggle="tab" href="<?php echo base_url('ProviderController/create')?>" role="tab" aria-controls="Crear Proveedor" aria-selected="true">Crear Proveedor</a>
+                      <a class="nav-link " id="material-list-tab" data-bs-toggle="tab" href="<?php echo base_url('ChargeController/create')?>" role="tab" aria-selected="false">Crear Cargos</a>
                     </li>
                   </ul>
                 </div>
                 <div class="tab-content tab-content-basic">
                   <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview"> 
+                   
                   <div class="row">             
                       <div class="col-lg-4 d-flex flex-column">
                           <div class="col-12 col-lg-4 col-lg-12 grid-margin stretch-card">
@@ -50,10 +51,10 @@
                                 <div class="d-sm-flex justify-content-between align-items-start">                             
                                   <div class="row-lg">
                                   <div class="col-12">
-                                   <h2 class="card-title card-title-dash">Ver la lista completa de Proveedores</h2>
+                                   <h2 class="card-title card-title-dash">Asignar Empleados</h2>
                                    <br>
                                    <br>
-                                   <a href="<?php echo base_url('ProviderController/list')?>" class="btn btn-primary btn-rounded btn-lg text-light">Lista de Proveedor</a>
+                                   <a href="<?php echo base_url('EmployeeController/index')?>" class="btn btn-success btn-rounded btn-lg text-light">Pagina de Asignacion de Cargos</a>
                                   </div>
                                   </div>
                                 </div>
@@ -68,10 +69,10 @@
                                 <div class="d-sm-flex justify-content-between align-items-start">                             
                                   <div class="row-lg">
                                   <div class="col-12">
-                                   <h2 class="card-title card-title-dash">Pagina Principal de adquisiciones</h2>
+                                   <h2 class="card-title card-title-dash">Lista completa de cargos</h2>
                                    <br>
                                    <br>
-                                   <a href="<?php echo base_url('AcquisitionController')?>" class="btn btn-success btn-rounded btn-lg text-light">Entrar a la pagina de adquisiciones</a>
+                                   <a href="<?php echo base_url('ChargeController/list')?>" class="btn btn-primary btn-rounded btn-lg text-light">Lista de cargos</a>
                                   </div>
                                   </div>
                                 </div>
@@ -98,26 +99,55 @@
                       </div>
                     </div>
                     <div class="row">
-                      <div class="col-lg-10 d-flex flex-column">
+                      <div class="col-lg-12 d-flex flex-column">
                         <div class="row flex-grow">
                           <div class="col-12 grid-margin stretch-card">
                             <div class="card card-rounded">
                               <div class="card-body">
-                                <h2 class="card-title">Registrar un Proveedor</h2>
-                                <p class="card-description"> Agregue un proveedor para solicitar adquisiciones</p>
-                                <form class="forms-sample" method="POST" id="add_provider" name="add_provider" action="<?php echo site_url('ProviderController/InsertProvider')?>">
-                                  <div class="form-group">
-                                   <label for="providerName">Nombre Del Proveedor</label>
-                                   <input type="text" class="form-control" id="providerName" name="providerName" placeholder="Nombre Proveedor">
+                                <div class="d-sm-flex justify-content-between align-Charges-start">
+                                  <div>
+                                    <h4 class="card-title card-title-dash">Listado de Cargos</h4>
                                   </div>
-                                  <div class="form-group">
-                                   <label for="contactNumber">Contacto del Proveedor</label>
-                                   <input type="number" class="form-control" id="contactNumber" name="contactNumber" min="60000000" max="79999999" placeholder="Contacto del Proveedor">
-                                  </div>
-                                  <div class="form-group">
-                                     <button type="submit" class="btn btn-lg btn-success text-light">Registrar Proveedor</button>
-                                  </div>
-                                </form>
+                                </div>
+                                <div class="table-responsive  mt-1">
+                                  <table class="table select-table">
+                                    <thead>
+                                      <tr>
+                                        <th>ID</th>
+                                        <th>Cargo</th> 
+                                        <th></th>                                               
+                                      </tr>
+                                    </thead>
+                                    <tbody>
+                                    <?php foreach($table as $row):?>
+                                      <tr>
+                                        <td>
+                                          <h6><?php echo $row['idCharge'];?></h6>
+                                        </td>
+                                        <td>
+                                          <h6><?php echo $row['chargeName'];?></h6>                                        
+                                        </td>
+                                        <td>
+                                          <form method="post" action="<?php echo site_url('ChargeController/editCharge')?>">
+                                            <div class="form-group">
+                                              <input type="hidden" name="idCharge" value="<?php echo $row['idCharge'];?>">
+                                              <input type="submit" class="btn btn-primary" value="Editar">
+                                            </div>
+                                          </form>   
+                                          <form method="post" action="<?php echo site_url('ChargeController/DeleteCharge')?>">
+                                            <div class="form-group">
+                                            <input type="hidden" name="idCharge" value="<?php echo $row['idCharge'];?>">
+                                              <input type="submit" class="btn btn-danger" value="Eliminar">
+                                            </div>
+                                          </form>                                       
+                                        </td>
+                                      </tr>
+                                      <?php endforeach;?>
+                                       
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -134,11 +164,11 @@
         <!-- partial:partials/_footer.html -->
         <footer class="footer">
           <div class="d-sm-flex justify-content-center justify-content-sm-between">
-            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash.</span>
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin Chargeplate</a> from BootstrapDash.</span>
             <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright © 2021. All rights reserved.</span>
           </div>
         </footer>
         <!-- partial -->
       </div>
-</body>
+      </body>
 </html>

@@ -8,33 +8,51 @@ class AcquisitionController extends BaseController
 {
     public function index()
     {
-        //$acquisitionModel = new AcquisitionModel();
-        //$table['table'] = $acquisitionModel->readAcquisitions();
-        return view('DashboardSCM');
+        echo view('import/Header');
+        $acquisitionModel = new AcquisitionModel();
+        $providerModel = new ProviderModel();
+        $table['provider'] = $providerModel->readProviders();
+        $table['table'] = $acquisitionModel->readAcquisitions();
+        return view('Acquisition/AcquisitionMain',$table);
+        echo view('import/Footer');
     }
-    public function createAcquisition()
+    public function create()
     { 
+        echo view('import/Header');
         $provider = new ProviderModel;
         $data['list'] = $provider->readProviders();
         return view('Acquisition/AcquisitionCreate',$data);
+        echo view('import/Footer');
+       
     }
-    public function editAcquisition()
+    public function edit()
     {
+        echo view('import/Header');
         $acquisitionModel = new AcquisitionModel();
+        $provider = new ProviderModel;
         $id = [
-            'idAcquisitionQuote' => $this->request->getVar('idAcquisitionQuote')
+            'idAdquisitionQuote' => $this->request->getVar('idAdquisitionQuote')
         ];
         $data['table'] = $acquisitionModel->readAcquisition($id);
-        return view('Acquisition/EditAcquisition',$data);
+        $data['list'] = $provider->readProviders();
+        return view('Acquisition/AcquisitionEdit',$data);
+        echo view('import/Footer');
+       
     }
-    public function acquisitionList()
+    public function list()
     {
+        echo view('import/Header');
         $acquisitionModel = new AcquisitionModel();
+        $providerModel = new ProviderModel();
         $table['table'] = $acquisitionModel->readAcquisitions();
+        $table['provider'] = $providerModel->readProviders();
         return view('Acquisition/AcquisitionList',$table);
+        echo view('import/Footer');
+      
     }
     public function InsertAcquisition()
     {
+        echo view('import/Header');
         $acquisitionModel = new AcquisitionModel();
 
         $data = [
@@ -45,42 +63,68 @@ class AcquisitionController extends BaseController
         $acquisitionModel->createAcquisition($data);
         $table['table'] = $acquisitionModel->readAcquisitions();
         return view('Acquisition/AcquisitionList',$table);
+        echo view('import/Footer');
+       
     }
 
     public function UpdateAcquisition()
     {
+        echo view('import/Header');
         $acquisitionModel = new AcquisitionModel();
-        $id = ['idAcquisitionQuote' => $this->request->getVar('idAcquisitionQuote')];
+        $id = ['idAdquisitionQuote' => $this->request->getVar('idAdquisitionQuote')];
         $data = [   
-            'name' => $this->request->getVar('AcquisitionName'),
+            'name' => $this->request->getVar('name'),
             'idUser' => 1,
-            'IdProvider' => $this->request->getVar('IdProvider')
+            'IdProvider' => $this->request->getVar('providerSelect')
             
         ];
         $acquisitionModel->updateAcquisition($id ,$data);
         $table['table'] = $acquisitionModel->readAcquisitions();
         return view('Acquisition/AcquisitionList',$table);
+        echo view('import/Footer');
+      
+    }
+
+    public function UpdateState()
+    {
+        echo view('import/Header');
+        $acquisitionModel = new AcquisitionModel();
+        $id = ['idAdquisitionQuote' => $this->request->getVar('idAdquisitionQuote')];
+        $data = [   
+            'quoteState' => $this->request->getVar('stateSelect')  
+        ];
+        $acquisitionModel->updateAcquisition($id ,$data);
+        $table['table'] = $acquisitionModel->readAcquisitions();
+        return view('Acquisition/AcquisitionList',$table);
+        echo view('import/Footer');
+      
     }
 
     public function DeleteAcquisition()
     {
+        echo view('import/Header');
         $acquisitionModel = new AcquisitionModel();
 
         $id = [
-            'idAcquisitionQuote' => $this->request->getVar('idAcquisitionQuote')
+            'idAdquisitionQuote' => $this->request->getVar('idAdquisitionQuote')
         ];
         $data = [   
-            'quoteState' => $this->request->getVar('quoteState')
+            'quoteState' => 0
         ];
         $acquisitionModel->deleteAcquisition($id,$data);
         $table['table'] = $acquisitionModel->readAcquisitions();
         return view('Acquisition/AcquisitionList',$table);
+        echo view('import/Footer');
+       
     }
 
     public function readAcquisition()
     {
+        echo view('import/Header');
         $acquisitionModel = new AcquisitionModel();
         $table['table'] = $acquisitionModel->readAcquisitions();
         return view('Acquisition/AcquisitionList',$table);
+        echo view('import/Footer');
+       
     }
 }

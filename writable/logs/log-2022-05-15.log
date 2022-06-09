@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 CRITICAL - 2022-05-15 22:15:34 --> include(): http:// wrapper is disabled in the server configuration by allow_url_include=0
 #0 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Views\DashboardPrincipal.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): http...', 'I:\\7mo Semestre...', 2)
 #1 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\app\Views\DashboardPrincipal.php(2): include()
@@ -66,4 +67,23 @@ CRITICAL - 2022-05-15 23:15:33 --> Invalid file: StorageMain.php
 #4 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\StorageContoller))
 #5 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
 #6 I:\7mo Semestre\TALLER DE SISTEMAS I\Proyecto\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+=======
+CRITICAL - 2022-05-15 17:59:42 --> Invalid file: DashboardSCM.php
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('DashboardSCM.ph...')
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('DashboardSCM', Array, true)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\Products.php(10): view('DashboardSCM')
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Products->index()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-05-15 17:59:58 --> Invalid file: DashboardSCM.php
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('DashboardSCM.ph...')
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('DashboardSCM', Array, true)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\Products.php(10): view('DashboardSCM')
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Products->index()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+>>>>>>> 4c6aa0c71d56a161c46c7545ea9d98994ac985fb
 #7 {main}

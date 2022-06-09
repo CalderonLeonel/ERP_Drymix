@@ -17,6 +17,8 @@ INSERT INTO Charge(chargeName, accessLevel) VALUES('Gerente departamental',3);
 SELECT * FROM charge;
 
 INSERT INTO Employee(name,secondSurname,surname, email, bithdate, employeeCode,ci, idDepartment, idCharge) VALUES('Super','User','SUDO','admin@prueba.com','2021-02-02','SUDO-9304','3423421', 1,1);
+INSERT INTO employee(`idEmployee`,name,`secondSurname`,surname,email,bithdate,department,`employeeCode`,ci,`idCharge`,`idArea`) VALUES(1,'PEPE','PEPE','PEPE','PEPE@gmail.com','1981-03-04','1','CEB158','7548126',1,1);
+INSERT INTO `user`(`idUser`,`userName`,`userPassword`) VALUES(1,'Pep150','Pep150');
 INSERT INTO User(idUser, userName, userPassword) VALUES(2,'sudo','sudo');
 SELECT * FROM employee;
 SELECT * FROM user;

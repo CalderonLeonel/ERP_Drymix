@@ -30,56 +30,33 @@
                 <div class="d-sm-flex align-items-center justify-content-between border-bottom">
                   <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item">
-                      <a class="nav-link" id="main-tab" data-bs-toggle="tab" href="#" role="tab" aria-selected="false">Adquisciones</a>
+                      <a class="nav-link active" id="main-tab" data-bs-toggle="tab" href="<?php echo base_url('AcquisitionController')?>" role="tab" aria-selected="true">Panel de Adquisiciones</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" id="material-list-tab" data-bs-toggle="tab" href="#" role="tab" aria-selected="false">Lista de Materiales</a>
+                      <a class="nav-link" id="main-tab" data-bs-toggle="tab" href="<?php echo base_url('AcquisitionController/list')?>" role="tab" aria-selected="false">Lista de Adquisiciones</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" id="provider-list-tab" data-bs-toggle="tab" href="#" role="tab" aria-selected="false">Lista de Proveedores</a>
+                    <a class="nav-link" id="main-tab" data-bs-toggle="tab" href="<?php echo base_url('ProviderController/list')?>" role="tab" aria-selected="false">Pagina Principal de Provedores</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" id="material-list-tab" data-bs-toggle="tab" href="#" role="tab" aria-selected="false">Registro de Adquisiciones</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="material-list-tab" data-bs-toggle="tab" href="#" role="tab" aria-selected="false">Solicitud de Adquisiciones</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" id="material-list-tab" data-bs-toggle="tab" href="#" role="tab" aria-selected="false">Lista de Solicitudes</a>
+                      <a class="nav-link" id="material-list-tab" data-bs-toggle="tab" href="<?php echo base_url('AcquisitionController/create')?>" role="tab" aria-selected="false">Crear Adquisicion</a>
                     </li>
                   </ul>
                 </div>
                 <div class="tab-content tab-content-basic">
                   <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview"> 
-                   
-                    <div class="row">
-                      <div class="col-lg-4 d-flex flex-column">
+                  <div class="row">             
+                  <div class="col-lg-4 d-flex flex-column">
                           <div class="col-12 col-lg-4 col-lg-12 grid-margin stretch-card">
                             <div class="card card-rounded">
                               <div class="card-body">
                                 <div class="d-sm-flex justify-content-between align-items-start">                             
                                   <div class="row-lg">
                                   <div class="col-12">
-                                   <h2 class="card-title card-title-dash">Adquirir Material</h2>
-                                   <h5 class="card-subtitle card-subtitle-dash">Adquiera Materiales para Drymix</h5>
-                                   <button type="button" class="btn btn-success btn-rounded btn-lg text-light">Hacer Una Adquisición</button>
-                                  </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                      </div>
-                      <div class="col-lg-6 d-flex flex-column">
-                          <div class="col-12 col-lg-4 col-lg-12 grid-margin stretch-card">
-                            <div class="card card-rounded">
-                              <div class="card-body">
-                                <div class="d-sm-flex justify-content-between align-items-start">                             
-                                  <div class="row-lg">
-                                  <div class="col-12">
-                                   <h2 class="card-title card-title-dash">Perfil</h2>
-                                   <h5 class="card-subtitle card-subtitle-dash">Nombre Usuario</h5>
-                                   <button type="button" class="btn btn-primary btn-rounded btn-lg text-light">Ver Perfil</button>
+                                   <h2 class="card-title card-title-dash">Ver la Lista de Proveedores</h2>
+                                   <br>
+                                   <br>
+                                   <a href="<?php echo base_url('ProviderController/list')?>" class="btn btn-primary btn-rounded btn-lg text-light">Lista de Proveedores</a>
                                   </div>
                                   </div>
                                 </div>
@@ -87,15 +64,34 @@
                             </div>
                           </div>   
                       </div>
-                      <div class="col-lg-2 d-flex flex-column">
+                      <div class="col-lg-4 d-flex flex-column">
                           <div class="col-12 col-lg-4 col-lg-12 grid-margin stretch-card">
-                            <div class="card card-rounded bg-primary">
+                            <div class="card card-rounded">
                               <div class="card-body">
-                              <h4 class="card-title card-title-dash text-light">Volver a la Pagina Principal</h4>
                                 <div class="d-sm-flex justify-content-between align-items-start">                             
                                   <div class="row-lg">
                                   <div class="col-12">
-                                   <a href="<?php echo site_url('home') ?>" class="hidden text-light stretched-link"></a>
+                                   <h2 class="card-title card-title-dash">Registrar adquisicion</h2>
+                                   <br>
+                                   <br>
+                                   <a href="<?php echo base_url('AcquisitionController/create')?>" class="btn btn-success btn-rounded btn-lg text-light">Registrar adquisicion</a>
+                                  </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 d-flex flex-column">
+                          <div class="col-12 col-lg-4 col-lg-12 grid-margin stretch-card">
+                            <div class="card card-rounded bg-primary">
+                              <div class="card-body">
+                              <i class=" mdi mdi-home mdi-48px text-light"></i>
+                              <h4 class="card-title card-title-dash text-light"> Volver a la Pagina Principal </h4>
+                                <div class="d-sm-flex justify-content-between align-items-start">                             
+                                  <div class="row-lg">
+                                  <div class="col-12">
+                                   <a href="<?php echo base_url('Home')?>" class="hidden text-light stretched-link"></a>
                                   </div>
                                   </div>
                                 </div>
@@ -110,139 +106,83 @@
                           <div class="col-12 grid-margin stretch-card">
                             <div class="card card-rounded">
                               <div class="card-body">
-                                <div class="d-sm-flex justify-content-between align-items-start">
-                                  <div>
-                                    <h4 class="card-title card-title-dash">Listado de Adquisiciones</h4>
-                                   <p class="card-subtitle card-subtitle-dash">Tiene 3 adquisiciones <span class="text-success">completadas</span></p>
-                                   <p class="card-subtitle card-subtitle-dash">Tiene 5 adquisiciones <span class="text-warning"> en curso</span></p>
-                                   <p class="card-subtitle card-subtitle-dash">Tiene 2 adquisiciones <span class="text-primary">pendientes</span></p>
-                                   <p class="card-subtitle card-subtitle-dash">Tiene 2 adquisiciones <span class="text-danger">canceladas</span></p>
-                                  </div>
-                                  <div>
-                                    <button class="btn btn-primary btn-lg text-white mb-0 me-0" type="button"><i class="mdi mdi-account-plus"></i>Ver Listado Completo</button>
-                                  </div>
+                                <div class="d-sm-flex justify-content-between align-items-start">                              
                                 </div>
                                 <div class="table-responsive  mt-1">
                                   <table class="table select-table">
                                     <thead>
                                       <tr>
-                                        <th>
-                                          <div class="form-check form-check-flat mt-0">
-                                            <label class="form-check-label">
-                                              <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
-                                          </div>
-                                        </th>
+                                        <th>Id</th>
                                         <th>Proveedor</th>
-                                        <th>Producto</th>
-                                        <th>Status</th>
+                                        <th>Nombre de Solicitud</th>
+                                        <th>Fecha</th>
+                                        <th>Estado</th>
+                                        <th>Estado</th>
                                       </tr>
                                     </thead>
                                     <tbody>
+                                    <?php foreach($table as $data):?>
                                       <tr>
+                                     
                                         <td>
-                                          <div class="form-check form-check-flat mt-0">
-                                            <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
-                                          </div>
-                                        </td>
-                                        <td>
-                                          <div class="d-flex ">
-                                            <div>
-                                              <h6>Brandon Washington</h6>
-                                              <p>Head admin</p>
-                                            </div>
-                                          </div>
-                                        </td>
-                                        <td>
-                                          <h6>Company name 1</h6>
-                                          <p>company type</p>
-                                        </td>
-                                        <td><div class="badge badge-opacity-warning">In progress</div></td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                          <div class="form-check form-check-flat mt-0">
-                                            <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
-                                          </div>
+                                          <h5><?= $data['idAdquisitionQuote'];?></h5> 
                                         </td>
                                         <td>
                                           <div class="d-flex">
                                             <div>
-                                              <h6>Laura Brooks</h6>
-                                              <p>Head admin</p>
+                                              <?php 
+                                              foreach($provider as $data1):
+                                              if($data['idProvider'] == $data1['idProvider']){
+                                                ?> <h5><?= $data1['providerName'];?></h5> <?php
+                                              }
+                                              endforeach;
+                                              ?>
+                                              <h6>Solicitado Por: NombreUsuario</h6>                                            
                                             </div>
                                           </div>
                                         </td>
                                         <td>
-                                          <h6>Company name 1</h6>
-                                          <p>company type</p>
-                                        </td>
-                                        <td><div class="badge badge-opacity-warning">In progress</div></td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                          <div class="form-check form-check-flat mt-0">
-                                            <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
-                                          </div>
+                                          <h5><?= $data['name'];?></h5>                                         
                                         </td>
                                         <td>
-                                          <div class="d-flex">
-                                            <div>
-                                              <h6>Wayne Murphy</h6>
-                                              <p>Head admin</p>
+                                          <h5><?= $data['createDate'];?></h5> 
+                                        </td>
+                                        <td>                                                                                     
+                                                  <?php 
+                                                    switch ( $data['quoteState']) {
+                                                      case 0:
+                                                        ?><h5>Cancelado</h5><?php 
+                                                        break;
+                                                      case 1:
+                                                        ?> <h5>Pendiente</h5><?php 
+                                                        break;
+                                                      case 2:
+                                                        ?>< <h5>En Proceso</h5><?php 
+                                                        break;
+                                                      case 3:
+                                                        ?><h5>Completado</h5><?php 
+                                                        break;
+                                                      default:
+                                                      ?><h5>Cancelado</h5><?php 
+                                                    }                                               
+                                                    ?>                                                
+                                        </td>
+                                        <td>
+                                          <form method="post" action="<?php echo site_url('AcquisitionController/edit')?>" >
+                                            <div class="form-group">
+                                              <input type="hidden" name="idAdquisitionQuote" id="idAdquisitionQuote" value="<?= $data['idAdquisitionQuote'];?>">
+                                              <input type="submit" class="btn btn-primary text-light" value="Editar">
                                             </div>
-                                          </div>
-                                        </td>
-                                        <td>
-                                          <h6>Company name 1</h6>
-                                          <p>company type</p>
-                                        </td>
-                                        <td><div class="badge badge-opacity-warning">In progress</div></td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                          <div class="form-check form-check-flat mt-0">
-                                            <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
-                                          </div>
-                                        </td>
-                                        <td>
-                                          <div class="d-flex">
-                                            <div>
-                                              <h6>Matthew Bailey</h6>
-                                              <p>Head admin</p>
+                                          </form>   
+                                          <form method="post" action="<?php echo site_url('AcquisitionController/DeleteAcquisition')?>" >
+                                            <div class="form-group">
+                                            <input type="hidden" name="idAdquisitionQuote" id="idAdquisitionQuote" value="<?= $data['idAdquisitionQuote'];?>">
+                                              <input type="submit" class="btn btn-danger text-light" value="Eliminar">
                                             </div>
-                                          </div>
+                                          </form>                                       
                                         </td>
-                                        <td>
-                                          <h6>Company name 1</h6>
-                                          <p>company type</p>
-                                        </td>
-                                        <td><div class="badge badge-opacity-danger">Pending</div></td>
-                                      </tr>
-                                      <tr>
-                                        <td>
-                                          <div class="form-check form-check-flat mt-0">
-                                            <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
-                                          </div>
-                                        </td>
-                                        <td>
-                                          <div class="d-flex">
-                                            <div>
-                                              <h6>Katherine Butler</h6>
-                                              <p>Head admin</p>
-                                            </div>
-                                          </div>
-                                        </td>
-                                        <td>
-                                          <h6>Company name 1</h6>
-                                          <p>company type</p>
-                                        </td>
-                                        <td><div class="badge badge-opacity-success">Completed</div></td>
-                                      </tr>
+                                      </tr>  
+                                      <?php endforeach;?>                                           
                                     </tbody>
                                   </table>
                                 </div>
