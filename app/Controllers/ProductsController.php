@@ -15,8 +15,9 @@ class ProductsController extends BaseController{
         
         return view('SCM/DashboardSCM');
     }
-//Controladores para la tabla Product
-    public function createProduct()
+
+    //Controladores para la tabla Product
+    public function CreateProduct()
     {
         $lineModel = new LineModel();
         $formatModel = new FormatModel();
@@ -28,7 +29,27 @@ class ProductsController extends BaseController{
         return view('SCM/NewProduct' ,  $data);
     }
 
-    public function updateProducts()
+    public function InsertProduct()
+    {
+        $session = session();
+        //if ($session->has('role') && $session->get('role') == '1') {
+            $productModel = new ProducModel();
+            $idLine = $this->request->getPost('idLine');
+            $idFormat = $this->request->getPost('idFormat');
+            $nameProduct = $this->request->getPost('productName');
+            
+            $parallelModel->InsertParallel($name, $id);
+            $url = base_url('public/grade');
+            return redirect()->to($url);
+        /*} else {
+            $url = base_url('public/');
+            return redirect()->to($url);
+        }*/
+        //return $this->response->redirect(site_url('/users-list'));
+    }
+
+
+    public function UpdateProducts()
     {
         $lineModel = new LineModel();
         $formatModel = new FormatModel();
@@ -43,7 +64,7 @@ class ProductsController extends BaseController{
         return view('SCM/UpdateProduct', $data);
     }
 
-    public function deleteProducts()
+    public function DeleteProducts()
     {
         $productModel = new ProductModel();
 
@@ -59,19 +80,7 @@ class ProductsController extends BaseController{
         return view('SCM/DeleteProduct');
     }
 
-    public function InsertProduct()
-    {
-        $productModel = new ProductModel();
-
-        $data = [
-            'productName' => $this->request->getVar('productName'),
-            'IdLine'  => $this->request->getVar('idLine'),
-            'IdFormat' => $this->request->getVar('idFormat')
-        ];
-        $productModel->InsertProduct($data);
-        //return $this->response->redirect(site_url('/users-list'));
-        return view('SCM/DashboardSCM');
-    }
+    
 
     public function UpdateProduct()
     {
@@ -114,7 +123,7 @@ class ProductsController extends BaseController{
 
     //Controladores para la tabla ProductType
 
-    public function createProductType()
+    public function CreateProductType()
     {
         $lineModel = new LineModel();
 
@@ -131,7 +140,7 @@ class ProductsController extends BaseController{
         return view('SCM/NewProductType' ,  $data);
     }
 
-    public function updateProductsType()
+    public function UpdateProductsType()
     {
         $lineModel = new LineModel();
         $id = [
@@ -145,7 +154,7 @@ class ProductsController extends BaseController{
         return view('SCM/UpdateProduct', $data);
     }
 
-    public function deleteProductsType()
+    public function DeleteProductsType()
     {
         $productTypeModel = new ProductTypeModel();
 
