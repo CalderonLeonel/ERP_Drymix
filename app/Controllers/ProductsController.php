@@ -87,12 +87,12 @@ class ProductsController extends BaseController{
         return view('SCM/DashboardSCM');
     }
 
-    public function DeleteProduct()
+    public function DeleteProduct($idProduct, $state)
     {
         $productModel = new ProductModel();
         $id = ['idProduct' => $this->request->getVar('idProduct')];
         
-        $productModel->deleteProduct($data , $id);
+        $productModel->deleteProduct();
         //return $this->response->redirect(site_url('/users-list'));
         return view('SCM/DashboardSCM');
     }
