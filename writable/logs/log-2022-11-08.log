@@ -1,0 +1,276 @@
+CRITICAL - 2022-11-08 08:25:18 --> Undefined property: stdClass::$idProduct
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\Product\ProductType\ListTypes.php(28): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 28)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/Product...', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductTypeController.php(48): view('Product/Product...', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductTypeController->ListTypes()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductTypeController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-08 10:05:30 --> Invalid file: Product/Lines/ListLines.php
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Product/Lines/L...')
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/Lines/L...', Array, true)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\LinesController.php(44): view('Product/Lines/L...', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\LinesController->ListLines()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LinesController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-08 19:15:39 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(24): CodeIgniter\Model->__call('SelectProductTy...', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-08 20:16:25 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(24): CodeIgniter\Model->__call('SelectProductTy...', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-08 20:16:56 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(24): CodeIgniter\Model->__call('SelectProductTy...', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-08 20:20:18 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(24): CodeIgniter\Model->__call('SelectProductTy...', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-08 20:24:53 --> Undefined property: stdClass::$productTypeName
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\Product\Line\ListLines.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 25)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/Line/Li...', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\LinesController.php(44): view('Product/Line/Li...', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\LinesController->ListLines()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LinesController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-08 20:26:46 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(24): CodeIgniter\Model->__call('SelectProductTy...', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-08 20:31:34 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(24): CodeIgniter\Model->__call('SelectProductTy...', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-08 20:35:13 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(24): CodeIgniter\Model->__call('SelectProductTy...', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-08 20:35:18 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(24): CodeIgniter\Model->__call('SelectProductTy...', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-08 20:35:30 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(24): CodeIgniter\Model->__call('SelectProductTy...', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-08 20:35:50 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(24): CodeIgniter\Model->__call('SelectProductTy...', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-08 20:36:40 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(24): CodeIgniter\Model->__call('SelectProductTy...', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-08 20:40:06 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(24): CodeIgniter\Model->__call('SelectProductTy...', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-08 20:43:09 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(24): CodeIgniter\Model->__call('SelectProductTy...', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-08 20:43:22 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(24): CodeIgniter\Model->__call('SelectProductTy...', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-08 20:43:53 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(24): CodeIgniter\Model->__call('SelectProductTy...', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-08 20:43:58 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(24): CodeIgniter\Model->__call('SelectProductTy...', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-08 20:51:00 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(24): CodeIgniter\Model->__call('SelectProductTy...', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-08 20:58:38 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(24): CodeIgniter\Model->__call('SelectProductTy...', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-08 21:00:58 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(24): CodeIgniter\Model->__call('SelectProductTy...', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-08 21:02:15 --> Undefined variable $data
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductTypeController.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 24)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductTypeController->RegisterProductType()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductTypeController))
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-08 21:03:47 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(24): CodeIgniter\Model->__call('SelectProductTy...', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-08 21:10:34 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(24): CodeIgniter\Model->__call('SelectProductTy...', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-08 21:11:52 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(24): CodeIgniter\Model->__call('SelectProductTy...', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-08 21:13:06 --> Undefined variable $types
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\Product\NewProduct.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/NewProd...', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(28): view('Product/NewProd...')
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-08 21:16:09 --> Undefined variable $types
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\Product\NewProduct.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 20)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/NewProd...', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(28): view('Product/NewProd...')
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-08 21:16:38 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(24): CodeIgniter\Model->__call('SelectProductTy...', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-08 21:16:56 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(24): CodeIgniter\Model->__call('SelectProductTy...', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

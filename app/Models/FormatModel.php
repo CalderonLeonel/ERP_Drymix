@@ -4,12 +4,6 @@ namespace App\Models;
 use CodeIgniter\Model;
 
 class FormatModel extends Model{
-    protected $table      = 'Format';
-    // Uncomment below if you want add primary key
-    protected $primaryKey = 'idFormat';
-    protected $allowedFields = ['formatName',  'state' ];
-    protected $createdField  = 'createDate';
-    protected $updatedField  = 'updateDate';
 
     public function ListFormats($idFormat)
     {
@@ -17,5 +11,20 @@ class FormatModel extends Model{
         $this->from('Format');
         $this->where('idFormat',$idFormat);
         $this->get();
+    }
+
+    public function SelectFormat ()
+    {
+        $builder = $this->db->table('Format');
+        $query = $builder->select('*');
+        $query = $builder->get();
+        return $query->getResult();
+    }
+
+    public function DeleteFormat($idFormat){
+        $builder = $this->db->table('Format');
+        $builder->set('state', 0);
+        $builder->where('idFormat',$idFormat);
+        return $builder->update();
     }
 }

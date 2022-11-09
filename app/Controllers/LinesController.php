@@ -3,109 +3,49 @@ namespace App\Controllers;
 
 use CodeIgniter\Controller;
 use App\Models\LineModel;
+
 class LinesController extends BaseController{
 
-
-    //Controladores para la tabla Product
-    public function createProduct()
+    public function index()
     {
-        $lineModel = new LineModel();
+        echo view('Import/header');
+        echo view('Product/DashboardSCM');
+        echo view('Import/footer');
+    }
 
-        $data['lines'] = $lineModel->orderBy('idLine')->findAll();
-        //$formatModel = new FormatModel();
-        //$lineModel = new LineModel();
-        //$idLine = $_POST['idLine'];
-        //$lineList = $this->LineModel->ListLines();
-        //$idFormat = $_POST['idFormat'];
-        //$formatList = $this->FormatModel->ListFormats();
-        //$dataLines ['Lines'] = $lineList;
-        //$dataFormat ['Format'] = $formatList;
+    public function RegisterLine(){
+
+        echo view('Import/header');
+        echo view('Product/Line/NewLine');
+        echo view('Import/footer');
+    }
+
+    public function InsertLine(){
         
-        return view('SCM/NewLine' ,  $data);
-    }
-
-    public function updateProducts()
-    {
-        $lineModel = new LineModel();
-        $id = [
-            'idLine' => $this->request->getVar('idLine')
-        ];
-
-
-        //$data['list'] = $productTypeModel->readProductsTypes();
-        $data['table'] =$lineModel ->readItem($id);
-        return view('SCM/UpdateProduct', $data);
-    }
-
-    public function deleteProducts()
-    {
-        $lineModel = new LineModel();
-
-        $id = [
-            'idModel' => $this->request->getVar('idModel')
-        ];
-        $data = [   
-            'state' => 0
-        ];
-        $lineModel->deleteProduct($id,$data);
-        $lineModel->readProducts();
-        $data['table'] = $lineModel->readProducts();
-        return view('SCM/DeleteProduct');
-    }
-
-    public function InsertProduct()
-    {
         $lineModel = new LineModel();
 
         $data = [
-            'productName' => $this->request->getVar('productName'),
-            'idLine'  => $this->request->getVar('idLine'),
-            'idFormat' => $this->request->getVar('idFormat')
+            'lineName' => $this->request->getVar('lineName')
         ];
+
         $lineModel->InsertLine($data);
-        //return $this->response->redirect(site_url('/users-list'));
-        return view('SCM/DashboardSCM');
+
+        $table['table'] = $lineModel->SelectProducts();
+        echo view('Imports/header');
+        echo view('Product/Line/ListLines',$table);
+        echo view('Import/footer');
     }
 
-    public function UpdateProduct()
-    {
+    public function ListLines(){
         $lineModel = new LineModel();
-        $id = ['idProduct' => $this->request->getVar('idProduct')];
-        $data = [
-            'nameProduct' => $this->request->getVar('nameProduct'),
-            'IdLine'  => $this->request->getVar('lineProduct'),
-            'IdFormat' => $this->request->getVar('formatProduct')
-        ];
-        $lineModel->updateProduct($data, $id);
-        //return $this->response->redirect(site_url('/users-list'));
-        return view('SCM/DashboardSCM');
+
+        $table['table'] = $lineModel->SelectLines();
+        echo view('Import/header');
+        echo view('Product/Line/ListLines',$table);  
+        echo view('Import/header');  
     }
 
-    public function DeleteProduct()
-    {
-        $lineModel = new LineModel();
-        $id = ['idProduct' => $this->request->getVar('idProduct')];
-        $data = [
-            'nameProduct' => $this->request->getVar('nameProduct'),
-            'IdLine'  => $this->request->getVar('lineProduct'),
-            'IdFormat' => $this->request->getVar('formatProduct')
-        ];
-        $lineModel->deleteProduct($data , $id);
-        //return $this->response->redirect(site_url('/users-list'));
-        return view('SCM/DashboardSCM');
-    }
+    public function InfoProduct($idProduct){
 
-    public function ReadProduct()
-    {
-        $lineModel = new LineModel();
-
-        $data = [
-            'nameProduct' => $this->request->getVar('nameProduct'),
-            'IdLine'  => $this->request->getVar('lineProduct'),
-            'IdFormat' => $this->request->getVar('formatProduct')
-        ];
-        $lineModel->readProducts($data);
-        //return $this->response->redirect(site_url('/users-list'));
-        return view('SCM/DashboardSCM');
     }
 }

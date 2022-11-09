@@ -34,7 +34,7 @@ class Database extends Config
         'DSN'      => '',
         'hostname' => 'localhost',
         'username' => 'root',
-        'password' => 'DeveloperLover69',
+        'password' => 'developerlover69',
         'database' => 'erp_dry_db',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',

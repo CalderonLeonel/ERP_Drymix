@@ -12,218 +12,87 @@ class ProductsController extends BaseController{
 
     public function index()
     {
-        
-        return view('SCM/DashboardSCM');
+        echo view('Import/header');
+        echo view('Product/DashboardSCM');
+        echo view('Import/footer');
     }
 
-    //Controladores para la tabla Product
-    public function CreateProduct()
-    {
-        $lineModel = new LineModel();
+    public function RegisterProduct(){
+        $productTypesModel = new ProductTypeModel();
         $formatModel = new FormatModel();
 
-        $data['lines'] = $lineModel->orderBy('idLine')->findAll();
-        $data['format'] = $formatModel->orderBy('idFormat')->findAll();
-       
+        $data['types'] = $productTypesModel->SelectProductTypes();
+        $data['format'] = $formatModel->SelectFormat();
+
+        echo view('Import/header');
+        echo view('Product/NewProduct', $data);
+        echo view('Import/footer');
+    }
+
+    public function InsertProduct(){
         
-        return view('SCM/NewProduct' ,  $data);
-    }
-
-    public function InsertProduct()
-    {
-        $session = session();
-        //if ($session->has('role') && $session->get('role') == '1') {
-            $productModel = new ProducModel();
-            $idLine = $this->request->getPost('idLine');
-            $idFormat = $this->request->getPost('idFormat');
-            $nameProduct = $this->request->getPost('productName');
-            
-            $parallelModel->InsertParallel($name, $id);
-            $url = base_url('public/grade');
-            return redirect()->to($url);
-        /*} else {
-            $url = base_url('public/');
-            return redirect()->to($url);
-        }*/
-        //return $this->response->redirect(site_url('/users-list'));
-    }
-
-
-    public function UpdateProducts()
-    {
-        $lineModel = new LineModel();
+        $productModel = new ProductModel();
+        $productTypesModel = new ProductTypeModel();
         $formatModel = new FormatModel();
-        $id = [
-            'IdProduct' => $this->request->getVar('idItem')
-        ];
-
-        $productTypeModel = new ProductTypeModel();
-
-        $data['list'] = $productTypeModel->readProductsTypes();
-        $data['table'] =$lineModel ->readItem($id);
-        return view('SCM/UpdateProduct', $data);
-    }
-
-    public function DeleteProducts()
-    {
-        $productModel = new ProductModel();
-
-        $id = [
-            'idItem' => $this->request->getVar('idItem')
-        ];
-        $data = [   
-            'state' => 0
-        ];
-        $productModel->deleteProduct($id,$data);
-        $productModel->readProducts();
-        $data['table'] = $productModel->readProducts();
-        return view('SCM/DeleteProduct');
-    }
-
-    
-
-    public function UpdateProduct()
-    {
-        $productModel = new ProductModel();
-        $id = ['idProduct' => $this->request->getVar('idProduct')];
-        $data = [
-            'nameProduct' => $this->request->getVar('nameProduct'),
-            'IdLine'  => $this->request->getVar('lineProduct'),
-            'IdFormat' => $this->request->getVar('formatProduct')
-        ];
-        $productModel->updateProduct($data, $id);
-        //return $this->response->redirect(site_url('/users-list'));
-        return view('SCM/DashboardSCM');
-    }
-
-    public function DeleteProduct($idProduct, $state)
-    {
-        $productModel = new ProductModel();
-        $id = ['idProduct' => $this->request->getVar('idProduct')];
-        
-        $productModel->deleteProduct();
-        //return $this->response->redirect(site_url('/users-list'));
-        return view('SCM/DashboardSCM');
-    }
-
-    public function ReadProduct()
-    {
-        $productModel = new ProductModel();
 
         $data = [
-            'nameProduct' => $this->request->getVar('nameProduct'),
-            'IdLine'  => $this->request->getVar('lineProduct'),
-            'IdFormat' => $this->request->getVar('formatProduct')
-        ];
-        $productModel->readProducts($data);
-        //return $this->response->redirect(site_url('/users-list'));
-        return view('SCM/DashboardSCM');
-    }
-
-
-    //Controladores para la tabla ProductType
-
-    public function CreateProductType()
-    {
-        $lineModel = new LineModel();
-
-        $data['lines'] = $lineModel->orderBy('idLine')->findAll();
-        //$formatModel = new FormatModel();
-        //$lineModel = new LineModel();
-        //$idLine = $_POST['idLine'];
-        //$lineList = $this->LineModel->ListLines();
-        //$idFormat = $_POST['idFormat'];
-        //$formatList = $this->FormatModel->ListFormats();
-        //$dataLines ['Lines'] = $lineList;
-        //$dataFormat ['Format'] = $formatList;
-        
-        return view('SCM/NewProductType' ,  $data);
-    }
-
-    public function UpdateProductsType()
-    {
-        $lineModel = new LineModel();
-        $id = [
-            'IdProduct' => $this->request->getVar('idItem')
-        ];
-
-        $productTypeModel = new ProductTypeModel();
-
-        $data['list'] = $productTypeModel->readProductsTypes();
-        $data['table'] =$lineModel ->readItem($id);
-        return view('SCM/UpdateProduct', $data);
-    }
-
-    public function DeleteProductsType()
-    {
-        $productTypeModel = new ProductTypeModel();
-
-        $id = [
-            'idItem' => $this->request->getVar('idItem')
-        ];
-        $data = [   
-            'state' => 0
-        ];
-        $productTypeModel->deleteProduct($id,$data);
-        $productTypeModel->readProducts();
-        $data['table'] = $productTypeModel->readProducts();
-        return view('SCM/DeleteProduct', $data);
-    }
-
-    public function InsertProductType()
-    {
-        $productTypeModel = new ProductTypeModel();
-
-        $data = [
+            //'codProduct' => $this->request->getPost('codProduct'),
             'productName' => $this->request->getVar('productName'),
-            'IdLine'  => $this->request->getVar('idLine'),
-            'IdFormat' => $this->request->getVar('idFormat')
+            //'lineProduct' => $this->request->getPost('idLine'),
+            'idProductType' => $this->request->getVar('idTypes'),
+            'idFormat' => $this->request->getVar('idFormat')
         ];
-        $productTypeModel->createProductType($data);
-        //return $this->response->redirect(site_url('/users-list'));
-        return view('SCM/DashboardSCM');
+
+        $productModel->InsertProduct($data);
+        $table['types'] = $productTypesModel->SelectProductTypes();
+        $table['format'] = $formatModel->SelectFormat();
+
+        $table['table'] = $productModel->SelectProducts();
+        echo view('Import/header');
+        echo view('Product/ListProducts',$table);
+        echo view('Import/Footer');
     }
 
-    public function UpdateProductType()
-    {
-        $productTypeModel = new ProductTypeModel();
-        $id = ['idProductType' => $this->request->getVar('idProductType')];
-        $data = [
-            'nameProduct' => $this->request->getVar('nameProduct'),
-            'IdLine'  => $this->request->getVar('lineProduct'),
-            'IdFormat' => $this->request->getVar('formatProduct')
-        ];
-        $productTypeModel->updateProductType($data, $id);
-        //return $this->response->redirect(site_url('/users-list'));
-        return view('SCM/DashboardSCM');
+    public function ListProducts(){
+        $productModel = new ProductModel();
+        $productTypesModel = new ProductTypeModel();
+        $formatModel = new FormatModel();
+
+        $table['types'] = $productTypesModel->SelectProductTypes();
+        $table['format'] = $formatModel->SelectFormat();
+
+        $table['table'] = $productModel->SelectProducts();
+        echo view('Import/header');
+        echo view('Product/ListProducts',$table);  
+        echo view('Import/footer');  
     }
 
-    public function DeleteProductType()
-    {
-        $productTypeModel = new ProductTypeModel();
-        $id = ['idProductType' => $this->request->getVar('idProductType')];
-        $data = [
-            'nameProduct' => $this->request->getVar('nameProduct'),
-            'IdLine'  => $this->request->getVar('lineProduct'),
-            'IdFormat' => $this->request->getVar('formatProduct')
-        ];
-        $productTypeModel->deleteProductType($data, $id);
-        //return $this->response->redirect(site_url('/users-list'));
-        return view('SCM/DashboardSCM');
-    }
-
-    public function ReadProductType()
-    {
-        $productTypeModel = new ProductTypeModel();
+    public function UpdateProduct(){
+        $productModel = new ProductModel();
+        $productTypesModel = new ProductTypeModel();
+        $formatModel = new FormatModel();
+        
+        $idProduct = $this->request->getPost('idProduct');
 
         $data = [
-            'nameProduct' => $this->request->getVar('nameProduct'),
-            'IdLine'  => $this->request->getVar('lineProduct'),
-            'IdFormat' => $this->request->getVar('formatProduct')
+            'productName' => $this->request->getPost('productName'),
+            //'lineProduct' => $this->request->getPost('idLine'),
+            'idProductType' => 3,
+            'idFormat' => 1
         ];
-        $productTypeModel->readProductsType($data);
-        //return $this->response->redirect(site_url('/users-list'));
-        return view('SCM/DashboardSCM');
+
+        $productModel->UpdateProduct($data, $idProduct);
+
+        $table['types'] = $productTypesModel->SelectProductTypes();
+        $table['format'] = $formatModel->SelectFormat();
+
+        $table['table'] = $productModel->SelectProducts();
+        echo view('Import/header');
+        echo view('Product/ListProducts',$table);  
+        echo view('Import/footer');  
     }
 
+    public function InfoProduct($idProduct){
+
+    }
 }

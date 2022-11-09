@@ -1,0 +1,188 @@
+CRITICAL - 2022-11-09 08:54:34 --> Undefined variable $types
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\Product\ListProducts.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 84)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/ListPro...', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(57): view('Product/ListPro...', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->ListProducts()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-09 08:56:20 --> Undefined variable $types
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\Product\ListProducts.php(84): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 84)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/ListPro...', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(48): view('Product/ListPro...', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-09 09:38:17 --> Undefined property: stdClass::$productName
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\Product\ListProducts.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/ListPro...', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(52): view('Product/ListPro...', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-09 09:43:10 --> Undefined property: stdClass::$productName
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\Product\ListProducts.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/ListPro...', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(52): view('Product/ListPro...', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-09 09:43:46 --> Undefined variable $data
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\Product\ListProducts.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/ListPro...', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(52): view('Product/ListPro...', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-09 09:44:33 --> Undefined variable $data
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\Product\ListProducts.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/ListPro...', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(52): view('Product/ListPro...', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-09 09:44:55 --> Undefined property: stdClass::$productName
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\Product\ListProducts.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/ListPro...', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(52): view('Product/ListPro...', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-09 09:58:28 --> Undefined property: stdClass::$productName
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\Product\ListProducts.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/ListPro...', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(52): view('Product/ListPro...', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-09 10:05:18 --> Undefined property: stdClass::$productName
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\Product\ListProducts.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/ListPro...', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(52): view('Product/ListPro...', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-09 10:05:36 --> Undefined property: stdClass::$productName
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\Product\ListProducts.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/ListPro...', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(52): view('Product/ListPro...', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-09 10:05:39 --> Undefined property: stdClass::$productName
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\Product\ListProducts.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/ListPro...', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(52): view('Product/ListPro...', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-09 10:05:40 --> Undefined property: stdClass::$productName
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\Product\ListProducts.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/ListPro...', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(52): view('Product/ListPro...', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-09 10:05:48 --> Undefined property: stdClass::$productName
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\Product\ListProducts.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/ListPro...', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(66): view('Product/ListPro...', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->ListProducts()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-09 10:05:50 --> Undefined property: stdClass::$productName
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\Product\ListProducts.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/ListPro...', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(66): view('Product/ListPro...', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->ListProducts()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-09 10:06:28 --> Undefined property: stdClass::$productName
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\Product\ListProducts.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 137)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/ListPro...', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(66): view('Product/ListPro...', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->ListProducts()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-09 10:23:35 --> Undefined property: stdClass::$productID
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\Product\ListProducts.php(25): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 25)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/ListPro...', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(66): view('Product/ListPro...', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->ListProducts()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-11-09 10:58:38 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2022-11-09 10:58:38 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Models\ProductTypeModel.php(27): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(61): App\Models\ProductTypeModel->SelectProductTypes()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->ListProducts()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

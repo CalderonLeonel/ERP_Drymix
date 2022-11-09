@@ -2,38 +2,51 @@
 namespace App\Models;
 
 use CodeIgniter\Model;
+use CodeIgniter\Database\MySQLi\Builder;
+
 
 class ProductTypeModel extends Model{
-    protected $table      = 'ProductType';
-    // Uncomment below if you want add primary key
-    protected $primaryKey = 'idProductType';
-    protected $allowedFields = ['productTypeName',  'state'];
-    protected $createdField  = 'createDate';
-    protected $updatedField  = 'updateDate';
 
-/**
- * Metodo tu mama
- * 
- * @param int $var 
- */
-    public function readProductsType()
+    public function InsertProductType($data)
     {
-        return $this->findAll();
+        $builder = $this->db->table('ProductType');
+
+        $data = [
+            'productTypeName' => $data['typeName']
+        ];
+
+        $query = $builder->insert($data);
+
+        return $query;
     }
-    public function readProductType($id)
+
+    public function SelectProductTypes()
     {
-        return $this->find($id);
+        $builder = $this->db->table('ProductType');
+        $query = $builder->select('*');
+        $query = $builder->get();
+        return $query->getResult();
     }
-    public function createProductType($data)
+
+    public function UpdateProductType($data, $idProductType)
     {
-        return $this->insert($data);
+        $builder = $this->db->table('ProductType');
+
+        $data = [
+            'productTypeName' => $data["productTypeName"]
+        ];
+
+        $query = $builder->where('idProductType', $idProductType);
+        $query = $builder->update($data);
+
+        return $query;
     }
-    public function updateProductType($id,$data)
+    public function DeleteProductType ($idProductType)
     {
-        return $this->update($id,$data);
-    }
-    public function deleteProductType($id,$data)
-    {
-        return $this->update($id,$data);
+        $builder = $this->db->table('ProductType');
+        $builder->set('state', 0);
+        $builder->where('idProductType',$idProductType);
+        return $builder->update();
+
     }
 }

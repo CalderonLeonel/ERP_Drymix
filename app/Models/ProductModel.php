@@ -5,30 +5,12 @@ use CodeIgniter\Database\MySQLi\Builder;
 use CodeIgniter\Model;
 
 class ProductModel extends Model{
-    /*protected $table      = 'Product';
-    protected $primaryKey = 'idProduct';
-    protected $allowedFields = ['productName',  'state'];
-    protected $createdField  = 'createDate';
-    protected $updatedField  = 'updateDate';
-    // Uncomment below if you want add primary key
-    // protected $primaryKey = 'id';*/
 
-   
-    /**
-     * ---
-     * Select
-     * ---
-     * Returns parallel by id
-     * 
-     * @param int $id
-     */
-    public function SelectParallelById($id)
-    {
-        $builder = $this->db->table('parallel');
-        $builder->select("*");
-        $builder->where('parallel_id', $id);
-        $builder->where('state', 1);
-        $builder->orderBy('create_date');
+
+    public function SelectProducts(){
+        
+        $builder = $this->db->table('Product');
+        $query = $builder->select('*');
         $query = $builder->get();
         return $query->getResult();
     }
@@ -37,20 +19,39 @@ class ProductModel extends Model{
      * ---
      * Select
      * ---
-     * Returns parallels of code 
+     * Returns Product by id
      * 
-     * @param int $id
-     * Returns parallel that has the code
-     * 
-     * @param int $code
+     * @param int $idProduct
      */
-    public function SelectProductByCode($code)
+    public function SelectProductById($idProduct)
     {
-        $builder = $this->db->table('parallel');
+        $builder = $this->db->table('Product');
         $builder->select("*");
-        $builder->where('code', $code);
+        $builder->where('idProduct', $idProduct);
         $builder->where('state', 1);
-        $builder->orderBy('create_date', 'asc');
+        $builder->orderBy('createDate');
+        $query = $builder->get();
+        return $query->getResult();
+    }
+
+    
+    /**
+     * ---
+     * Select
+     * --- 
+     * 
+     * 
+     * @param int $idformat
+     * 
+     * Returns product by Format
+     */
+    public function SelectProductByFormat($idformat)
+    {
+        $builder = $this->db->table('Product');
+        $builder->select("*");
+        $builder->where('idformat', $idformat);
+        $builder->where('state', 1);
+        $builder->orderBy('createDate', 'asc');
         $query = $builder->get();
         return $query;
     }
@@ -59,42 +60,19 @@ class ProductModel extends Model{
      * ---
      * Select
      * ---
-     * Returns parallels of code 
+     * Returns product by ProductLine 
      * 
      * @param int $id
-     * Returns parallel that has the code
+     * Returns product by ProductLine
      * 
-     * @param int $code
      */
-    public function SelectProductByFormat($code)
+    public function SelectProductByLine($idLine)
     {
-        $builder = $this->db->table('parallel');
+        $builder = $this->db->table('line');
         $builder->select("*");
-        $builder->where('code', $code);
+        $builder->where('idLine', $idLine);
         $builder->where('state', 1);
-        $builder->orderBy('create_date', 'asc');
-        $query = $builder->get();
-        return $query;
-    }
-
-    /**
-     * ---
-     * Select
-     * ---
-     * Returns parallels of code 
-     * 
-     * @param int $id
-     * Returns parallel that has the code
-     * 
-     * @param int $code
-     */
-    public function SelectProductByProductLine($code)
-    {
-        $builder = $this->db->table('parallel');
-        $builder->select("*");
-        $builder->where('code', $code);
-        $builder->where('state', 1);
-        $builder->orderBy('create_date', 'asc');
+        $builder->orderBy('createDate', 'asc');
         $query = $builder->get();
         return $query;
     }
@@ -110,17 +88,15 @@ class ProductModel extends Model{
      * @param string $nameProduct
      * @param int $productTypeID
      * @param int $formatID
-     * @param int $lineID
      */
-    public function InsertProduct($nameProduct, $productTypeID, $formatID, $lineID)
+    public function InsertProduct($data)
     {
         $builder = $this->db->table('Product');
 
         $data = [
-            'nameProduct' => $name,
-            'productTypeID' => $gradeId,
-            'formatID' => $number,
-            'lineID' => $lineID
+            'productName' => $data['productName'],
+            'idProductType' => 1,
+            'idFormat' => 3
         ];
 
         $query = $builder->insert($data);
@@ -135,17 +111,30 @@ class ProductModel extends Model{
      * ---
      * Changes data for a Product
      * 
-     * @param int $id
-     * @param string $name
+     * @param int $idProduct
+     * @param string $nameProduct
      */
-    public function UpdateProduct($id, $name)
+    public function UpdateProduct($data, $idProduct)
     {
         $builder = $this->db->table('Product');
-        $builder->set('name', $name);
-        $builder->where('parallel_id', $id);
-        return $builder->update();
+        $data = [
+            'productName' => $data['productName'],
+            'idProductType' => 3,
+            'idFormat' => 1
+        ];
+        $builder->where('idProduct', $idProduct);
+
+        return $builder->update($data);
     }
 
+    public function DeleteProduct ($idProduct)
+    {
+        $builder = $this->db->table('Product');
+        $builder->set('state', 0);
+        $builder->where('idProductType',$idProduct);
+        return $builder->update();
+
+    }
    
 
 

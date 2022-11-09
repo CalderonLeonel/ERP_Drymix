@@ -31,7 +31,7 @@ class LineModel extends Model{
      * 
      */
 
-    public function InsertLine ()
+    public function InsertLine ($data)
     {
         $builder = $this->db->table('Line');
         $data = [
@@ -41,14 +41,18 @@ class LineModel extends Model{
 
     }
 
-    public function UpdateLine ()
+    public function UpdateLine($data, $idLine)
     {
         $builder = $this->db->table('Line');
-        $data = [
-            'LineName' => 'LineName'
-        ];
-        return $builder->update($data);
 
+        $data = [
+            'lineName' => $data["lineName"]
+        ];
+
+        $query = $builder->where('idLine', $idLine);
+        $query = $builder->update($data);
+
+        return $query;
     }
 
     public function SelectLines ()
@@ -63,10 +67,9 @@ class LineModel extends Model{
     public function DeleteLines ($idLine)
     {
         $builder = $this->db->table('Line');
-        $data = [
-            'idLine' => 'idLine'
-        ];
-        $builder->update($idLine, 0);
+        $builder->set('state', 0);
+        $builder->where('idLine',$idLine);
+        return $builder->update();
 
     }
 }

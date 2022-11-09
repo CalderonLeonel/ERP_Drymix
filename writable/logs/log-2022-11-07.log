@@ -1,0 +1,694 @@
+CRITICAL - 2022-11-07 08:14:46 --> Invalid file: inc/header.php
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('inc/header.php')
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('inc/header', Array, true)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(20): view('inc/header')
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-07 08:15:04 --> Undefined variable $types
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\SCM\NewProduct.php(282): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 282)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('SCM/NewProduct', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(21): view('SCM/NewProduct')
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-07 08:36:34 --> Undefined property: App\Controllers\ProductsController::$ProductTypeModel
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 20)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-07 08:38:04 --> Undefined property: App\Controllers\ProductsController::$ProductTypeModel
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 20)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+ERROR - 2022-11-07 08:40:39 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-11-07 08:40:39 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Models\ProductTypeModel.php(21): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(21): App\Models\ProductTypeModel->readProductsType()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-07 08:42:45 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-11-07 08:42:45 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Models\ProductTypeModel.php(21): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(21): App\Models\ProductTypeModel->readProductsType()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-07 08:42:46 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-11-07 08:42:46 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Models\ProductTypeModel.php(21): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(21): App\Models\ProductTypeModel->readProductsType()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-07 08:42:56 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2022-11-07 08:42:56 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(183): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\BaseModel.php(584): CodeIgniter\Model->doFindAll(0, 0)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Models\ProductTypeModel.php(21): CodeIgniter\BaseModel->findAll()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(21): App\Models\ProductTypeModel->readProductsType()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-07 08:44:28 --> Undefined variable $types
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\SCM\NewProduct.php(287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 287)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('SCM/NewProduct', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(24): view('SCM/NewProduct', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-07 08:46:41 --> Undefined variable $lines
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\SCM\NewProduct.php(302): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 302)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('SCM/NewProduct', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(24): view('SCM/NewProduct', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-07 08:48:29 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('SCM/NewProduct', Array, true)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(27): view('SCM/NewProduct', Array)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-07 08:52:06 --> Call to a member function getResult() on array
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('SCM/NewProduct', Array, true)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(27): view('SCM/NewProduct', Array)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-07 08:52:36 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('SCM/NewProduct', Array, true)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(27): view('SCM/NewProduct', Array)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-07 09:05:43 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('SCM/NewProduct', Array, true)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(27): view('SCM/NewProduct', Array)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-07 09:07:00 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('SCM/NewProduct', Array, true)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(27): view('SCM/NewProduct', Array)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-07 09:07:06 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('SCM/NewProduct', Array, true)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(27): view('SCM/NewProduct', Array)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-07 09:08:55 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('SCM/NewProduct', Array, true)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(27): view('SCM/NewProduct', Array)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-07 09:09:05 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('SCM/NewProduct', Array, true)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(27): view('SCM/NewProduct', Array)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-07 09:09:13 --> Undefined variable $format
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\SCM\NewProduct.php(317): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 317)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('SCM/NewProduct', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(27): view('SCM/NewProduct', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-07 09:14:46 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('SCM/NewProduct', Array, true)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(27): view('SCM/NewProduct', Array)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-07 09:17:34 --> Attempt to read property "idProductType" on array
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\SCM\NewProduct.php(290): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 290)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('SCM/NewProduct', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(27): view('SCM/NewProduct', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-07 09:20:26 --> Attempt to read property "idProductType" on array
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\SCM\NewProduct.php(290): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 290)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('SCM/NewProduct', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(29): view('SCM/NewProduct', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-07 09:21:51 --> Undefined array key 0
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\SCM\NewProduct.php(290): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 290)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('SCM/NewProduct', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(29): view('SCM/NewProduct', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-07 09:23:24 --> Attempt to read property "productTypeID" on array
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\SCM\NewProduct.php(290): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 290)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('SCM/NewProduct', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(29): view('SCM/NewProduct', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-07 09:23:58 --> Attempt to read property "idProductType" on array
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\SCM\NewProduct.php(290): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 290)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('SCM/NewProduct', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(29): view('SCM/NewProduct', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-07 09:26:32 --> Attempt to read property "idProductType" on array
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\SCM\NewProduct.php(290): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 290)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('SCM/NewProduct', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(29): view('SCM/NewProduct', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-07 09:27:14 --> Attempt to read property "idProductType" on array
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\SCM\NewProduct.php(290): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 290)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('SCM/NewProduct', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(29): view('SCM/NewProduct', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-07 09:27:15 --> Attempt to read property "idProductType" on array
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\SCM\NewProduct.php(290): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 290)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('SCM/NewProduct', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(29): view('SCM/NewProduct', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-07 09:29:18 --> Attempt to read property "productTypeName" on array
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\SCM\NewProduct.php(290): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 290)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('SCM/NewProduct', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(29): view('SCM/NewProduct', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-07 09:39:00 --> Attempt to read property "idProductType" on array
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\SCM\NewProduct.php(290): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 290)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('SCM/NewProduct', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(27): view('SCM/NewProduct', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-07 09:39:55 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(23): CodeIgniter\Model->__call('readProductsTyp...', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-07 09:40:35 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(23): CodeIgniter\Model->__call('readProductsTyp...', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-07 09:46:21 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(23): CodeIgniter\Model->__call('readProductsTyp...', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-07 09:46:53 --> Call to undefined method App\Models\ProductTypeModel::readProductsType
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(23): CodeIgniter\Model->__call('readProductsTyp...', Array)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-07 09:49:01 --> Call to undefined method App\Models\ProductTypeModel::readProductsType
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(23): CodeIgniter\Model->__call('readProductsTyp...', Array)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-07 09:50:01 --> Call to undefined method App\Models\ProductTypeModel::readProductsType
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(23): CodeIgniter\Model->__call('readProductsTyp...', Array)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2022-11-07 18:22:12 --> Invalid file: SCM/NewProduct.php
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('SCM/NewProduct....')
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('SCM/NewProduct', Array, true)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(27): view('SCM/NewProduct', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-07 18:22:13 --> Invalid file: SCM/NewProduct.php
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('SCM/NewProduct....')
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('SCM/NewProduct', Array, true)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(27): view('SCM/NewProduct', Array)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->RegisterProduct()
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-07 18:22:58 --> Undefined array key "productName"
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Models\ProductModel.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 96)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(43): App\Models\ProductModel->InsertProduct(Array)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-11-07 18:23:55 --> Undefined array key "productName"
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Models\ProductModel.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 96)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(43): App\Models\ProductModel->InsertProduct(Array)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-11-07 18:23:56 --> Undefined array key "productName"
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Models\ProductModel.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 96)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(43): App\Models\ProductModel->InsertProduct(Array)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-11-07 18:24:02 --> Undefined array key "productName"
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Models\ProductModel.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 96)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(43): App\Models\ProductModel->InsertProduct(Array)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-11-07 18:24:12 --> Undefined array key "productName"
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Models\ProductModel.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 96)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(43): App\Models\ProductModel->InsertProduct(Array)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-11-07 18:24:13 --> Undefined array key "productName"
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Models\ProductModel.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 96)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(43): App\Models\ProductModel->InsertProduct(Array)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-11-07 18:24:19 --> Undefined array key "productName"
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Models\ProductModel.php(96): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 96)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(43): App\Models\ProductModel->InsertProduct(Array)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-11-07 18:24:49 --> Undefined array key "productType"
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Models\ProductModel.php(97): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 97)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(43): App\Models\ProductModel->InsertProduct(Array)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2022-11-07 18:24:58 --> Undefined array key "format"
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Models\ProductModel.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 98)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(43): App\Models\ProductModel->InsertProduct(Array)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-11-07 18:25:14 --> Unknown column 'formatID' in 'field list'
+CRITICAL - 2022-11-07 18:25:14 --> Unknown column 'formatID' in 'field list'
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Pr...', 0)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Pr...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Pr...')
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pr...', Array, false)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Models\ProductModel.php(101): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(43): App\Models\ProductModel->InsertProduct(Array)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-07 18:25:46 --> Incorrect integer value: '' for column 'idFormat' at row 1
+CRITICAL - 2022-11-07 18:25:46 --> Incorrect integer value: '' for column 'idFormat' at row 1
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Pr...', 0)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Pr...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Pr...')
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pr...', Array, false)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Models\ProductModel.php(101): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(43): App\Models\ProductModel->InsertProduct(Array)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-07 18:26:01 --> Incorrect integer value: '' for column 'idFormat' at row 1
+CRITICAL - 2022-11-07 18:26:01 --> Incorrect integer value: '' for column 'idFormat' at row 1
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Pr...', 0)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Pr...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Pr...')
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pr...', Array, false)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Models\ProductModel.php(101): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(43): App\Models\ProductModel->InsertProduct(Array)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-07 18:26:02 --> Incorrect integer value: '' for column 'idFormat' at row 1
+CRITICAL - 2022-11-07 18:26:02 --> Incorrect integer value: '' for column 'idFormat' at row 1
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Pr...', 0)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Pr...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Pr...')
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pr...', Array, false)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Models\ProductModel.php(101): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(43): App\Models\ProductModel->InsertProduct(Array)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-07 18:33:15 --> Incorrect integer value: '' for column 'idFormat' at row 1
+CRITICAL - 2022-11-07 18:33:15 --> Incorrect integer value: '' for column 'idFormat' at row 1
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Pr...', 0)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Pr...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Pr...')
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pr...', Array, false)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Models\ProductModel.php(101): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(43): App\Models\ProductModel->InsertProduct(Array)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-07 18:38:35 --> Incorrect integer value: '' for column 'idFormat' at row 1
+CRITICAL - 2022-11-07 18:38:35 --> Incorrect integer value: '' for column 'idFormat' at row 1
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Pr...', 0)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Pr...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Pr...')
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pr...', Array, false)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Models\ProductModel.php(101): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(43): App\Models\ProductModel->InsertProduct(Array)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-07 18:38:46 --> Incorrect integer value: '' for column 'idFormat' at row 1
+CRITICAL - 2022-11-07 18:38:46 --> Incorrect integer value: '' for column 'idFormat' at row 1
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Pr...', 0)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Pr...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Pr...')
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pr...', Array, false)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Models\ProductModel.php(101): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(43): App\Models\ProductModel->InsertProduct(Array)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-07 18:39:14 --> Incorrect integer value: '' for column 'idFormat' at row 1
+CRITICAL - 2022-11-07 18:39:14 --> Incorrect integer value: '' for column 'idFormat' at row 1
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Pr...', 0)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Pr...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Pr...')
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pr...', Array, false)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Models\ProductModel.php(101): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(43): App\Models\ProductModel->InsertProduct(Array)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-07 18:42:00 --> Undefined array key "idFormat"
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Models\ProductModel.php(98): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 98)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(43): App\Models\ProductModel->InsertProduct(Array)
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2022-11-07 18:42:09 --> Field 'idProductType' doesn't have a default value
+CRITICAL - 2022-11-07 18:42:09 --> Field 'idProductType' doesn't have a default value
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Pr...', 0)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Pr...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Pr...')
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pr...', Array, false)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Models\ProductModel.php(101): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(43): App\Models\ProductModel->InsertProduct(Array)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-07 19:04:35 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/ListPro...', Array, true)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(46): view('Product/ListPro...', Array)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-07 19:07:13 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/ListPro...', Array, true)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(46): view('Product/ListPro...', Array)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-07 19:08:09 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/ListPro...', Array, true)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(46): view('Product/ListPro...', Array)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-07 19:13:18 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/ListPro...', Array, true)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(46): view('Product/ListPro...', Array)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-07 19:18:29 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/ListPro...', Array, true)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(46): view('Product/ListPro...', Array)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-07 19:50:04 --> Undefined variable $value
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\Product\ListProducts.php(290): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 290)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/ListPro...', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(46): view('Product/ListPro...', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-07 19:50:33 --> Cannot use object of type stdClass as array
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/ListPro...', Array, true)
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(46): view('Product/ListPro...', Array)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2022-11-07 19:51:05 --> Undefined property: stdClass::$idProducto
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\app\Views\Product\ListProducts.php(293): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 293)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/ListPro...', Array, true)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(46): view('Product/ListPro...', Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2022-11-07 20:23:16 --> Column 'productName' cannot be null
+CRITICAL - 2022-11-07 20:23:16 --> Column 'productName' cannot be null
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Pr...', 0)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Pr...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Pr...')
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pr...', Array, false)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Models\ProductModel.php(101): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(44): App\Models\ProductModel->InsertProduct(Array)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2022-11-07 20:26:07 --> Column 'productName' cannot be null
+CRITICAL - 2022-11-07 20:26:07 --> Column 'productName' cannot be null
+#0 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Pr...', 0)
+#1 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Pr...')
+#2 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Pr...')
+#3 C:\xampp\htdocs\ERP\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Pr...', Array, false)
+#4 C:\xampp\htdocs\ERP\ERP_Drymix\app\Models\ProductModel.php(101): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ERP\ERP_Drymix\app\Controllers\ProductsController.php(44): App\Models\ProductModel->InsertProduct(Array)
+#6 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\ProductsController->InsertProduct()
+#7 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductsController))
+#8 C:\xampp\htdocs\ERP\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ERP\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
