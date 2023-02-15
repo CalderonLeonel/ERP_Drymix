@@ -1,0 +1,82 @@
+CRITICAL - 2022-11-15 09:45:28 --> syntax error, unexpected variable "$builder"
+#0 C:\xampp\htdocs\ERP_Drymix\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\ERP_Drymix\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\Move...')
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\MovementsController.php(54): CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\Move...')
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\MovementsController->ListMovements()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovementsController))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2022-11-15 09:45:46 --> Table 'erp_dry_db.movement' doesn't exist
+CRITICAL - 2022-11-15 09:45:46 --> Table 'erp_dry_db.movement' doesn't exist
+#0 C:\xampp\htdocs\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Models\MovementModel.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ERP_Drymix\app\Controllers\MovementsController.php(58): App\Models\MovementModel->SelectMovements()
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\MovementsController->ListMovements()
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovementsController))
+#8 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2022-11-15 09:47:15 --> Invalid file: Movement/ListMovements.php
+#0 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Movement/ListMo...')
+#1 C:\xampp\htdocs\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Movement/ListMo...', Array, true)
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\MovementsController.php(60): view('Movement/ListMo...', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\MovementsController->ListMovements()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovementsController))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-15 09:48:02 --> Invalid file: Product/InventoryMovement/Movement/ListMovements.php
+#0 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Product/Invento...')
+#1 C:\xampp\htdocs\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/Invento...', Array, true)
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\MovementsController.php(60): view('Product/Invento...', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\MovementsController->ListMovements()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovementsController))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-15 09:49:02 --> Undefined variable $types
+#0 C:\xampp\htdocs\ERP_Drymix\app\Views\InventoryMovement\ListMovements.php(95): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 95)
+#1 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('InventoryMoveme...', Array, true)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Controllers\MovementsController.php(60): view('InventoryMoveme...', Array)
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\MovementsController->ListMovements()
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovementsController))
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-15 10:16:51 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\MovementsController.php(24): CodeIgniter\Model->__call('SelectMovement', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\MovementsController->NewMovement()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovementsController))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2022-11-15 10:17:32 --> Undefined variable $table
+#0 C:\xampp\htdocs\ERP_Drymix\app\Views\Movement\NewMovement.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 9)
+#1 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Movement/NewMov...', Array, true)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Controllers\MovementsController.php(28): view('Movement/NewMov...', Array)
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\MovementsController->NewMovement()
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovementsController))
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2022-11-15 10:18:03 --> Undefined variable $table
+#0 C:\xampp\htdocs\ERP_Drymix\app\Views\Movement\NewMovement.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 9)
+#1 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Movement/NewMov...', Array, true)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Controllers\MovementsController.php(23): view('Movement/NewMov...')
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\MovementsController->NewMovement()
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MovementsController))
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

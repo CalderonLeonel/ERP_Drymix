@@ -23,7 +23,7 @@ class App extends BaseConfig
      *
      * @var string
      */
-    public $baseURL = 'http://localhost/ERP/ERP_Drymix/public/';
+    public $baseURL = 'http://localhost/ERP_Drymix/public/';
 
     /**
      * --------------------------------------------------------------------------

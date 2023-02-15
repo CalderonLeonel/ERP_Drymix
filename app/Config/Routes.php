@@ -50,6 +50,6 @@ if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
 //$routes->get('usuarios', 'Users::index');
-$routes->get('insertar', 'ProductsController::RegisterProduct');
-$routes->get('produccion', 'ProductsController::index');
+$routes->get('insertar', 'Product::RegisterProduct');
+$routes->get('produccion', 'Product::index');
 $routes->get('crearUsuario', 'Users::crear');

@@ -1,0 +1,10 @@
+CRITICAL - 2022-11-22 09:27:22 --> Class "ControladorProducto" not found
+#0 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Sales/Newsale', Array, true)
+#3 C:\xampp\htdocs\ERP_Drymix\app\Controllers\SaleController.php(22): view('Sales/Newsale')
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\SaleController->NewSale()
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SaleController))
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

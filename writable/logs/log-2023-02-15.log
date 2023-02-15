@@ -1,0 +1,60 @@
+ERROR - 2023-02-15 12:19:59 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2023-02-15 12:19:59 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\ERP_Drymix\app\Models\ProductTypeModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Products.php(62): App\Models\ProductTypeModel->SelectProductTypes()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Products->ListProducts()
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2023-02-15 12:20:08 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2023-02-15 12:20:08 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\ERP_Drymix\app\Models\ProductTypeModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Products.php(62): App\Models\ProductTypeModel->SelectProductTypes()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Products->ListProducts()
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2023-02-15 12:20:19 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2023-02-15 12:20:19 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\ERP_Drymix\app\Models\ProductTypeModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Products.php(62): App\Models\ProductTypeModel->SelectProductTypes()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Products->ListProducts()
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2023-02-15 12:41:11 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2023-02-15 12:41:11 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\ERP_Drymix\app\Models\ProductTypeModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Products.php(62): App\Models\ProductTypeModel->SelectProductTypes()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Products->ListProducts()
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+ERROR - 2023-02-15 12:41:17 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2023-02-15 12:41:17 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\ERP_Drymix\app\Models\ProductTypeModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Products.php(62): App\Models\ProductTypeModel->SelectProductTypes()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Products->ListProducts()
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

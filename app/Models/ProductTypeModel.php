@@ -12,7 +12,8 @@ class ProductTypeModel extends Model{
         $builder = $this->db->table('ProductType');
 
         $data = [
-            'productTypeName' => $data['typeName']
+            'productTypeName' => $data['productTypeName'],
+            'idLine' => 1
         ];
 
         $query = $builder->insert($data);

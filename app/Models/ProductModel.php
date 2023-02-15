@@ -119,12 +119,13 @@ class ProductModel extends Model{
         $builder = $this->db->table('Product');
         $data = [
             'productName' => $data['productName'],
-            'idProductType' => 3,
-            'idFormat' => 1
+            'idProductType' => 1, //$data['idProductType'],
+            'idFormat' => 1,//$data['idFormat'],
         ];
-        $builder->where('idProduct', $idProduct);
+        $query = $builder->where('idProduct', $idProduct);
+        $query = $builder->update($data);
 
-        return $builder->update($data);
+        return $query;
     }
 
     public function DeleteProduct ($idProduct)
