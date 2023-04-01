@@ -80,4 +80,7 @@ INSERT INTO Product(idProductType, idFormat, productName) VALUES(3, 3, 'Bolsa de
 INSERT INTO Product(idProductType, idFormat, productName) VALUES(3, 4, 'Bolsa de yeso regulado a granel');
 -- SELECT * FROM Product;
 -- 3 MODULO DE DOCUMENTACION  --
+-- 4 MODULO DE CLIENTE --
+INSERT INTO client(idClient, idClientType, fullname, description, cellphone, entity, state) VALUES(2, 1, 'Sebastian Clavijo', 'Cliente Frecuente', '65360118', 'Univalle', 1);
+INSERT INTO clienttype(idClientType, type, state) VALUES(1, 'Cliente Frecuente', 1);
 

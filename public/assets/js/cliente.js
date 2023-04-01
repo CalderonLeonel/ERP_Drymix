@@ -4,7 +4,7 @@ function MNuevoCliente(){
   var obj=""
   $.ajax({
     type:"POST",
-    url:"vista/cliente/FNuevoCliente.php",
+    url:"../Clients/RegisterClient",
     data:obj,
     success:function(data){
       $("#content-lg").html(data)
@@ -18,7 +18,7 @@ function RegCliente(){
 
   $.ajax({
     type:"POST",
-    url:"controlador/clienteControlador.php?ctrRegCliente",
+    url:"../Clients/InsertClients",
     data:formData,
     cache:false,
     contentType:false,

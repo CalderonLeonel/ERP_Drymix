@@ -15,9 +15,8 @@ class LineModel extends Model{
      */
     public function ListLines()
     {
-        $builder = $this->db->table('Lines');
+        $builder = $this->db->table('Line');
         $builder->select("*");
-        $builder->where('idLines', 1);
         $query = $builder->get();
         return $query->getResult();
         
@@ -35,7 +34,8 @@ class LineModel extends Model{
     {
         $builder = $this->db->table('Line');
         $data = [
-            'LineName' => 'LineName' 
+            //'lineCode' => 'LineCode'
+            'lineName' => $data['lineName']
         ];
         return $builder->insert($data);
 
@@ -55,14 +55,6 @@ class LineModel extends Model{
         return $query;
     }
 
-    public function SelectLines ()
-    {
-        $builder = $this->db->table('Line');
-        $query = $builder->select('*');
-        $query = $builder->get();
-        return $query->getResult();
-
-    }
 
     public function SelecLineById($idLine)
     {

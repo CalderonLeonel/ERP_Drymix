@@ -60,7 +60,7 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="VUsuario" class="nav-link">
+                    <a href="<?php echo site_url('Users/index')?>" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Lista de usuarios</p>
                     </a>
@@ -82,9 +82,34 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="VCliente" class="nav-link">
+                  <a href="<?php echo site_url("Clients/ListClients")?>" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Lista de clientes</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-cog"></i>
+                <p>
+                  Fabricas
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="SinCatalogo" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Control de Fabricas</p>
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="<?php echo site_url('Factories/ListFactories')?>" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Listado de Fabricas </p>
                   </a>
                 </li>
               </ul>
@@ -114,7 +139,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="<?php echo site_url('Line/ListProducts')?>" class="nav-link">
+                    <a href="<?php echo site_url('Lines/ListLines')?>" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p>Lista de Lineas</p>
                     </a>
@@ -147,7 +172,7 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="FormVenta" class="nav-link">
+                  <a href="<?php echo site_url('Sales/RegisterSale') ?>" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Realizar venta</p>
                   </a>

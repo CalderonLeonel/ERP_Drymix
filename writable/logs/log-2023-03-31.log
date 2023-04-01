@@ -1,0 +1,166 @@
+CRITICAL - 2023-03-31 08:59:21 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(69): CodeIgniter\Model->__call('SelectLines', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-03-31 08:59:23 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(69): CodeIgniter\Model->__call('SelectLines', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-03-31 08:59:33 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(69): CodeIgniter\Model->__call('SelectLines', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-03-31 09:00:25 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(69): CodeIgniter\Model->__call('SelectLines', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-03-31 09:00:45 --> Undefined property: stdClass::$lineCode
+#0 C:\xampp\htdocs\ERP_Drymix\app\Views\Line\ListLines.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 40)
+#1 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Line/ListLines', Array, true)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(82): view('Line/ListLines', Array)
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->ListLines()
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-31 09:47:22 --> Too few arguments to function App\Controllers\Lines::InfoLines(), 0 passed in C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InfoLines()
+#1 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#2 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-03-31 09:47:30 --> Too few arguments to function App\Controllers\Lines::InfoLines(), 0 passed in C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InfoLines()
+#1 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#2 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-03-31 09:47:56 --> Too few arguments to function App\Controllers\Lines::InfoLines(), 0 passed in C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InfoLines()
+#1 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#2 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-03-31 09:47:57 --> Too few arguments to function App\Controllers\Lines::InfoLines(), 0 passed in C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InfoLines()
+#1 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#2 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-03-31 09:49:16 --> Too few arguments to function App\Controllers\Lines::InfoLines(), 0 passed in C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InfoLines()
+#1 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#2 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-03-31 09:49:53 --> Too few arguments to function App\Controllers\Lines::InfoLines(), 0 passed in C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InfoLines()
+#1 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#2 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-03-31 09:49:56 --> Too few arguments to function App\Controllers\Lines::InfoLines(), 0 passed in C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php on line 832 and exactly 1 expected
+#0 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InfoLines()
+#1 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#2 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2023-03-31 09:50:46 --> Undefined variable $product
+#0 C:\xampp\htdocs\ERP_Drymix\app\Views\Line\MInfoLine.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Line/MInfoLine', Array, true)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(94): view('Line/MInfoLine', Array)
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InfoLine()
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-31 09:50:48 --> Undefined variable $product
+#0 C:\xampp\htdocs\ERP_Drymix\app\Views\Line\MInfoLine.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Line/MInfoLine', Array, true)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(94): view('Line/MInfoLine', Array)
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InfoLine()
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-31 09:51:41 --> Undefined array key "tableName"
+#0 C:\xampp\htdocs\ERP_Drymix\app\Views\Line\MInfoLine.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Line/MInfoLine', Array, true)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(94): view('Line/MInfoLine', Array)
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InfoLine()
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-31 09:52:27 --> Undefined array key "lineName"
+#0 C:\xampp\htdocs\ERP_Drymix\app\Views\Line\MInfoLine.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Line/MInfoLine', Array, true)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(94): view('Line/MInfoLine', Array)
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InfoLine()
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-31 09:54:11 --> Attempt to read property "lineName" on array
+#0 C:\xampp\htdocs\ERP_Drymix\app\Views\Line\MInfoLine.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Line/MInfoLine', Array, true)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(94): view('Line/MInfoLine', Array)
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InfoLine()
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-31 09:54:24 --> Attempt to read property "lineName" on array
+#0 C:\xampp\htdocs\ERP_Drymix\app\Views\Line\MInfoLine.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Line/MInfoLine', Array, true)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(94): view('Line/MInfoLine', Array)
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InfoLine()
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-31 09:54:34 --> Attempt to read property "lineName" on array
+#0 C:\xampp\htdocs\ERP_Drymix\app\Views\Line\MInfoLine.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'C:\\xampp\\htdocs...', 21)
+#1 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Line/MInfoLine', Array, true)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(94): view('Line/MInfoLine', Array)
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InfoLine()
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

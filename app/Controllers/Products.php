@@ -3,7 +3,7 @@ namespace App\Controllers;
 
 use CodeIgniter\Controller;
 use App\Controllers\BaseController;
-use App\Models\ProductModel;
+use App\Models\Product;
 use App\Models\LineModel;
 use App\Models\FormatModel;
 use App\Models\ProductTypeModel;
@@ -25,14 +25,14 @@ class Products extends BaseController{
         $data['types'] = $productTypesModel->SelectProductTypes();
         $data['format'] = $formatModel->SelectFormat();
 
-        echo view('Import/header');
+        echo view('Import/Header');
         echo view('Product/NewProduct', $data);
-        echo view('Import/footer');
+        echo view('Import/Footer');
     }
 
     public function InsertProduct(){
         
-        $productModel = new ProductModel();
+        $productModel = new Product();
         $productTypesModel = new ProductTypeModel();
         $formatModel = new FormatModel();
 
@@ -55,7 +55,7 @@ class Products extends BaseController{
     }
 
     public function ListProducts(){
-        $productModel = new ProductModel();
+        $productModel = new Product();
         $productTypesModel = new ProductTypeModel();
         $formatModel = new FormatModel();
 
@@ -70,7 +70,7 @@ class Products extends BaseController{
     }
 
     public function Update(){
-        $productModel = new ProductModel();
+        $productModel = new Product();
         $productTypesModel = new ProductTypeModel();
         $formatModel = new FormatModel();
         $idProduct = [
@@ -85,7 +85,7 @@ class Products extends BaseController{
     }
 
     public function UpdateProduct(){
-        $productModel = new ProductModel();
+        $productModel = new Product();
         $productTypesModel = new ProductTypeModel();
         $formatModel = new FormatModel();
         
@@ -110,7 +110,7 @@ class Products extends BaseController{
     }
 
     public function InfoProduct(){
-        $productModel = new ProductModel();
+        $productModel = new Product();
         
         $idProduct = $this->request->getVar('idProduct');
 
@@ -119,5 +119,12 @@ class Products extends BaseController{
         echo view('Product/UpdateProduct',$table);
         echo view('Import/Footer');
 
+    }
+
+    public function SearchProduct()
+    {
+        $productModel = new Product();
+        
+        $idProduct = $this->request->getPost('idProduct');
     }
 }

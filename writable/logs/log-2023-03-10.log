@@ -1,0 +1,12 @@
+ERROR - 2023-03-10 12:06:48 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2023-03-10 12:06:48 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\ERP_Drymix\app\Models\ProductTypeModel.php(28): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Products.php(62): App\Models\ProductTypeModel->SelectProductTypes()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Products->ListProducts()
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products))
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}

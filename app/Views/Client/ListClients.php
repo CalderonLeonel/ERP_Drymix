@@ -5,7 +5,7 @@
     <div class="container-fluid">
       <div class="row mb-2">
         <div class="col-sm-6">
-          <h1>Listado de Productos</h1>
+          <h1>Listado de Clientes</h1>
         </div>
         <div class="col-sm-6">
 
@@ -19,16 +19,16 @@
     <div class="container-fluid">
       <div class="card">
         <div class="card-header">
-          <h3 class="card-title">Listado de Productos</h3>
+          <h3 class="card-title">Listado de Clientes</h3>
         </div>
         <!-- /.card-header -->
         <div class="card-body">
-          <table id="example1" class="table table-bordered table-striped">
-            <button type="submit" class="btn btn-success" style="margin-left: 900px; margin-bottom: 5px; height: 40px; width: 100px;" onclick="MNuevoProducto()">Nuevo</button>
+          <table id="DataTableCliente" class="table table-bordered table-striped">
+            <button type="submit" class="btn btn-success" style="margin-left: 900px; margin-bottom: 5px; height: 40px; width: 100px;" onclick="MNuevoCliente()">Nuevo</button>
             <thead>
               <tr>
-                <th>Codigo del Producto</th>
-                <th>Nombre del Producto</th>
+                <th>Codigo Cliente</th>
+                <th>Nombre Cliente</th>
                 <th>Estado</th>
                 <th>Fecha Registro</th>
                 <th>Acciones</th>
@@ -38,25 +38,25 @@
               <?php foreach ($table as $row) {
               ?>
                 <tr>
-                  <td><?php echo $row->productCode ?></td>
-                  <td><?php echo $row->productName ?></td>
+                  <td><?php echo $row->fullname ?></td>
+                  <td><?php echo $row->fullname ?></td>
                   <td><?php echo $row->state ?></td>
                   <td><?php echo $row->createDate ?></td>
                   <td>
 
                     <div class="btn-group">
-                      <input type="hidden" name="idLine" id="idLine">
+                      <input type="hidden" name="idClient" id="idClient">
                       <button class="btn btn-info" id="btnInfo">
-                        <i class="mdi mdi-information-outline"></i>
+                        <i class="mdi mdi-information-outClient"></i>
                       </button>
 
-                      <input type="hidden" name="idLine" id="idLine">
-                      <button class='btn btn-secondary' onclick='MEditLine(<?php $row->idLine ?>)'>
+                      <input type="hidden" name="idClient" id="idClient">
+                      <button class='btn btn-secondary' onclick='MEditClient(<?php $row->idClient ?>)'>
                         <i class='fa fa-edit'></i>
                       </button>
 
-                      <input type="hidden" name="idLine" id="idLine">
-                      <button class="btn btn-danger" onclick='MDelLine(<?php echo $row->idLine; ?>)'>
+                      <input type="hidden" name="idClient" id="idClient">
+                      <button class="btn btn-danger" onclick='MDelClient(<?php echo $row->idClient; ?>)'>
                         <i class="mdi mdi-delete"></i>
                       </button>
 
@@ -67,8 +67,8 @@
             </tbody>
             <tfoot>
               <tr>
-                <th>Codigo Linea</th>
-                <th>Nombre de la Linea</th>
+                <th>Codigo Cliente</th>
+                <th>Nombre Cliente</th>
                 <th>Estado</th>
                 <th>Fecha Registro</th>
                 <th>Acciones</th>

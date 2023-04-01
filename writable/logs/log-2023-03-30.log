@@ -1,0 +1,82 @@
+CRITICAL - 2023-03-30 08:49:14 --> Invalid file: Client/ListClientes.php
+#0 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Client/ListClie...')
+#1 C:\xampp\htdocs\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Client/ListClie...', Array, true)
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Clients.php(50): view('Client/ListClie...')
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Clients->ListClients()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clients))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-03-30 08:49:39 --> Undefined variable $table
+#0 C:\xampp\htdocs\ERP_Drymix\app\Views\Client\ListClients.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 39)
+#1 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Client/ListClie...', Array, true)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Clients.php(50): view('Client/ListClie...')
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Clients->ListClients()
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clients))
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-30 08:51:18 --> Undefined property: stdClass::$lineCode
+#0 C:\xampp\htdocs\ERP_Drymix\app\Views\Client\ListClients.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 42)
+#1 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Client/ListClie...', Array, true)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Clients.php(54): view('Client/ListClie...', Array)
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Clients->ListClients()
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clients))
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-30 08:51:39 --> Undefined property: stdClass::$idLine
+#0 C:\xampp\htdocs\ERP_Drymix\app\Views\Client\ListClients.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 55)
+#1 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Client/ListClie...', Array, true)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Clients.php(54): view('Client/ListClie...', Array)
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Clients->ListClients()
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clients))
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-30 08:59:47 --> Invalid file: Client/NewCliente.php
+#0 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Client/NewClien...')
+#1 C:\xampp\htdocs\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Client/NewClien...', Array, true)
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Clients.php(25): view('Client/NewClien...')
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Clients->RegisterClient()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clients))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-03-30 09:00:56 --> Invalid file: Client/NewCliente.php
+#0 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Client/NewClien...')
+#1 C:\xampp\htdocs\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Client/NewClien...', Array, true)
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Clients.php(24): view('Client/NewClien...')
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Clients->RegisterClient()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clients))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-03-30 09:01:13 --> Undefined variable $types
+#0 C:\xampp\htdocs\ERP_Drymix\app\Views\Client\NewClient.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 48)
+#1 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Client/NewClien...', Array, true)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Clients.php(24): view('Client/NewClien...')
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Clients->RegisterClient()
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clients))
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-30 09:01:19 --> Undefined variable $types
+#0 C:\xampp\htdocs\ERP_Drymix\app\Views\Client\NewClient.php(48): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 48)
+#1 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Client/NewClien...', Array, true)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Clients.php(24): view('Client/NewClien...')
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Clients->RegisterClient()
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Clients))
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

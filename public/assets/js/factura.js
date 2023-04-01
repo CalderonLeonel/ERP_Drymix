@@ -173,8 +173,22 @@ function transformaFecha(fechaISO){
 }
 
 
+function MBuscarCliente(){
+  $("#modal-xl").modal("show")
+
+  var obj=""
+  $.ajax({
+    type:"POST",
+    url:"../Sales/ListClientsModal",
+    data:obj,
+    success:function(data){
+      $("#content-xl").html(data)
+    }
+  })
+}
+
 function busCliente(){
-  let nitCliente=document.getElementById("nitCliente").value
+  let nitCliente=document.getElementById("example1_filter").value
 
   var obj={
     nitCliente:nitCliente
@@ -199,16 +213,30 @@ function busCliente(){
   })
 }
 
+function MBuscarProducto(){
+  $("#modal-xl").modal("show")
+
+  var obj=""
+  $.ajax({
+    type:"POST",
+    url:"../Sales/ListProdModals",
+    data:obj,
+    success:function(data){
+      $("#content-xl").html(data)
+    }
+  })
+}
+
 function busCod(){
-  let codProducto=document.getElementById("codProducto").value
+  //let codProducto=document.getElementById("example1_filter").value
 
   var obj={
-    codProducto:codProducto
+    //codProducto:codProducto
   }
 
   $.ajax({
     type:"POST",
-    url:"controlador/productoControlador.php?ctrBusProducto",
+    url:"../Products/SearchProduct",
     data:obj,
     dataType:"json",
     success:function(data){

@@ -1,0 +1,372 @@
+CRITICAL - 2023-04-01 18:13:20 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(69): CodeIgniter\Model->__call('SelectLines', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-04-01 18:13:21 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(69): CodeIgniter\Model->__call('SelectLines', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-04-01 18:13:54 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(69): CodeIgniter\Model->__call('SelectLines', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-04-01 18:14:00 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(69): CodeIgniter\Model->__call('SelectLines', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-04-01 18:15:13 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(69): CodeIgniter\Model->__call('SelectLines', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-04-01 18:15:14 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(69): CodeIgniter\Model->__call('SelectLines', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2023-04-01 18:16:50 --> Column 'lineName' cannot be null
+CRITICAL - 2023-04-01 18:16:50 --> Column 'lineName' cannot be null
+#0 C:\xampp\htdocs\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Li...', 0)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Li...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Li...')
+#3 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Li...', Array, false)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Models\LineModel.php(40): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(67): App\Models\LineModel->InsertLine(Array)
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#8 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-01 18:17:07 --> Column 'lineName' cannot be null
+CRITICAL - 2023-04-01 18:17:07 --> Column 'lineName' cannot be null
+#0 C:\xampp\htdocs\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Li...', 0)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Li...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Li...')
+#3 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Li...', Array, false)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Models\LineModel.php(40): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(67): App\Models\LineModel->InsertLine(Array)
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#8 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-01 18:17:18 --> Column 'lineName' cannot be null
+CRITICAL - 2023-04-01 18:17:18 --> Column 'lineName' cannot be null
+#0 C:\xampp\htdocs\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Li...', 0)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Li...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Li...')
+#3 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Li...', Array, false)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Models\LineModel.php(40): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(67): App\Models\LineModel->InsertLine(Array)
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#8 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-01 18:20:24 --> Column 'lineName' cannot be null
+CRITICAL - 2023-04-01 18:20:24 --> Column 'lineName' cannot be null
+#0 C:\xampp\htdocs\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Li...', 0)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Li...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Li...')
+#3 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Li...', Array, false)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Models\LineModel.php(40): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(67): App\Models\LineModel->InsertLine(Array)
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#8 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-01 18:21:43 --> Column 'lineName' cannot be null
+CRITICAL - 2023-04-01 18:21:43 --> Column 'lineName' cannot be null
+#0 C:\xampp\htdocs\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Li...', 0)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Li...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Li...')
+#3 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Li...', Array, false)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Models\LineModel.php(40): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(67): App\Models\LineModel->InsertLine(Array)
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#8 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-01 18:21:44 --> Column 'lineName' cannot be null
+CRITICAL - 2023-04-01 18:21:44 --> Column 'lineName' cannot be null
+#0 C:\xampp\htdocs\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Li...', 0)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Li...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Li...')
+#3 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Li...', Array, false)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Models\LineModel.php(40): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(67): App\Models\LineModel->InsertLine(Array)
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#8 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-01 18:22:05 --> Column 'lineName' cannot be null
+CRITICAL - 2023-04-01 18:22:05 --> Column 'lineName' cannot be null
+#0 C:\xampp\htdocs\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Li...', 0)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Li...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Li...')
+#3 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Li...', Array, false)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Models\LineModel.php(40): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(67): App\Models\LineModel->InsertLine(Array)
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#8 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-01 18:22:10 --> Column 'lineName' cannot be null
+CRITICAL - 2023-04-01 18:22:10 --> Column 'lineName' cannot be null
+#0 C:\xampp\htdocs\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Li...', 0)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Li...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Li...')
+#3 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Li...', Array, false)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Models\LineModel.php(40): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(67): App\Models\LineModel->InsertLine(Array)
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#8 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-01 18:24:44 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(69): CodeIgniter\Model->__call('SelectLines', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-04-01 18:25:02 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(69): CodeIgniter\Model->__call('SelectLines', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-04-01 18:25:17 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(69): CodeIgniter\Model->__call('SelectLines', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-04-01 18:26:02 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(69): CodeIgniter\Model->__call('SelectLines', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-04-01 18:26:03 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(69): CodeIgniter\Model->__call('SelectLines', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2023-04-01 18:28:44 --> Column 'lineName' cannot be null
+CRITICAL - 2023-04-01 18:28:44 --> Column 'lineName' cannot be null
+#0 C:\xampp\htdocs\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Li...', 0)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Li...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Li...')
+#3 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Li...', Array, false)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Models\LineModel.php(40): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(67): App\Models\LineModel->InsertLine(Array)
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#8 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-01 18:30:03 --> Column 'lineName' cannot be null
+CRITICAL - 2023-04-01 18:30:03 --> Column 'lineName' cannot be null
+#0 C:\xampp\htdocs\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Li...', 0)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Li...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Li...')
+#3 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Li...', Array, false)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Models\LineModel.php(40): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(67): App\Models\LineModel->InsertLine(Array)
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#8 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-01 18:30:12 --> Column 'lineName' cannot be null
+CRITICAL - 2023-04-01 18:30:12 --> Column 'lineName' cannot be null
+#0 C:\xampp\htdocs\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Li...', 0)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Li...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Li...')
+#3 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Li...', Array, false)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Models\LineModel.php(40): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(67): App\Models\LineModel->InsertLine(Array)
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#8 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+ERROR - 2023-04-01 18:30:31 --> Column 'lineName' cannot be null
+CRITICAL - 2023-04-01 18:30:31 --> Column 'lineName' cannot be null
+#0 C:\xampp\htdocs\ERP_Drymix\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `Li...', 0)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `Li...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `Li...')
+#3 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `Li...', Array, false)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Models\LineModel.php(40): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(67): App\Models\LineModel->InsertLine(Array)
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#8 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-04-01 18:33:08 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(69): CodeIgniter\Model->__call('SelectLines', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-04-01 18:33:12 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(69): CodeIgniter\Model->__call('SelectLines', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-04-01 18:34:21 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(69): CodeIgniter\Model->__call('SelectLines', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-04-01 18:34:30 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(69): CodeIgniter\Model->__call('SelectLines', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-04-01 18:35:04 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(69): CodeIgniter\Model->__call('SelectLines', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-04-01 18:35:58 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(69): CodeIgniter\Model->__call('SelectLines', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-04-01 18:36:08 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(69): CodeIgniter\Model->__call('SelectLines', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-04-01 18:37:39 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(69): CodeIgniter\Model->__call('SelectLines', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-04-01 18:37:39 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(69): CodeIgniter\Model->__call('SelectLines', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-04-01 18:37:40 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(69): CodeIgniter\Model->__call('SelectLines', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-04-01 18:37:40 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(69): CodeIgniter\Model->__call('SelectLines', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-04-01 18:42:04 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(69): CodeIgniter\Model->__call('SelectLines', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-04-01 18:42:16 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\ERP_Drymix\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\ERP_Drymix\system\Model.php(722): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(69): CodeIgniter\Model->__call('SelectLines', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->InsertLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

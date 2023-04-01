@@ -1,5 +1,5 @@
 <?php 
-session_start();
+//session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -37,3 +37,4 @@ session_start();
     <!-- summernote -->
     <link rel="stylesheet" href="<?php echo base_url() ?>/assets/plugins/summernote/summernote-bs4.min.css">
   </head>
+  

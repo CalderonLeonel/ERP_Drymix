@@ -43,7 +43,15 @@ class Lines extends BaseController{
 
         $table['table'] = $lineModel->SelectLines();
         echo view('Imports/Header');
-        echo view('Product/Line/ListLines',$table);
+        echo view('Imports/asideMenu');
+        echo view('Line/ListLines',$table);
+        echo view('Import/Footer');
+    }
+
+    public function RegisterLine(){
+
+        echo view('Import/Header');
+        echo view('Line/NewLine');
         echo view('Import/Footer');
     }
 
@@ -52,28 +60,39 @@ class Lines extends BaseController{
         $lineModel = new LineModel();
 
         $data = [
+            //'lineCode' => $this->request->getVar('lineCode'),
             'lineName' => $this->request->getVar('lineName')
         ];
 
         $lineModel->InsertLine($data);
 
         $table['table'] = $lineModel->SelectLines();
-        echo view('Imports/Header');
+        echo view('Import/Header');
         echo view('Import/asideMenu');
-        echo view('Product/Line/ListLines',$table);
+        echo view('Line/ListLines',$table);
         echo view('Import/Footer');
     }
 
     public function ListLines(){
         $lineModel = new LineModel();
 
-        $table['table'] = $lineModel->SelectLines();
+        $table['table'] = $lineModel->ListLines();
         echo view('Import/Header');
-        echo view('Product/Line/ListLines',$table);  
-        echo view('Import/Header');  
+        echo view('Import/asideMenu');
+        echo view('Line/ListLines',$table);  
+        echo view('Import/Footer');  
     }
 
-    public function InfoProduct($idProduct){
+    public function InfoLine($idLine){
+        $lineModel = new LineModel();
+
+        $idLine = [
+            'idLine' => $this->request->getVar('idLine'),
+        ];
+        $table ['table'] = $lineModel->SelecLineById($idLine);
+        echo view('Import/Header');
+        echo view('Line/MInfoLine',$table);  
+        echo view('Import/Footer'); 
 
     }
 }

@@ -49,6 +49,7 @@
 <script src="<?php echo base_url() ?>/assets/js/producto.js"></script>
 <script src="<?php echo base_url() ?>/assets/js/factura.js"></script>
 <script src="<?php echo base_url() ?>/assets/js/reporte.js"></script>
+<script src="<?php echo base_url() ?>/assets/js/fabrica.js"></script>
 
 <!--====================
 seccion de modals
@@ -171,7 +172,7 @@ $(function () {
       "responsive": true, 
       "lengthChange": false, 
       "autoWidth": false,
-      "ajax": "vista/cliente/dataTableCliente.php",
+      "ajax": "Views/Client/ListClients.php",
       language:{
         "decimal": "",
         "emptyTable": "No hay información",

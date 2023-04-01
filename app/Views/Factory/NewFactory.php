@@ -1,23 +1,29 @@
 <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Nueva Fabrica</h5>
-        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-      <form  class="forms-sample" method="POST" id="formNewFactory" name="formNewFactory" action="<?php echo base_url('FactoryController/InsertFactory') ?>">
-          <div class="form-group">
-            <label for="factoryName">Nombre de la Fabrica</label>
-            <input type="text" class="form-control" id="factoryName" name="factoryName" placeholder="Nombre de la Fabrica">
-          </div>
-          <div class="form-group">
-            <label for="factoryAddress">Direccion de la Fabrica</label>
-            <input type="text" class="form-control" id="factoryAddress" name="factoryAddress" placeholder="Direccion de la Fabrica">
-          </div>
+  <h4 class="modal-title">Nueva Fabrica</h4>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <form action="" id="FormRegFactory" enctype="multipart/form-data">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="">Codigo Fabrica</label>
+          <input type="text" class="form-control" id="codLine" name="codLine" placeholder="Codigo usado por la empresa">
         </div>
-      <div class="modal-footer">
-        <button type="submit" class="btn btn-success">Agregar</button>
-        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cerrar</button>
       </div>
-      </form>
-      </div>
+      <div class="col-sm-6">
+        <div class="form-group">
+          <label for="">Nombre Fabrica</label>
+          <input type="text" class="form-control" id="nameLine" name="nameLine" placeholder="Nombre usado por la empresa">
+        </div>
+      </div> 
+    </div>
+  </form>
+</div>
+
+<div class="modal-footer justify-content-between">
+  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+  <button type="button" class="btn btn-primary" onclick="RegFac()">Guardar</button>
+</div>

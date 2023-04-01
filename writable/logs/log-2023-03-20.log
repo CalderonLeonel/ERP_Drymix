@@ -1,0 +1,31 @@
+CRITICAL - 2023-03-20 08:45:33 --> Undefined variable $types
+#0 C:\xampp\htdocs\ERP_Drymix\app\Views\Product\NewProduct.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 36)
+#1 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/NewProd...', Array, true)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(54): view('Product/NewProd...')
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->RegisterLine()
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-20 08:45:42 --> Undefined variable $types
+#0 C:\xampp\htdocs\ERP_Drymix\app\Views\Product\NewProduct.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 36)
+#1 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/NewProd...', Array, true)
+#4 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(54): view('Product/NewProd...')
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->RegisterLine()
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#7 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-03-20 08:46:29 --> Invalid file: Product/NewLine.php
+#0 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Product/NewLine...')
+#1 C:\xampp\htdocs\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Product/NewLine', Array, true)
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Lines.php(54): view('Product/NewLine')
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Lines->RegisterLine()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Lines))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}

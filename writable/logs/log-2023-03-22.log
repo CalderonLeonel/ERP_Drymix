@@ -1,0 +1,39 @@
+CRITICAL - 2023-03-22 08:58:28 --> Invalid file: Factories/asideMenu.php
+#0 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Factories/aside...')
+#1 C:\xampp\htdocs\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Factories/aside...', Array, true)
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Factories.php(46): view('Factories/aside...')
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Factories->ListFactories()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Factories))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-03-22 08:58:41 --> Invalid file: Factories/ListFactories.php
+#0 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Factories/ListF...')
+#1 C:\xampp\htdocs\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('Factories/ListF...', Array, true)
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Factories.php(47): view('Factories/ListF...', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Factories->ListFactories()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Factories))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2023-03-22 09:45:24 --> Invalid file: shared/selectUsers.php
+#0 C:\xampp\htdocs\ERP_Drymix\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('shared/selectUs...')
+#1 C:\xampp\htdocs\ERP_Drymix\system\Common.php(1089): CodeIgniter\View\View->render('shared/selectUs...', Array, true)
+#2 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Users.php(25): view('shared/selectUs...', Array)
+#3 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Users->index()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Users))
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2023-03-22 14:40:24 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2023-03-22 14:40:24 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\ERP_Drymix\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\ERP_Drymix\app\Models\FactoryModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\ERP_Drymix\app\Controllers\Factories.php(43): App\Models\FactoryModel->SelectFactories()
+#4 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(832): App\Controllers\Factories->ListFactories()
+#5 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Factories))
+#6 C:\xampp\htdocs\ERP_Drymix\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\ERP_Drymix\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
