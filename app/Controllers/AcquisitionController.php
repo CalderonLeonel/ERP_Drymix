@@ -10,31 +10,47 @@ class AcquisitionController extends BaseController
     {
         //$acquisitionModel = new AcquisitionModel();
         //$table['table'] = $acquisitionModel->readAcquisitions();
-        return view('Product/DashboardSCM');
+        //echo view('Product/DashboardSCM');
+        /*echo view('Import/Header');
+        echo view('Import/asideMenu');
+        echo view('Acquisition/AcquisitionMain');
+        echo view('Import/Footer');*/
+         echo view('Import/Header');
+        $acquisitionModel = new AcquisitionModel();
+        $table['table'] = $acquisitionModel->readAcquisitions();
+        echo view('Acquisition/AcquisitionList',$table);
+        echo view('Import/Footer');
     }
     public function createAcquisition()
     { 
+        echo view('Import/Header');
         $provider = new ProviderModel;
         $data['list'] = $provider->readProviders();
-        return view('Acquisition/AcquisitionCreate',$data);
+        echo view('Acquisition/AcquisitionCreate',$data);
+        echo view('Import/Footer');
     }
     public function editAcquisition()
     {
+        echo view('Import/Header');
         $acquisitionModel = new AcquisitionModel();
         $id = [
             'idAcquisitionQuote' => $this->request->getVar('idAcquisitionQuote')
         ];
         $data['table'] = $acquisitionModel->readAcquisition($id);
-        return view('Acquisition/EditAcquisition',$data);
+        echo view('Acquisition/EditAcquisition',$data);
+        echo view('Import/Footer');
     }
     public function acquisitionList()
     {
+        echo view('Import/Header');
         $acquisitionModel = new AcquisitionModel();
         $table['table'] = $acquisitionModel->readAcquisitions();
-        return view('Acquisition/AcquisitionList',$table);
+        echo view('Acquisition/AcquisitionList',$table);
+        echo view('Import/Footer');
     }
     public function InsertAcquisition()
     {
+        echo view('Import/Header');
         $acquisitionModel = new AcquisitionModel();
 
         $data = [
@@ -44,11 +60,13 @@ class AcquisitionController extends BaseController
         ];
         $acquisitionModel->createAcquisition($data);
         $table['table'] = $acquisitionModel->readAcquisitions();
-        return view('Acquisition/AcquisitionList',$table);
+        echo view('Acquisition/AcquisitionList',$table);
+        echo view('Import/Footer');
     }
 
     public function UpdateAcquisition()
     {
+        echo view('Import/Header');
         $acquisitionModel = new AcquisitionModel();
         $id = ['idAcquisitionQuote' => $this->request->getVar('idAcquisitionQuote')];
         $data = [   
@@ -59,11 +77,14 @@ class AcquisitionController extends BaseController
         ];
         $acquisitionModel->updateAcquisition($id ,$data);
         $table['table'] = $acquisitionModel->readAcquisitions();
-        return view('Acquisition/AcquisitionList',$table);
+        echo view('Acquisition/AcquisitionList',$table);
+        echo view('Import/Footer');
+      
     }
 
     public function DeleteAcquisition()
     {
+        echo view('Import/Header');
         $acquisitionModel = new AcquisitionModel();
 
         $id = [
@@ -74,13 +95,16 @@ class AcquisitionController extends BaseController
         ];
         $acquisitionModel->deleteAcquisition($id,$data);
         $table['table'] = $acquisitionModel->readAcquisitions();
-        return view('Acquisition/AcquisitionList',$table);
+        echo view('Acquisition/AcquisitionList',$table);
+        echo view('Import/Footer');
     }
 
     public function readAcquisition()
     {
+        echo view('Import/Header');
         $acquisitionModel = new AcquisitionModel();
         $table['table'] = $acquisitionModel->readAcquisitions();
-        return view('Acquisition/AcquisitionList',$table);
+        echo view('Acquisition/AcquisitionList',$table);
+        echo view('Import/Footer');
     }
 }
